@@ -9,7 +9,8 @@ jobs:
   unzip:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Needed to commit the extracted files
+      contents: write
+      workflows: write # Needed to commit the extracted files
     steps:
       - name: Checkout code
         uses: actions/checkout@v7.0.1
