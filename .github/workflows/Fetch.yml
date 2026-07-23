@@ -1,0 +1,48 @@
+name: Fetch Upstream Devel
+
+on:
+  workflow_dispatch:
+
+env:
+  TARGET_BRANCH: "devel2"
+
+jobs:
+  sync-upstream:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Kotatsu-Next
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git Identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Fetch and Create Branch
+        run: |
+          # 1. Add upstream and fetch
+          git remote add upstream https://github.com/kotatsu-redo/kotatsu-redo.git
+          git fetch upstream devel
+          
+          # 2. Create/Reset the 'devel2' branch locally based on upstream
+          git checkout -B ${{ env.TARGET_BRANCH }} upstream/devel
+
+      - name: Purge Upstream Workflows
+        run: |
+          # 3. Completely remove the upstream's workflow folder
+          # This prevents the "refusing to allow GitHub App to create/update workflow" error.
+          rm -rf .github/workflows
+          
+          # 4. Commit the removal
+          git add -A
+          git commit -m "Remove all upstream workflows to avoid permission issues" || echo "No workflows found to remove"
+
+      - name: Push to Origin
+        run: |
+          # 5. Push the cleaned 'devel2' branch to your repo
+          git push origin ${{ env.TARGET_BRANCH }} --force

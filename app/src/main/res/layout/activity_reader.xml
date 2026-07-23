@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<androidx.fragment.app.FragmentContainerView
+		android:id="@+id/container"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:background="@color/grey" />
+
+	<!-- Vertical page-switch slider on the right side, ported from Tsukimi -->
+	<LinearLayout
+		android:id="@+id/container_slider_vertical"
+		android:layout_width="56dp"
+		android:layout_height="match_parent"
+		android:layout_gravity="end|center_vertical"
+		android:layout_marginEnd="8dp"
+		android:layout_marginTop="100dp"
+		android:layout_marginBottom="100dp"
+		android:gravity="center_horizontal"
+		android:orientation="vertical"
+		android:paddingVertical="8dp"
+		android:visibility="gone">
+
+		<com.google.android.material.button.MaterialButton
+			android:id="@+id/button_prev_vertical"
+			style="?materialIconButtonStyle"
+			android:layout_width="48dp"
+			android:layout_height="48dp"
+			android:backgroundTint="?attr/colorSurfaceContainerHigh"
+			android:contentDescription="@string/prev_chapter"
+			android:rotation="90"
+			app:icon="@drawable/ic_prev"
+			app:iconTint="?attr/colorPrimary" />
+
+		<LinearLayout
+			android:id="@+id/pill_vertical_slider"
+			android:layout_width="48dp"
+			android:layout_height="0dp"
+			android:layout_marginVertical="8dp"
+			android:layout_weight="1"
+			android:background="@drawable/bg_reader_vertical_controls"
+			android:backgroundTint="?attr/colorSurfaceContainerHigh"
+			android:gravity="center_horizontal"
+			android:orientation="vertical"
+			android:paddingVertical="16dp">
+
+			<TextView
+				android:id="@+id/textView_current_page_vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?attr/textAppearanceBodySmall"
+				android:textColor="?attr/colorOnSurface" />
+
+			<org.koitharu.kotatsu.reader.ui.widgets.VerticalSliderWrapper
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_marginVertical="8dp"
+				android:layout_weight="1">
+
+				<com.google.android.material.slider.Slider
+					android:id="@+id/slider_vertical"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:rotation="90"
+					android:valueFrom="0"
+					android:valueTo="1"
+					app:labelBehavior="gone" />
+
+			</org.koitharu.kotatsu.reader.ui.widgets.VerticalSliderWrapper>
+
+			<TextView
+				android:id="@+id/textView_total_pages_vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?attr/textAppearanceBodySmall"
+				android:textColor="?attr/colorOnSurface" />
+
+		</LinearLayout>
+
+		<com.google.android.material.button.MaterialButton
+			android:id="@+id/button_next_vertical"
+			style="?materialIconButtonStyle"
+			android:layout_width="48dp"
+			android:layout_height="48dp"
+			android:backgroundTint="?attr/colorSurfaceContainerHigh"
+			android:contentDescription="@string/next_chapter"
+			android:rotation="90"
+			app:icon="@drawable/ic_next"
+			app:iconTint="?attr/colorPrimary" />
+
+	</LinearLayout>
+
+	<com.google.android.material.button.MaterialButton
+		android:id="@+id/button_timer"
+		style="?materialIconButtonOutlinedStyle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|end"
+		android:layout_margin="16dp"
+		app:backgroundTint="@color/bg_floating_button"
+		app:icon="@drawable/ic_timelapse"
+		app:layout_insetEdge="bottom" />
+
+	<org.koitharu.kotatsu.core.ui.widgets.ZoomControl
+		android:id="@+id/zoomControl"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|end"
+		android:layout_margin="16dp"
+		android:orientation="vertical"
+		android:spacing="2dp"
+		android:visibility="gone"
+		app:layout_dodgeInsetEdges="bottom"
+		tools:visibility="visible" />
+
+	<org.koitharu.kotatsu.reader.ui.ReaderInfoBarView
+		android:id="@+id/infoBar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="top"
+		android:padding="6dp"
+		android:textSize="12sp"
+		android:visibility="gone"
+		tools:visibility="visible" />
+
+	<org.koitharu.kotatsu.reader.ui.ScrollTimerControlView
+		android:id="@+id/timerControl"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom"
+		android:layout_margin="@dimen/screen_padding"
+		android:background="@drawable/bg_card"
+		android:elevation="@dimen/m3_card_elevated_elevation"
+		android:visibility="gone"
+		app:layout_dodgeInsetEdges="bottom" />
+
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/appbar_top"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:elevation="@dimen/m3_card_elevated_elevation"
+		app:elevation="@dimen/m3_card_elevated_elevation"
+		app:liftOnScroll="false">
+
+		<com.google.android.material.appbar.MaterialToolbar
+			android:id="@id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:elevation="@dimen/m3_card_elevated_elevation"
+			app:elevation="@dimen/m3_card_elevated_elevation"
+			app:popupTheme="@style/ThemeOverlay.Kotatsu"
+			tools:menu="@menu/opt_reader" />
+
+	</com.google.android.material.appbar.AppBarLayout>
+
+	<com.google.android.material.dockedtoolbar.DockedToolbarLayout
+		android:id="@+id/toolbar_docked"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom"
+		android:fitsSystemWindows="false"
+		app:cardBackgroundColor="?colorSurfaceContainer"
+		app:layout_insetEdge="bottom">
+
+		<org.koitharu.kotatsu.reader.ui.ReaderActionsView
+			android:id="@+id/actionsView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:minHeight="?actionBarSize" />
+
+	</com.google.android.material.dockedtoolbar.DockedToolbarLayout>
+
+	<org.koitharu.kotatsu.reader.ui.ReaderToastView
+		android:id="@+id/toastView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|center_horizontal"
+		android:layout_marginBottom="20dp"
+		android:background="@drawable/bg_reader_indicator"
+		android:drawablePadding="6dp"
+		android:elevation="1000dp"
+		android:singleLine="true"
+		android:textAppearance="?attr/textAppearanceBodySmall"
+		android:theme="@style/ThemeOverlay.Material3.Dark"
+		android:visibility="gone"
+		app:layout_dodgeInsetEdges="bottom"
+		tools:text="@string/loading_"
+		tools:visibility="visible" />
+
+	<LinearLayout
+		android:id="@+id/layout_loading"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:background="@drawable/bg_card"
+		android:backgroundTint="?colorSurfaceContainer"
+		android:gravity="center_horizontal"
+		android:orientation="vertical"
+		android:outlineProvider="background"
+		android:padding="@dimen/screen_padding">
+
+		<com.google.android.material.progressindicator.CircularProgressIndicator
+			android:id="@+id/progressBar"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:indeterminate="true" />
+
+		<TextView
+			android:id="@+id/textView_loading"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:text="@string/loading_"
+			android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+	</LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

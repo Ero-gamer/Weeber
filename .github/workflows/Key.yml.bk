@@ -1,0 +1,36 @@
+name: One-Time Key Generator
+
+on:
+  workflow_dispatch:
+    inputs:
+      keystore_password:
+        description: 'Password for the keystore and key'
+        required: true
+        default: ''
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate Keypair
+        run: |
+          # Use the password from the manual trigger input
+          PASS="${{ github.event.inputs.keystore_password }}"
+          
+          keytool -genkeypair -v \
+            -keystore release.keystore \
+            -alias my-key-alias \
+            -keyalg RSA \
+            -keysize 2048 \
+            -validity 10000 \
+            -storepass "$PASS" \
+            -keypass "$PASS" \
+            -dname "CN=Radhouane, OU=EroGamer, O=Dev, L=EsSenia, ST=Oran, C=DZ"
+
+      - name: Output Base64 String
+        run: |
+          echo "------------------------------------------------------------"
+          echo "COPY THE LINE BELOW (This is your RELEASE_KEYSTORE secret):"
+          echo "------------------------------------------------------------"
+          base64 -w 0 release.keystore
+          echo -e "\n------------------------------------------------------------"

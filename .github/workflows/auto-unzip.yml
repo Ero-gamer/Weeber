@@ -12,9 +12,7 @@ jobs:
       contents: write # Needed to commit the extracted files
     steps:
       - name: Checkout code
-        uses: actions/checkout@v7.0.1
-        with:
-          token: ${{ secrets.WORKFLOW_PAT }}
+        uses: actions/checkout@v7
 
       - name: Extract zip
         run: |
