@@ -28,10 +28,10 @@
 
 <div align="center">
 
-> **Weeber** is a free, open-source manga · webtoon · manhua reader for Android.
+> **Weeber** is a free, lightweight, open-source manga · webtoon · manhua reader for Android.
 > Built on [Kotatsu Redo](https://github.com/Kotatsu-Redo/Kotatsu-redo) and enriched with the best features
-> from the Kotatsu ecosystem — plus Mihon extension support, an in-app Browser Source,
-> and 1400+ built-in manga sources.
+> from Kotatsu ecosystem — plus Mihon extensions support, an in-app Browser Source,
+> and 1200+ built-in manga sources.
 
 </div>
 
@@ -193,9 +193,9 @@ These features were imported, merged, and adapted from the Kotatsu ecosystem:
 
 ---
 
-## ⭐ Weeber-Original Features
+## ⭐ Weeber Original Unique Features:
 
-These features were built from scratch for Kotatsu-Next / Weeber — not ported from any other app:
+These features were built from scratch for Kotatsu Next / Weeber.
 
 - **Vibrance & Sharpening image filters** — Vibrance restores washed-out colors while preserving natural tones, perfect for manhua, webtoons and colored manga. Sharpening makes blurry or bad scans look crisp and detailed. (Experimental, resource-intensive — use with caution)
 - **Denoise, Dither & Grain image filters** — Additional CPU-based image filters. All filters applied per-tile inline post-decode via `ThreadLocal` IntArray pools — zero GC pressure.
