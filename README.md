@@ -53,7 +53,7 @@
 </div>
 
 <details>
-<summary>📋 Full feature list</summary>
+<summary>📋 Full features list</summary>
 <br>
 
 **Sources & discovery**
