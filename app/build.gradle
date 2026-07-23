@@ -36,7 +36,7 @@ android {
     }
 
     defaultConfig {
-        applicationId 'io.github.kotatsu.next'
+        applicationId 'io.github.weeber'
         minSdk = 23
         targetSdk = 36
         versionCode = 2037
