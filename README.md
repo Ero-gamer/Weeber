@@ -339,9 +339,9 @@ Weeber is built upon the collective work of multiple outstanding open-source pro
 | **Kaisoku** | [glitch-228/Kaisoku](https://github.com/glitch-228/Kaisoku) | Mihon extension system, FlareSolverr, BypassProxyServer, BrowserSource, crash system, ChapterSwitchCursor, CloudflareSolver improvements, WebtoonPageSizeCache, ListDiffExecutor |
 | **Usagi** | [UsagiApp/Usagi](https://github.com/UsagiApp/Usagi) | Custom JAR plugin system, plugin manager UI, favourites drag-reorder, DragSelectionListener, ProgressButton, DownscaleMode, OnContextClickListenerCompat |
 | **Usagi 0.0.32** | [UsagiApp/Usagi](https://github.com/UsagiApp/Usagi) | ExternalSourceFetcher for Mihon extension cover images |
-| **Yumemi** | [Yumemi fork](https://github.com/bento07/yumemi) | DatabaseOptimizer, ResumableDownloader, DownloadStateTracker, ScrobbleOfflineQueue, ProxyBlacklistManager, GaplessPageTransformer, AppUpdateCheckWorker, SourceHealthTracker |
-| **Yumemi v9.4.11** | [Yumemi fork](https://github.com/bento07/yumemi) | DST-safe reading streak, streak card always visible, DB query indexes |
-| **Tsuki / Futon** | [landwarderer/Tsuki](https://github.com/landwarderer/futon) | ConnectionWarmer, WebViewPerformanceConfigurator, HapticExt, KotatsuParserMatcher |
+| **Yumemi** | [Yumemi fork](https://github.com/AgentKush/Yumemi) | DatabaseOptimizer, ResumableDownloader, DownloadStateTracker, ScrobbleOfflineQueue, ProxyBlacklistManager, GaplessPageTransformer, AppUpdateCheckWorker, SourceHealthTracker |
+| **Yumemi v9.4.11** | [Yumemi fork](https://github.com/AgentKush/Yumemi) | DST-safe reading streak, streak card always visible, DB query indexes |
+| **Futon** | [landwarderer](https://github.com/landwarderer/futon) | ConnectionWarmer, WebViewPerformanceConfigurator, HapticExt, KotatsuParserMatcher |
 
 ### 🌍 Community
 
