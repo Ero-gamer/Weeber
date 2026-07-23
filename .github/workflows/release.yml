@@ -11,9 +11,6 @@ jobs:
         uses: actions/checkout@v7.0.1
         with:
           submodules: 'recursive'
-
-      - name: Make Gradle wrapper executable run: chmod +x gradlew
-
       - name: Set up JDK 21
         uses: actions/setup-java@v5
         with:
