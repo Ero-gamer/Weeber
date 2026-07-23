@@ -15,7 +15,7 @@
 <div align="center">
 
 [![Android](https://img.shields.io/badge/Android-6.0+-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/Ero-gamer/Weeber)
-[![License](https://img.shields.io/github/license/KotatsuApp/Kotatsu?style=for-the-badge&color=blue)](https://github.com/KotatsuApp/Kotatsu/blob/devel/LICENSE)
+[![License](https://img.shields.io/badge/License-GPL--3.0-blue?style=for-the-badge)](https://github.com/Ero-gamer/Weeber/blob/main/LICENSE)
 [![FOSS](https://img.shields.io/badge/FOSS-100%25-success?style=for-the-badge)](https://github.com/Ero-gamer/Weeber)
 [![Stars](https://img.shields.io/github/stars/Ero-gamer/Weeber?style=for-the-badge&color=yellow)](https://github.com/Ero-gamer/Weeber/stargazers)
 [![Forks](https://img.shields.io/github/forks/Ero-gamer/Weeber?style=for-the-badge&color=orange)](https://github.com/Ero-gamer/Weeber/network)
@@ -188,6 +188,23 @@ These features were imported, merged, and adapted from the Kotatsu ecosystem:
 | **isWebtoonMemorySaver** — caps live decoded pages and disables prefetch on constrained devices | Next (original) |
 
 </details>
+
+---
+
+---
+
+## ⭐ Weeber-Original Features
+
+These features were built from scratch for Kotatsu-Next / Weeber — not ported from any other app:
+
+- **Vibrance & Sharpening image filters** — Vibrance restores washed-out colors while preserving natural tones, perfect for manhua, webtoons and colored manga. Sharpening makes blurry or bad scans look crisp and detailed. (Experimental, resource-intensive — use with caution)
+- **Denoise, Dither & Grain image filters** — Additional CPU-based image filters. All filters applied per-tile inline post-decode via `ThreadLocal` IntArray pools — zero GC pressure.
+- **JPEG Turbo decoder** — Replaced the default JPEG decoder with libjpeg-turbo via JNI. Decodes error-free even for images larger than 10000×5000 px that produce visible tint artifacts in the stock decoder. 2×–6× faster with equal or lower memory overhead.
+- **Increased max zoom ×2 + 3-step double-tap zoom cycle** — Max pinch/scroll zoom doubled. Double-tap cycles through 3 zoom levels. Ideal for high-resolution manhua and detailed scans.
+- **Vertical slider reader control** — Optional vertical slider for manual position navigation in the reader.
+- **Webtoon memory saver mode** — Opt-in toggle that caps live decoded pages and disables prefetch to reduce memory pressure on low-RAM devices.
+- **Global toggle: disable CF captcha auto-solver** — Single setting to turn off automatic Cloudflare captcha solving for all sources at once.
+- **Optimized Backup & Restore** — Faster, more reliable backup and restore flow.
 
 ---
 
