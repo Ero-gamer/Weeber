@@ -7,7 +7,7 @@
 <br>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=32&pause=1000&color=C792EA&center=true&vCenter=true&width=700&lines=Weeber;Your+manga+universe%2C+FOSS+%26+free;1400%2B+sources+%7C+No+ads+%7C+Material+You;Mihon+%2B+built-in+sources+%7C+BrowserSource" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=32&pause=1000&color=C792EA&center=true&vCenter=true&width=700&lines=Weeber;Your+manga+universe%2C+FOSS+%26+free;1200%2B+sources+%7C+No+ads+%7C+Material+You;Mihon+%2B+built-in+sources+%7C+BrowserSource" alt="Typing SVG" />
 </div>
 
 <br>
