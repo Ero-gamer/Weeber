@@ -28,8 +28,8 @@
 
 <div align="center">
 
-> **Weeber** is a free, lightweight, open-source manga · webtoon · manhua reader for Android.
-> Built on [Kotatsu Redo](https://github.com/Kotatsu-Redo/Kotatsu-redo) and enriched with the best features
+> **Weeber** is Kotatsu Next re-born. A free, lightweight, open-source manga · webtoon & manhua full featured reader for Android.
+> Built on [Kotatsu Next](https://github.com/Ero-gamer/Kotatsu-Next) and enriched with the best features
 > from Kotatsu ecosystem — plus Mihon extensions support, an in-app Browser Source,
 > and 1200+ built-in manga sources.
 
