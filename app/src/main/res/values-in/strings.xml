@@ -10,8 +10,8 @@
     <string name="list_mode">Mode daftar</string>
     <string name="settings">Pengaturan</string>
     <string name="remote_sources">Sumber manga</string>
-    <string name="loading_">Memuat…</string>
-    <string name="computing_">Menghitung…</string>
+    <string name="loading_">Memuat&#8230;</string>
+    <string name="computing_">Menghitung&#8230;</string>
     <string name="chapter_d_of_d">Bab %1$d dari %2$d</string>
     <string name="close">Tutup</string>
     <string name="try_again">Coba lagi</string>
@@ -28,8 +28,8 @@
     <string name="share_s">Bagikan %s</string>
     <string name="search">Cari</string>
     <string name="search_manga">Cari manga</string>
-    <string name="manga_downloading_">Mengunduh…</string>
-    <string name="processing_">Memproses…</string>
+    <string name="manga_downloading_">Mengunduh&#8230;</string>
+    <string name="processing_">Memproses&#8230;</string>
     <string name="download_complete">Diunduh</string>
     <string name="downloads">Unduhan</string>
     <string name="by_name">Nama</string>
@@ -83,7 +83,7 @@
     <string name="download">Unduh</string>
     <string name="notifications_settings">Pengaturan notifikasi</string>
     <string name="notification_sound">Suara notifikasi</string>
-    <string name="text_empty_holder_primary">Sepi juga di sini…</string>
+    <string name="text_empty_holder_primary">Sepi juga di sini&#8230;</string>
     <string name="text_history_holder_primary">Apa yang Anda baca akan ditampilkan di sini</string>
     <string name="text_history_holder_secondary">Cari sesuatu untuk dibaca via «Eksplor»</string>
     <string name="text_local_holder_primary">Simpan sesuatu dulu</string>
@@ -227,7 +227,7 @@
     <string name="restore_backup">Pulihkan dari cadangan</string>
     <string name="file_not_found">Berkas tidak ditemukan</string>
     <string name="password_length_hint">Kata sandi harus 4 karakter atau lebih</string>
-    <string name="preparing_">Mempersiapkan…</string>
+    <string name="preparing_">Mempersiapkan&#8230;</string>
     <string name="text_clear_updates_feed_prompt">Bersihkan semua riwayat pembaruan secara permanen\?</string>
     <string name="sign_in">Masuk</string>
     <string name="default_s">Standar: %s</string>

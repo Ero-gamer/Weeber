@@ -35,8 +35,8 @@
     <string name="grid">Mreža</string>
     <string name="settings">Postavke</string>
     <string name="remote_sources">Manga izvori</string>
-    <string name="loading_">Učitavanje…</string>
-    <string name="computing_">Računanje…</string>
+    <string name="loading_">Učitavanje&#8230;</string>
+    <string name="computing_">Računanje&#8230;</string>
     <string name="chapter_d_of_d">Poglavlje %1$d od %2$d</string>
     <string name="close">Zatvori</string>
     <string name="try_again">Pokušaj ponovo</string>
@@ -53,7 +53,7 @@
     <string name="share_s">Dijeli %s</string>
     <string name="search">Traži</string>
     <string name="search_manga">Traži mangu</string>
-    <string name="manga_downloading_">Preuzimanje…</string>
+    <string name="manga_downloading_">Preuzimanje&#8230;</string>
     <string name="network_error">Pogreška mreže</string>
     <string name="list_mode">Modus popisa</string>
     <string name="theme">Tema</string>
@@ -437,7 +437,7 @@
     <string name="_new">Novo</string>
     <string name="all_languages">Svi jezici</string>
     <string name="screenshots_block_incognito">Blokiraj u anonimnom načinu rada</string>
-    <string name="processing_">Obrada…</string>
+    <string name="processing_">Obrada&#8230;</string>
     <string name="download_complete">Preuzeto</string>
     <string name="by_name">Ime</string>
     <string name="newest">Najnovije</string>
@@ -456,7 +456,7 @@
     <string name="track_sources">Potražite ažuriranja</string>
     <string name="clear_search_history">Obriši povijest pretraživanja</string>
     <string name="open_in_browser">Otvorite u web pregledniku</string>
-    <string name="text_empty_holder_primary">Ovdje je nekako prazno…</string>
+    <string name="text_empty_holder_primary">Ovdje je nekako prazno&#8230;</string>
     <string name="updates">Ažuriranja</string>
     <string name="downloads">Preuzimanja</string>
     <string name="popular">Popularno</string>
@@ -469,7 +469,7 @@
     <string name="clear_updates_feed">Očisti sažetak ažuriranja</string>
     <string name="updates_feed_cleared">Očišćeno</string>
     <string name="rotate_screen">Zakreni zaslon</string>
-    <string name="preparing_">Priprema…</string>
+    <string name="preparing_">Priprema&#8230;</string>
     <string name="restore_backup">Vrati iz sigurnosne kopije</string>
     <string name="file_not_found">Datoteka nije pronađena</string>
     <string name="data_restored_success">Svi podaci su vraćeni</string>
@@ -674,7 +674,7 @@
     <string name="by_date">Datum</string>
     <string name="popularity">Popularnost</string>
     <string name="updated_long_ago">Aktualizirano davno</string>
-    <string name="manga_replaced">Manga „%1$s” (%2$s) zamijenjen sa „%3$s” (%4$s)</string>
+    <string name="manga_replaced">Manga „%1$s&#8221; (%2$s) zamijenjen sa „%3$s&#8221; (%4$s)</string>
     <string name="downloads_background">Preuzimanja u pozadini</string>
     <string name="download_new_chapters">Preuzmi nova poglavlja</string>
     <string name="manga_with_downloaded_chapters">Manga s preuzetim poglavljima</string>
@@ -837,7 +837,7 @@
     <string name="local_storage_cleanup">Čišćenje lokalne memorije</string>
     <string name="packup_creation_failed">Neuspjelo stvaranje sigurnosne kopije</string>
     <string name="main_screen">Glavni ekran</string>
-    <string name="main_screen_fab">Prikaži plutajući gumb „Nastavi”</string>
+    <string name="main_screen_fab">Prikaži plutajući gumb „Nastavi&#8221;</string>
     <string name="main_screen_fab_summary">Omogućuje nastavak čitanja jednim klikom. Ovaj se gumb neće prikazivati u anonimnom modusu ili kada je povijest prazna</string>
     <string name="error_corrupted_zip">Oštećena ZIP arhiva (%s)</string>
     <string name="discord_token">Discord token</string>
@@ -845,7 +845,7 @@
     <string name="discord_token_hint">Ovdje umetni svoj Discord token</string>
     <string name="discord_rpc_summary">Prikaži svoje stanje čitanja na Discordu</string>
     <string name="obtain">Nabavi</string>
-    <string name="discord_rpc_description">Čitanje manga na Kotatsu – aplikaciji za čitanje manga</string>
+    <string name="discord_rpc_description">Čitanje manga na Kotatsu &#8211; aplikaciji za čitanje manga</string>
     <string name="reading_s">Čitaš %s</string>
     <string name="read_on_s">Čitaj na %s</string>
     <string name="rpc_skip_nsfw_summary">Ne koristi Rich Presence klijent (RPC) za sadržaj za odrasle</string>
@@ -868,7 +868,7 @@
     <string name="two_page_scroll_sensitivity">Osjetljivost pomicanja dviju stranica</string>
     <string name="frequency_every_6_hours">Svakih 6 sati</string>
     <string name="overwrite">Prepiši</string>
-    <string name="filter_overwrite_confirm">Filtar s imenom „%s” već postoji. Želiš li ga prepisati?</string>
+    <string name="filter_overwrite_confirm">Filtar s imenom „%s&#8221; već postoji. Želiš li ga prepisati?</string>
     <string name="storage_and_network">Spremište i mreža</string>
     <string name="create_or_restore_backup">Stvori ili obnovi sigurnosnu kopiju</string>
     <string name="data_removal">Uklanjanje podataka</string>

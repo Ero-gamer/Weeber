@@ -7,8 +7,8 @@
     <string name="list_mode">Lista mód</string>
     <string name="settings">Beállítások</string>
     <string name="remote_sources">Manga források</string>
-    <string name="loading_">Betöltés…</string>
-    <string name="computing_">Számítás…</string>
+    <string name="loading_">Betöltés&#8230;</string>
+    <string name="computing_">Számítás&#8230;</string>
     <string name="chapter_d_of_d">Fejezet %1$d / %2$d</string>
     <string name="try_again">Próbálja újra</string>
     <string name="nothing_found">Nem található semmi</string>
@@ -18,11 +18,11 @@
     <string name="add">Hozzáadás</string>
     <string name="save">Mentés</string>
     <string name="share">Megosztás</string>
-    <string name="create_shortcut">Parancsikon létrehozása…</string>
+    <string name="create_shortcut">Parancsikon létrehozása&#8230;</string>
     <string name="share_s">Megosztás %s</string>
     <string name="search">Keresés</string>
     <string name="search_manga">Manga keresése</string>
-    <string name="processing_">Feldolgozás…</string>
+    <string name="processing_">Feldolgozás&#8230;</string>
     <string name="download_complete">Letöltött</string>
     <string name="downloads">Letöltések</string>
     <string name="by_name">Név</string>
@@ -51,7 +51,7 @@
     <string name="clear_history">Előzmények törlése</string>
     <string name="add_to_favourites">Kedvencekhez adás</string>
     <string name="add_new_category">Új kategória</string>
-    <string name="manga_downloading_">Letöltés…</string>
+    <string name="manga_downloading_">Letöltés&#8230;</string>
     <string name="popular">Népszerű</string>
     <string name="theme">Téma</string>
     <string name="dark">Sötét</string>
@@ -104,7 +104,7 @@
     <string name="vibration">Rezgés</string>
     <string name="favourites_categories">Kedvenc kategóriák</string>
     <string name="remove_category">Eltávolítás</string>
-    <string name="text_empty_holder_primary">Kicsit üres itt…</string>
+    <string name="text_empty_holder_primary">Kicsit üres itt&#8230;</string>
     <string name="text_search_holder_secondary">Próbáld meg átalakítani a kérdést.</string>
     <string name="text_local_holder_primary">Először ments el valamit</string>
     <string name="manga_shelf">Polc</string>
@@ -138,7 +138,7 @@
     <string name="black_dark_theme_summary">Kevesebb energiát használ AMOLED képernyőkön</string>
     <string name="data_restored">Helyreállítva</string>
     <string name="backup_restore">Mentés és helyreállítás</string>
-    <string name="preparing_">Előkészítés…</string>
+    <string name="preparing_">Előkészítés&#8230;</string>
     <string name="file_not_found">A fájl nem található</string>
     <string name="data_restored_success">Minden adat helyreállításra került</string>
     <string name="data_restored_with_errors">Az adatok helyreállításra kerültek, de hibák találhatók</string>
@@ -630,7 +630,7 @@
     <string name="missing_storage_permission">Nincs engedély a külső tárhelyen lévő mangákhoz való hozzáférésre</string>
     <string name="show_updated">Frissített megjelenítése</string>
     <string name="invalid_server_address_message">Érvénytelen kiszolgáló cím</string>
-    <string name="migrate_confirmation">A „%1$s” mangát a „%2$s”-ből a „%3$s” mangát a „%4$s”-ből a „%2$s” mangával fogja helyettesíteni az előzményekben és a kedvencekben (ha van ilyen)</string>
+    <string name="migrate_confirmation">A „%1$s&#8221; mangát a „%2$s&#8221;-ből a „%3$s&#8221; mangát a „%4$s&#8221;-ből a „%2$s&#8221; mangával fogja helyettesíteni az előzményekben és a kedvencekben (ha van ilyen)</string>
     <string name="webtoon_gaps_summary">Függőleges hézagok megjelenítése az oldalak között webtoon módban</string>
     <string name="webtoon_gaps">Hézagok a webtoon módban</string>
     <string name="retry">Újra</string>

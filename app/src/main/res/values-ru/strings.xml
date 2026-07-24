@@ -13,7 +13,7 @@
     <string name="list_mode">Вид списка</string>
     <string name="settings">Настройки</string>
     <string name="remote_sources">Источники манги</string>
-    <string name="loading_">Загрузка…</string>
+    <string name="loading_">Загрузка&#8230;</string>
     <string name="chapter_d_of_d">Глава %1$d из %2$d</string>
     <string name="close">Закрыть</string>
     <string name="try_again">Повторить</string>
@@ -31,8 +31,8 @@
     <string name="share_s">Поделиться %s</string>
     <string name="search">Поиск</string>
     <string name="search_manga">Поиск манги</string>
-    <string name="manga_downloading_">Загрузка…</string>
-    <string name="processing_">Обработка…</string>
+    <string name="manga_downloading_">Загрузка&#8230;</string>
+    <string name="processing_">Обработка&#8230;</string>
     <string name="download_complete">Загружено</string>
     <string name="downloads">Загрузки</string>
     <string name="by_name">Имя</string>
@@ -89,7 +89,7 @@
     <string name="vibration">Вибросигнал</string>
     <string name="favourites_categories">Категории избранного</string>
     <string name="remove_category">Удалить</string>
-    <string name="text_empty_holder_primary">Как-то здесь пусто…</string>
+    <string name="text_empty_holder_primary">Как-то здесь пусто&#8230;</string>
     <string name="text_search_holder_secondary">Попробуйте переформулировать запрос.</string>
     <string name="text_history_holder_primary">То, что вы прочитаете, будет отображено здесь</string>
     <string name="text_history_holder_secondary">Найдите, что почитать в разделе «Обзор»</string>
@@ -141,7 +141,7 @@
     <string name="create_backup">Создать резервную копию</string>
     <string name="restore_backup">Восстановить данные</string>
     <string name="data_restored">Восстановлено</string>
-    <string name="preparing_">Подготовка…</string>
+    <string name="preparing_">Подготовка&#8230;</string>
     <string name="file_not_found">Файл не найден</string>
     <string name="data_restored_success">Все данные были восстановлены</string>
     <string name="data_restored_with_errors">Данные были восстановлены, но возникли некоторые ошибки</string>
@@ -199,7 +199,7 @@
     <string name="exclude_nsfw_from_suggestions">Не предлагать NSFW мангу</string>
     <string name="enabled">Включено</string>
     <string name="disabled">Выкл.</string>
-    <string name="computing_">Вычисление…</string>
+    <string name="computing_">Вычисление&#8230;</string>
     <string name="reset_filter">Сбросить фильтр</string>
     <string name="onboard_text">Выберите языки, на которых Вы хотите читать мангу. Это можно будет изменить позже в настройках.</string>
     <string name="never">Никогда</string>
@@ -846,7 +846,7 @@
     <string name="discord_token_hint">Вставьте свой токен Discord сюда</string>
     <string name="discord_rpc_summary">Покажите свой статус чтения в Discord</string>
     <string name="obtain">Получить</string>
-    <string name="discord_rpc_description">Чтение манги в Kotatsu — приложение для чтения манги</string>
+    <string name="discord_rpc_description">Чтение манги в Kotatsu &#8212; приложение для чтения манги</string>
     <string name="reading_s">Чтение %s</string>
     <string name="read_on_s">Читать дальше %s</string>
     <string name="rpc_skip_nsfw_summary">Не использовать RPC для контента для взрослых</string>

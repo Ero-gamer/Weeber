@@ -10,7 +10,7 @@
     <string name="grid">Grade</string>
     <string name="list_mode">Modo lista</string>
     <string name="settings">Configurações</string>
-    <string name="loading_">Carregando…</string>
+    <string name="loading_">Carregando&#8230;</string>
     <string name="chapter_d_of_d">Capítulo %1$d de %2$d</string>
     <string name="try_again">Tente novamente</string>
     <string name="clear_history">Limpar histórico</string>
@@ -25,7 +25,7 @@
     <string name="share_s">Compartilhar %s</string>
     <string name="search">Procurar</string>
     <string name="search_manga">Pesquisar mangá</string>
-    <string name="manga_downloading_">Baixando…</string>
+    <string name="manga_downloading_">Baixando&#8230;</string>
     <string name="download_complete">Baixado</string>
     <string name="downloads">Baixados</string>
     <string name="by_name">Nome</string>
@@ -74,7 +74,7 @@
     <string name="light">Claro</string>
     <string name="history">Histórico</string>
     <string name="read">Ler</string>
-    <string name="processing_">Processando…</string>
+    <string name="processing_">Processando&#8230;</string>
     <string name="newest">Novos</string>
     <string name="theme">Tema</string>
     <string name="no_description">Sem descrição</string>
@@ -90,7 +90,7 @@
     <string name="state_finished">Concluído</string>
     <string name="state_ongoing">Em andamento</string>
     <string name="remove_category">Remover</string>
-    <string name="text_empty_holder_primary">Está meio vazio aqui…</string>
+    <string name="text_empty_holder_primary">Está meio vazio aqui&#8230;</string>
     <string name="manga_shelf">Estante</string>
     <string name="done">Feito</string>
     <string name="zoom_mode_keep_start">Manter no início</string>
@@ -117,7 +117,7 @@
     <string name="create_backup">Criar backup de dados</string>
     <string name="restore_backup">Restaurar do backup</string>
     <string name="data_restored">Restaurado</string>
-    <string name="preparing_">Preparando…</string>
+    <string name="preparing_">Preparando&#8230;</string>
     <string name="file_not_found">Ficheiro não encontrado</string>
     <string name="data_restored_success">Todos os dados foram restaurados</string>
     <string name="data_restored_with_errors">Os dados foram restaurados, mas há erros</string>
@@ -187,7 +187,7 @@
     <string name="manga_save_location">Pasta de downloads</string>
     <string name="exclude_nsfw_from_history">Excluir mangá NSFW do histórico</string>
     <string name="system_default">Padrão</string>
-    <string name="computing_">Computando…</string>
+    <string name="computing_">Computando&#8230;</string>
     <string name="screenshots_allow">Permitir</string>
     <string name="screenshots_block_nsfw">Bloquear no NSFW</string>
     <string name="screenshots_policy">Política de captura de ecrã</string>
@@ -782,7 +782,7 @@
     <string name="nsfw_16">16+</string>
     <string name="badges_in_lists">Emblemas em listas</string>
     <string name="link_to_manga_on_s">Link para o mangá no %s</string>
-    <string name="error_disclaimer_report">Podes submeter uma denúncia de erro para os desenvolvedores. Isto ajuda–nos a investigar e arranjar o problema.</string>
+    <string name="error_disclaimer_report">Podes submeter uma denúncia de erro para os desenvolvedores. Isto ajuda&#8211;nos a investigar e arranjar o problema.</string>
     <string name="search_disabled_sources">Pesquisar fontes desabilitadas</string>
     <string name="error_details">Erro de detalhes</string>
     <string name="error_disclaimer_manga">Tenta abrir o mangá num web browser para verificar se está disponível na sua fonte.</string>

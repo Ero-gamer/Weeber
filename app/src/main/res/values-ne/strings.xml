@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="manga_downloading_">डाउनलोड गर्दै…</string>
+    <string name="manga_downloading_">डाउनलोड गर्दै&#8230;</string>
     <string name="download_complete">डाउनलोड गरेको</string>
     <string name="filter">फिल्टर</string>
     <string name="dark">अँध्यारो</string>
@@ -18,7 +18,7 @@
     <string name="chapters">अध्यायहरू</string>
     <string name="settings">सेटिङहरू</string>
     <string name="remote_sources">माङ्गा स्रोतहरू</string>
-    <string name="loading_">लोड हुँदै…</string>
+    <string name="loading_">लोड हुँदै&#8230;</string>
     <string name="clear_history">इतिहास खाली गर्नुहोस्</string>
     <string name="you_have_not_favourites_yet">अहिले कुनै मनपर्ने छैन</string>
     <string name="add_to_favourites">मनपर्ने मा राख्नुहोस्</string>
@@ -26,7 +26,7 @@
     <string name="share_s">%s साझा गर्नुहोस्</string>
     <string name="search">खोज्नुहोस्</string>
     <string name="search_manga">माङ्गा खोज्नुहोस्</string>
-    <string name="processing_">प्रक्रिया गर्दैछ…</string>
+    <string name="processing_">प्रक्रिया गर्दैछ&#8230;</string>
     <string name="downloads">डाउनलोडहरू</string>
     <string name="by_name">नाम</string>
     <string name="updated">अपडेट गरिएको</string>
@@ -35,7 +35,7 @@
     <string name="theme">थीम</string>
     <string name="light">उज्यालो</string>
     <string name="follow_system">सिस्टम पालना गर्नुहोस्</string>
-    <string name="computing_">कम्प्युटिङ…</string>
+    <string name="computing_">कम्प्युटिङ&#8230;</string>
     <string name="favourites">मनपर्ने</string>
     <string name="details">विवरण</string>
     <string name="detailed_list">विस्तृत सूची</string>
@@ -46,7 +46,7 @@
     <string name="add">थप्नुहोस्</string>
     <string name="save">सेभ गर्नुहोस्</string>
     <string name="share">साझा गर्नुहोस्</string>
-    <string name="create_shortcut">सर्टकट सिर्जना गर्नुहोस्…</string>
+    <string name="create_shortcut">सर्टकट सिर्जना गर्नुहोस्&#8230;</string>
     <string name="popular">लोकप्रिय</string>
     <string name="by_rating">मूल्याङ्कन</string>
     <string name="new_chapters">नयाँ अध्यायहरू</string>
@@ -81,7 +81,7 @@
     <string name="vibration">भाईब्रेशन</string>
     <string name="favourites_categories">मनपर्ने वर्गहरू</string>
     <string name="remove_category">हटाउनुहोस्</string>
-    <string name="text_empty_holder_primary">यहाँ अलि खाली जस्तो छ…</string>
+    <string name="text_empty_holder_primary">यहाँ अलि खाली जस्तो छ&#8230;</string>
     <string name="text_search_holder_secondary">सोधपुछ सुधार गर्ने प्रयास गर्नुहोस्।</string>
     <string name="text_history_holder_primary">तपाईँले पढेको कुरा यहाँ देखाइनेछ</string>
     <string name="text_history_holder_secondary">«अन्वेषण» खण्डमा गएर के पढ्ने हेर्नुहोस्</string>
@@ -144,7 +144,7 @@
     <string name="create_backup">डाटा ब्याकअप सिर्जना गर्नुहोस्</string>
     <string name="restore_backup">ब्याकअपबाट पुनर्स्थापना गर्नुहोस्</string>
     <string name="data_restored">पुनर्स्थापित</string>
-    <string name="preparing_">तयारी गर्दै…</string>
+    <string name="preparing_">तयारी गर्दै&#8230;</string>
     <string name="file_not_found">फाइल फेला परेन</string>
     <string name="data_restored_success">सबै डाटा पुनर्स्थापित गरियो</string>
     <string name="data_restored_with_errors">डाटा पुनर्स्थापित गरियो, तर त्यहाँ त्रुटिहरू पनि छन्</string>

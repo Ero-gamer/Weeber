@@ -14,8 +14,8 @@
     <string name="list_mode">modus dhaptar</string>
     <string name="settings">Pathokan</string>
     <string name="remote_sources">Sumber Manga</string>
-    <string name="loading_">Ngewrat…</string>
-    <string name="computing_">Ngitung…</string>
+    <string name="loading_">Ngewrat&#8230;</string>
+    <string name="computing_">Ngitung&#8230;</string>
     <string name="close">Tudhung</string>
     <string name="try_again">Jajal Maneh</string>
     <string name="retry">Baleni</string>
@@ -33,8 +33,8 @@
     <string name="share_s">Edumaken %s</string>
     <string name="search">Luru</string>
     <string name="search_manga">Golek komik</string>
-    <string name="manga_downloading_">Ngunduh…</string>
-    <string name="processing_">Mroses…</string>
+    <string name="manga_downloading_">Ngunduh&#8230;</string>
+    <string name="processing_">Mroses&#8230;</string>
     <string name="download_complete">Diundhuh</string>
     <string name="downloads">Unggah</string>
     <string name="by_name">Jeneng</string>

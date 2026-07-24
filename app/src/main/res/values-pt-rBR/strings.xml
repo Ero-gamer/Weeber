@@ -15,7 +15,7 @@
     <string name="list_mode">Modo lista</string>
     <string name="settings">Configurações</string>
     <string name="remote_sources">Fontes</string>
-    <string name="loading_">Carregando…</string>
+    <string name="loading_">Carregando&#8230;</string>
     <string name="chapter_d_of_d">Capítulo %1$d de %2$d</string>
     <string name="close">Fechar</string>
     <string name="try_again">Tente novamente</string>
@@ -29,11 +29,11 @@
     <string name="share_s">Compartilhar %s</string>
     <string name="search">Procurar</string>
     <string name="search_manga">Procurar obra</string>
-    <string name="manga_downloading_">Baixando…</string>
-    <string name="processing_">Processando…</string>
+    <string name="manga_downloading_">Baixando&#8230;</string>
+    <string name="processing_">Processando&#8230;</string>
     <string name="download_complete">Baixado</string>
     <string name="downloads">Baixados</string>
-    <string name="computing_">Processando…</string>
+    <string name="computing_">Processando&#8230;</string>
     <string name="add_to_favourites">Favoritar obra</string>
     <string name="by_name">Nome</string>
     <string name="popular">Popular</string>
@@ -48,7 +48,7 @@
     <string name="pages">Páginas</string>
     <string name="clear">Limpar</string>
     <string name="remove">Remover</string>
-    <string name="_s_deleted_from_local_storage">“%s” excluído do armazenamento local</string>
+    <string name="_s_deleted_from_local_storage">&#8220;%s&#8221; excluído do armazenamento local</string>
     <string name="save_page">Salvar página</string>
     <string name="page_saved">Página salva</string>
     <string name="share_image">Compartilhar imagem</string>
@@ -63,7 +63,7 @@
     <string name="grid_size">Tamanho da grade</string>
     <string name="search_on_s">Procurar em %s</string>
     <string name="delete_manga">Excluir obra</string>
-    <string name="text_delete_local_manga">Excluir “%s” do dispositivo permanentemente?</string>
+    <string name="text_delete_local_manga">Excluir &#8220;%s&#8221; do dispositivo permanentemente?</string>
     <string name="reader_settings">Configurações do leitor</string>
     <string name="_continue">Continuar</string>
     <string name="error">Erro</string>
@@ -82,7 +82,7 @@
     <string name="light_indicator">Indicador LED</string>
     <string name="vibration">Vibração</string>
     <string name="remove_category">Remover</string>
-    <string name="text_empty_holder_primary">Tá meio vazio aqui…</string>
+    <string name="text_empty_holder_primary">Tá meio vazio aqui&#8230;</string>
     <string name="text_search_holder_secondary">Tente reformular a busca.</string>
     <string name="text_history_holder_primary">O que você lê vai aparecer aqui</string>
     <string name="text_history_holder_secondary">Encontre o que ler na seção «Explorar»</string>
@@ -196,7 +196,7 @@
     <string name="text_feed_holder">Novos capítulos da(s) obra(s) que você lê serão mostrados aqui</string>
     <string name="app_version">Versão %s</string>
     <string name="zoom_mode_fit_width">Ajustar à largura</string>
-    <string name="preparing_">Preparando…</string>
+    <string name="preparing_">Preparando&#8230;</string>
     <string name="data_restored_success">Todos os dados foram restaurados</string>
     <string name="protect_application">Proteja o aplicativo</string>
     <string name="updates_feed_cleared">Limpo</string>
@@ -690,8 +690,8 @@
     <string name="error_image_format">Formato de imagem não suportado: %s</string>
     <string name="manga_with_downloaded_chapters">Mangás com capítulos baixados</string>
     <string name="manga_fix_prompt">Essa função encontrará fontes alternativas para a obra selecionada. A tarefa levará algum tempo e será executada em segundo plano</string>
-    <string name="manga_replaced">Obra “%1$s” (%2$s) substituída por “%3$s” (%4$s)</string>
-    <string name="no_alternatives_found">Não foi encontrado alternativas para “%s”</string>
+    <string name="manga_replaced">Obra &#8220;%1$s&#8221; (%2$s) substituída por &#8220;%3$s&#8221; (%4$s)</string>
+    <string name="no_alternatives_found">Não foi encontrado alternativas para &#8220;%s&#8221;</string>
     <string name="pages_saved">Páginas salvas</string>
     <string name="text_empty_holder_secondary_filtered">Não existem mangás que correspondam aos filtros selecionados</string>
     <string name="plugin_incompatible_with_cause">Erro de plugin: %s\n· Certifique-se de que você está usando a versão mais recente do plugin e Kotatsu</string>

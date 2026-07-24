@@ -30,7 +30,7 @@
     <string name="nothing_found">ไม่พบอะไรเลย</string>
     <string name="settings">ตั้งค่า</string>
     <string name="close">ปิด</string>
-    <string name="loading_">โปรดรอสักครู่…</string>
+    <string name="loading_">โปรดรอสักครู่&#8230;</string>
     <string name="add">เพิ่ม</string>
     <string name="local_storage">ที่เก็บข้อมูลในเครื่อง</string>
     <string name="clear_history">ลบประวัติ</string>
@@ -52,7 +52,7 @@
     <string name="done">สำเร็จ</string>
     <string name="text_feed_holder">ตอนใหม่ของเรื่องที่คุณกําลังอ่านจะแสดงไว้ที่นี่</string>
     <string name="passwords_mismatch">รหัสผ่านไม่ตรงกัน</string>
-    <string name="text_empty_holder_primary">ที่นี่มันว่างเปล่า…</string>
+    <string name="text_empty_holder_primary">ที่นี่มันว่างเปล่า&#8230;</string>
     <string name="filter">กรอง</string>
     <string name="search_on_s">ค้นหาบน %s</string>
     <string name="delete_manga">ลบมังงะ</string>
@@ -85,7 +85,7 @@
     <string name="list">รายการ</string>
     <string name="add_to_favourites">เพิ่มเข้ารายการโปรด</string>
     <string name="add_new_category">หมวดหมู่ใหม่</string>
-    <string name="manga_downloading_">กำลังดาวน์โหลด…</string>
+    <string name="manga_downloading_">กำลังดาวน์โหลด&#8230;</string>
     <string name="download_complete">ดาวน์โหลดสำเร็จ</string>
     <string name="by_name">ชื่อ</string>
     <string name="popular">ความนิยม</string>
@@ -103,12 +103,12 @@
     <string name="cookies_cleared">คุกกี้ทั้งหมดได้ถูกลบแล้ว</string>
     <string name="removed_from_history">ได้ลบจากประวัติแล้ว</string>
     <string name="removed_from_favourites">ลบออกจากรายการโปรดแล้ว</string>
-    <string name="processing_">ประมวลผล…</string>
+    <string name="processing_">ประมวลผล&#8230;</string>
     <string name="downloads">ดาวน์โหลด</string>
     <string name="newest">ใหม่ล่าสุด</string>
     <string name="remote_sources">แหล่งมังงะ</string>
-    <string name="computing_">กำลังคำนวน…</string>
-    <string name="create_shortcut">สร้าง shortcut…</string>
+    <string name="computing_">กำลังคำนวน&#8230;</string>
+    <string name="create_shortcut">สร้าง shortcut&#8230;</string>
     <string name="sort_order">เรียวตามลำดับ</string>
     <string name="enable">เปิดใช้งาน</string>
     <string name="downloads_removed">การดาวน์โหลดของคุณได้ถูกนำออกแล้ว</string>
@@ -159,7 +159,7 @@
     <string name="create_backup">สร้างข้อมูลสำรอง</string>
     <string name="restore_backup">คืนค่าจากข้อมูลสำรอง</string>
     <string name="data_restored">คืนค่าแล้ว</string>
-    <string name="preparing_">กำลังเตรียม…</string>
+    <string name="preparing_">กำลังเตรียม&#8230;</string>
     <string name="file_not_found">ไม่พบไฟล์</string>
     <string name="data_restored_success">ข้อมูลทั้งหมดได้คืนค่าแล้ว</string>
     <string name="data_restored_with_errors">ข้อมูลทั้งหมดได้คืนค่าแล้วแต่พบเจอปัญหา</string>

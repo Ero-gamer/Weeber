@@ -66,7 +66,7 @@
     <string name="black_dark_theme_summary">Gumagamit ng mas kaunting power sa mga AMOLED na screen</string>
     <string name="backup_restore">I-backup at I-restore</string>
     <string name="data_restored">Naibalik na</string>
-    <string name="preparing_">Naghahanda…</string>
+    <string name="preparing_">Naghahanda&#8230;</string>
     <string name="file_not_found">Hindi nahanap ang file</string>
     <string name="backup_information">Maaari kang lumikha ng backup ng iyong kasaysayan at mga paborito at i-restore ito</string>
     <string name="just_now">Ngayon lang</string>
@@ -111,7 +111,7 @@
     <string name="grid">Grid</string>
     <string name="settings">Mga setting</string>
     <string name="remote_sources">Mga source ng Manga</string>
-    <string name="loading_">Naglo-load…</string>
+    <string name="loading_">Naglo-load&#8230;</string>
     <string name="close">Isara</string>
     <string name="nothing_found">Walang nahanap</string>
     <string name="remove">Tanggalin</string>
@@ -126,8 +126,8 @@
     <string name="share_s">Ibahagi sa %s</string>
     <string name="search">Maghanap</string>
     <string name="search_manga">Maghanap ng manga</string>
-    <string name="manga_downloading_">Nagda-download…</string>
-    <string name="processing_">Nagpoproseso…</string>
+    <string name="manga_downloading_">Nagda-download&#8230;</string>
+    <string name="processing_">Nagpoproseso&#8230;</string>
     <string name="download_complete">Na-download</string>
     <string name="downloads">Mga download</string>
     <string name="by_name">Pangalan</string>
@@ -144,7 +144,7 @@
     <string name="notification_sound">Tunog ng abiso</string>
     <string name="favourites_categories">Mga paboritong kategorya</string>
     <string name="remove_category">Tanggalin</string>
-    <string name="text_empty_holder_primary">Parang walang laman dito…</string>
+    <string name="text_empty_holder_primary">Parang walang laman dito&#8230;</string>
     <string name="text_history_holder_secondary">Hanapin kung anong pwedeng basahin sa «Mag-Explore» na seksyon</string>
     <string name="recent_manga">Kamakailan</string>
     <string name="manga_save_location">Mga folder ng pag-download</string>
@@ -189,7 +189,7 @@
     <string name="zoom_mode_fit_height">Pagkasyahin sa tangkad</string>
     <string name="never">Hindi kailanman</string>
     <string name="only_using_wifi">Sa Wi-Fi lang</string>
-    <string name="computing_">Nagco-compute…</string>
+    <string name="computing_">Nagco-compute&#8230;</string>
     <string name="chapter_d_of_d">Kabanata %1$d ng %2$d</string>
     <string name="try_again">Subukan ulit</string>
     <string name="sort_order">Pag-aayos ng order</string>

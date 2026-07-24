@@ -13,8 +13,8 @@
     <string name="list_mode">Lijstmodus</string>
     <string name="settings">Instellingen</string>
     <string name="remote_sources">Mangabronnen</string>
-    <string name="loading_">Bezig met laden…</string>
-    <string name="computing_">Computeren…</string>
+    <string name="loading_">Bezig met laden&#8230;</string>
+    <string name="computing_">Computeren&#8230;</string>
     <string name="chapter_d_of_d">Hoofdstuk %1$d van %2$d</string>
     <string name="close">Sluiten</string>
     <string name="try_again">Probeer het opnieuw</string>
@@ -69,7 +69,7 @@
     <string name="grid_size">Rastergrootte</string>
     <string name="search_on_s">Zoeken op %s</string>
     <string name="delete_manga">Manga verwijderen</string>
-    <string name="text_delete_local_manga">“%s” definitief van apparaat verwijderen?</string>
+    <string name="text_delete_local_manga">&#8220;%s&#8221; definitief van apparaat verwijderen?</string>
     <string name="reader_settings">Lezer-instellingen</string>
     <string name="switch_pages">Van pagina wisselen</string>
     <string name="_continue">Doorgaan</string>

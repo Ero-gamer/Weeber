@@ -22,8 +22,8 @@
     <string name="by_name">Per nome</string>
     <string name="downloads">Scaricati</string>
     <string name="download_complete">Download finito</string>
-    <string name="processing_">Elaborazione…</string>
-    <string name="manga_downloading_">Downloading…</string>
+    <string name="processing_">Elaborazione&#8230;</string>
+    <string name="manga_downloading_">Downloading&#8230;</string>
     <string name="search_manga">Cerca manga</string>
     <string name="search">Cerca</string>
     <string name="share_s">Condividi %s</string>
@@ -42,7 +42,7 @@
     <string name="text_clear_updates_feed_prompt">Tutta la cronologia degli aggiornamenti sarà cancellata e questa azione non può essere annullata. Sei sicuro/a\?</string>
     <string name="close">Chiudi</string>
     <string name="chapter_d_of_d">Capitolo %1$d di %2$d</string>
-    <string name="loading_">Caricamento…</string>
+    <string name="loading_">Caricamento&#8230;</string>
     <string name="remote_sources">Fonti manga</string>
     <string name="settings">Impostazioni</string>
     <string name="list_mode">Modalità elenco</string>
@@ -75,7 +75,7 @@
     <string name="yesterday">Ieri</string>
     <string name="just_now">Proprio ora</string>
     <string name="file_not_found">File non trovato</string>
-    <string name="preparing_">Preparazione…</string>
+    <string name="preparing_">Preparazione&#8230;</string>
     <string name="data_restored">Dati ripristinati</string>
     <string name="restore_backup">Ripristina da un backup</string>
     <string name="create_backup">Crea un backup dei dati</string>
@@ -122,7 +122,7 @@
     <string name="text_history_holder_secondary">Trova cosa leggere nella sezione «Esplora»</string>
     <string name="text_history_holder_primary">I manga che stai leggendo saranno visualizzati qui</string>
     <string name="text_search_holder_secondary">Prova a riformulare la domanda.</string>
-    <string name="text_empty_holder_primary">È un po\' vuoto qui…</string>
+    <string name="text_empty_holder_primary">È un po\' vuoto qui&#8230;</string>
     <string name="remove_category">Rimuovi la categoria</string>
     <string name="favourites_categories">Categorie di preferiti</string>
     <string name="vibration">Vibrazione</string>
@@ -187,7 +187,7 @@
     <string name="system_default">Predefinito</string>
     <string name="exclude_nsfw_from_history">Escludi i manga NSFW dalla storia</string>
     <string name="show_pages_numbers">Mostra i numeri delle pagine</string>
-    <string name="computing_">Calcolo…</string>
+    <string name="computing_">Calcolo&#8230;</string>
     <string name="screenshots_policy">Politica sulle schermate</string>
     <string name="screenshots_allow">Permetti</string>
     <string name="screenshots_block_nsfw">Blocca per NSFW</string>
@@ -843,7 +843,7 @@
     <string name="discord_token">Token Discord</string>
     <string name="discord_rpc_summary">Mostra il tuo stato di lettura su Discord</string>
     <string name="obtain">Ottieni</string>
-    <string name="discord_rpc_description">Leggendo manga su Kotatsu - un’app per leggere manga</string>
+    <string name="discord_rpc_description">Leggendo manga su Kotatsu - un&#8217;app per leggere manga</string>
     <string name="reading_s">Leggendo %s</string>
     <string name="read_on_s">Leggendo su %s</string>
     <string name="invalid_token">Token non valido: %s</string>

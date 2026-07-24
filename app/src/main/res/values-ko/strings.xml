@@ -30,7 +30,7 @@
     <string name="favourites">즐겨찾기</string>
     <string name="remove">지우기</string>
     <string name="settings">설정</string>
-    <string name="loading_">불러오는 중…</string>
+    <string name="loading_">불러오는 중&#8230;</string>
     <string name="close">닫기</string>
     <string name="try_again">다시 시도</string>
     <string name="you_have_not_favourites_yet">즐겨찾기가 비어있음</string>
@@ -54,8 +54,8 @@
     <string name="download_complete">다운로드 완료</string>
     <string name="add_new_category">새 카테고리</string>
     <string name="search_manga">만화를 검색하세요</string>
-    <string name="manga_downloading_">다운로드 중…</string>
-    <string name="processing_">처리중…</string>
+    <string name="manga_downloading_">다운로드 중&#8230;</string>
+    <string name="processing_">처리중&#8230;</string>
     <string name="updated">최근 업데이트 순</string>
     <string name="newest">최근 발간 순</string>
     <string name="follow_system">시스템 설정</string>
@@ -82,7 +82,7 @@
     <string name="read_later">나중에 읽기</string>
     <string name="search_results">검색 결과</string>
     <string name="size_s">크기: %s</string>
-    <string name="computing_">계산중…</string>
+    <string name="computing_">계산중&#8230;</string>
     <string name="clear">지우기</string>
     <string name="text_local_holder_primary">먼저 아무거나 저장해보세요</string>
     <string name="text_feed_holder">여기서 읽고 있는 만화의 새로운 챕터들을 확인할 수 있습니다</string>
@@ -97,7 +97,7 @@
     <string name="restore_backup">백업한 데이터 복원하기</string>
     <string name="create_backup">백업하기</string>
     <string name="data_restored">복원됨</string>
-    <string name="preparing_">준비중…</string>
+    <string name="preparing_">준비중&#8230;</string>
     <string name="welcome">환영합니다</string>
     <string name="auth_complete">인증됨</string>
     <string name="about_app_translation">번역</string>
@@ -131,7 +131,7 @@
     <string name="clear_history">기록 삭제</string>
     <string name="add">추가</string>
     <string name="history_is_empty">아직 기록이 없습니다</string>
-    <string name="create_shortcut">바로가기 추가…</string>
+    <string name="create_shortcut">바로가기 추가&#8230;</string>
     <string name="theme">테마</string>
     <string name="_s_deleted_from_local_storage">\"%s\"가 로컬 저장소에서 삭제됨</string>
     <string name="operation_not_supported">지원되지 않는 동작입니다</string>
@@ -139,7 +139,7 @@
     <string name="_continue">계속</string>
     <string name="search_history_cleared">삭제됨</string>
     <string name="new_chapters">새로운 챕터</string>
-    <string name="text_empty_holder_primary">이 항목은 비어있는 것 같습니다…</string>
+    <string name="text_empty_holder_primary">이 항목은 비어있는 것 같습니다&#8230;</string>
     <string name="recent_manga">최근에 추가된</string>
     <string name="manga_save_location">다운로드를 저장하기 위한 폴더</string>
     <string name="manga_shelf">책장</string>

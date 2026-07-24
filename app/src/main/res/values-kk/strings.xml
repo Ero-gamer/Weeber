@@ -18,8 +18,8 @@
     <string name="detailed_list">Егжей-тегжейлі тізім</string>
     <string name="list_mode">Тізім түрі</string>
     <string name="remote_sources">Манга дереккөзі</string>
-    <string name="loading_">Жүктеліп жатыр…</string>
-    <string name="computing_">Есептеу…</string>
+    <string name="loading_">Жүктеліп жатыр&#8230;</string>
+    <string name="computing_">Есептеу&#8230;</string>
     <string name="favourites">Таңдаулы</string>
     <string name="network_error">Желі қатесі</string>
     <string name="details">Дерек</string>
@@ -34,8 +34,8 @@
     <string name="create_shortcut">Таңбаша жасау</string>
     <string name="share_s">%s бөлісу</string>
     <string name="search">Іздеу</string>
-    <string name="manga_downloading_">Жүктеліп жатыр…</string>
-    <string name="processing_">Үдерісте…</string>
+    <string name="manga_downloading_">Жүктеліп жатыр&#8230;</string>
+    <string name="processing_">Үдерісте&#8230;</string>
     <string name="download_complete">Жүктелді</string>
     <string name="by_name">Атауы</string>
     <string name="popular">Танымал</string>
@@ -81,7 +81,7 @@
     <string name="vibration">Діріл</string>
     <string name="favourites_categories">Таңдаулы санаты</string>
     <string name="remove_category">Жою</string>
-    <string name="text_empty_holder_primary">Мына жер бос екен…</string>
+    <string name="text_empty_holder_primary">Мына жер бос екен&#8230;</string>
     <string name="text_history_holder_primary">Бұ жерде оқығаныңыз тұрады</string>
     <string name="text_local_holder_primary">Алдымен бірдеңе сақтаңыз</string>
     <string name="manga_shelf">Сөре</string>
@@ -113,7 +113,7 @@
     <string name="text_file_not_supported">CBZ не ZIP пішімде таңдаңыз.</string>
     <string name="clear_pages_cache">Бет кәшін тазалау</string>
     <string name="read_mode">Оқу режімі</string>
-    <string name="text_delete_local_manga">“%s” құрылғыдан біржолата жоямысыз?</string>
+    <string name="text_delete_local_manga">&#8220;%s&#8221; құрылғыдан біржолата жоямысыз?</string>
     <string name="_continue">Жалғастыру</string>
     <string name="error">Қате</string>
     <string name="clear_search_history">Іздеу тарихын тазалау</string>
@@ -163,7 +163,7 @@
     <string name="about">Қолданба туралы</string>
     <string name="create_category">Жаңа санат</string>
     <string name="data_restored">Қалыпқа келді</string>
-    <string name="preparing_">Дайындау…</string>
+    <string name="preparing_">Дайындау&#8230;</string>
     <string name="data_restored_with_errors">Дерек қалыпқа келсе де, сәл қате шығып қалды</string>
     <string name="exclude_nsfw_from_history">ҰЯТСЫЗ манганы тарихта көрсетпеу</string>
     <string name="state_ongoing">Шығып жатыр</string>

@@ -14,7 +14,7 @@
     <string name="detailed_list">Llista detallada</string>
     <string name="grid">Quadrícula</string>
     <string name="remote_sources">Fonts de Manga</string>
-    <string name="loading_">S\'està carregant…</string>
+    <string name="loading_">S\'està carregant&#8230;</string>
     <string name="chapter_d_of_d">Capítol %1$d de %2$d</string>
     <string name="nothing_found">No s\'ha trobat res</string>
     <string name="read">Llegir</string>
@@ -24,12 +24,12 @@
     <string name="share">Comparteix</string>
     <string name="save">Desa</string>
     <string name="add">Afegeix</string>
-    <string name="create_shortcut">Crea drecera…</string>
+    <string name="create_shortcut">Crea drecera&#8230;</string>
     <string name="share_s">Compartir %s</string>
     <string name="search">Cerca</string>
     <string name="search_manga">Cerca manga</string>
-    <string name="manga_downloading_">Descarregant…</string>
-    <string name="processing_">Processant…</string>
+    <string name="manga_downloading_">Descarregant&#8230;</string>
+    <string name="processing_">Processant&#8230;</string>
     <string name="download_complete">Descarregat</string>
     <string name="downloads">Descàrregues</string>
     <string name="by_name">Nom</string>
@@ -66,7 +66,7 @@
     <string name="text_file_sizes">B|kB|MB|GB|TB</string>
     <string name="standard">Estàndard</string>
     <string name="settings">Configuració</string>
-    <string name="computing_">Computant…</string>
+    <string name="computing_">Computant&#8230;</string>
     <string name="close">Tancar</string>
     <string name="try_again">Torna a provar</string>
     <string name="clear_history">Esborrar historial</string>

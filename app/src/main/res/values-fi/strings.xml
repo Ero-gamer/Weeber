@@ -40,7 +40,7 @@
     <string name="data_restored_with_errors">Tiedot palautettu, mutta niissä on virheitä</string>
     <string name="data_restored_success">Kaikki tiedot palautettu onnistuneesti</string>
     <string name="file_not_found">Tiedostoa ei löytynyt</string>
-    <string name="preparing_">Valmistellaan…</string>
+    <string name="preparing_">Valmistellaan&#8230;</string>
     <string name="data_restored">Tiedot palautettu</string>
     <string name="restore_backup">Palauta varmuuskopiosta</string>
     <string name="create_backup">Luo tietojen varmuuskopio</string>
@@ -87,7 +87,7 @@
     <string name="text_history_holder_secondary">Löydät luettavaa sivuvalikosta.</string>
     <string name="text_history_holder_primary">Manga, jota luet, näytetään täällä</string>
     <string name="text_search_holder_secondary">Yritä muotoilla kysely uudelleen.</string>
-    <string name="text_empty_holder_primary">Täällä on aika tyhjää…</string>
+    <string name="text_empty_holder_primary">Täällä on aika tyhjää&#8230;</string>
     <string name="remove_category">Poista luokka</string>
     <string name="favourites_categories">Suosikkiluokat</string>
     <string name="vibration">Tärinä</string>
@@ -110,7 +110,7 @@
     <string name="_continue">Jatka</string>
     <string name="switch_pages">Vaihda sivuja</string>
     <string name="reader_settings">Lukijan asetukset</string>
-    <string name="text_delete_local_manga">Haluatko todella poistaa ”%s” puhelimen paikallisesta tallennustilasta?</string>
+    <string name="text_delete_local_manga">Haluatko todella poistaa &#8221;%s&#8221; puhelimen paikallisesta tallennustilasta?</string>
     <string name="delete_manga">Poista manga</string>
     <string name="search_on_s">Hae kohteesta %s</string>
     <string name="grid_size">Ruudukon koko</string>
@@ -127,7 +127,7 @@
     <string name="share_image">Jaa kuva</string>
     <string name="page_saved">Sivu tallennettu onnistuneesti</string>
     <string name="save_page">Tallenna sivu</string>
-    <string name="_s_deleted_from_local_storage">”%s” poistettu paikallisesta tallennustilasta</string>
+    <string name="_s_deleted_from_local_storage">&#8221;%s&#8221; poistettu paikallisesta tallennustilasta</string>
     <string name="remove">Poista</string>
     <string name="clear">Tyhjennä</string>
     <string name="pages">Sivut</string>
@@ -144,12 +144,12 @@
     <string name="by_name">Nimen mukaan</string>
     <string name="downloads">Lataukset</string>
     <string name="download_complete">Lataus valmis</string>
-    <string name="processing_">Käsitellään…</string>
-    <string name="manga_downloading_">Manga ladataan…</string>
+    <string name="processing_">Käsitellään&#8230;</string>
+    <string name="manga_downloading_">Manga ladataan&#8230;</string>
     <string name="search_manga">Etsi manga</string>
     <string name="search">Etsi</string>
     <string name="share_s">Jaa %s</string>
-    <string name="create_shortcut">Luo pikakuvake…</string>
+    <string name="create_shortcut">Luo pikakuvake&#8230;</string>
     <string name="share">Jaa</string>
     <string name="save">Tallenna</string>
     <string name="add">Lisää</string>
@@ -163,7 +163,7 @@
     <string name="try_again">Yritä uudelleen</string>
     <string name="close">Sulje</string>
     <string name="chapter_d_of_d">Luku %1$d / %2$d</string>
-    <string name="loading_">Ladataan…</string>
+    <string name="loading_">Ladataan&#8230;</string>
     <string name="remote_sources">Mangalähteet</string>
     <string name="settings">Asetukset</string>
     <string name="list_mode">Luettelotila</string>
@@ -191,7 +191,7 @@
     <string name="screenshots_allow">Salli</string>
     <string name="screenshots_block_nsfw">Estä NSFW:lle</string>
     <string name="screenshots_block_all">Estä aina</string>
-    <string name="computing_">Lasketaan…</string>
+    <string name="computing_">Lasketaan&#8230;</string>
     <string name="suggestions">Ehdotukset</string>
     <string name="suggestions_summary">Ehdota mangaa mieltymystesi perusteella</string>
     <string name="suggestions_info">Kaikki tiedot analysoidaan paikallisesti tässä laitteessa. Henkilötietojasi ei siirretä mihinkään palveluihin</string>

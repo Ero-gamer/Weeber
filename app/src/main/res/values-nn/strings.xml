@@ -11,12 +11,12 @@
     <string name="add_new_category">Ny hop</string>
     <string name="add">Legg til</string>
     <string name="save">Hent</string>
-    <string name="create_shortcut">Lag ein snarveg …</string>
+    <string name="create_shortcut">Lag ein snarveg &#8230;</string>
     <string name="share_s">Del %s</string>
     <string name="search">Søk</string>
     <string name="search_manga">Søk manga</string>
-    <string name="manga_downloading_">Hentar …</string>
-    <string name="processing_">Handsamar …</string>
+    <string name="manga_downloading_">Hentar &#8230;</string>
+    <string name="processing_">Handsamar &#8230;</string>
     <string name="downloads">Henta</string>
     <string name="newest">Nyaste</string>
     <string name="by_rating">Omdøme</string>
@@ -88,7 +88,7 @@
     <string name="history">Historikk</string>
     <string name="network_error">Nettverksfeil</string>
     <string name="list">Liste</string>
-    <string name="loading_">Hentar fram …</string>
+    <string name="loading_">Hentar fram &#8230;</string>
     <string name="close">Steng</string>
     <string name="try_again">Røyn att</string>
     <string name="nothing_found">Fann ikkje noko</string>
@@ -111,7 +111,7 @@
     <string name="zoom_mode_keep_start">Auk byrjinga av sida</string>
     <string name="restore_backup">Gjenopprett</string>
     <string name="backup_information">Du kan tryggleikskopiera historikken og likerlista di til seinare gjenoppretting</string>
-    <string name="preparing_">Førebur …</string>
+    <string name="preparing_">Førebur &#8230;</string>
     <string name="system_default">Forval</string>
     <string name="just_now">No</string>
     <string name="today">I dag</string>
@@ -254,7 +254,7 @@
     <string name="text_clear_cookies_prompt">Du vert logga ut ifrå alle kjeldane</string>
     <string name="screenshots_block_nsfw">Hindre ved vakse innhald</string>
     <string name="remove_category">Slett</string>
-    <string name="text_empty_holder_primary">Her var det tomt …</string>
+    <string name="text_empty_holder_primary">Her var det tomt &#8230;</string>
     <string name="protect_application_summary">Spør om lykelordet ved byrjing av appen</string>
     <string name="wrong_password">Feil lykelord</string>
     <string name="protect_application">Vern appen</string>
@@ -299,7 +299,7 @@
     <string name="theme_name_miku">Miku</string>
     <string name="settings_apply_restart_required">Byrja om appen for å nytta desse brigda</string>
     <string name="chapters">Kapittel</string>
-    <string name="computing_">Utreknar…</string>
+    <string name="computing_">Utreknar&#8230;</string>
     <string name="chapter_d_of_d">Kapittel %1$d av %2$d</string>
     <string name="operation_not_supported">Ustødd gjerd</string>
     <string name="text_file_sizes">B|kB|MB|GB|TB</string>

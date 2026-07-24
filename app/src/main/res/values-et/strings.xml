@@ -105,7 +105,7 @@
     <string name="manga_save_location">Allalaadimiste kaust</string>
     <string name="status_reading">Loen</string>
     <string name="auth_complete">Lubatud</string>
-    <string name="loading_">Laadimine…</string>
+    <string name="loading_">Laadimine&#8230;</string>
     <string name="suggestions_notifications_summary">Vahepeal näita teateid koos soovitatud mangaga</string>
     <string name="updates_feed_cleared">Tühjendatud</string>
     <string name="webtoon_zoom">Webtooni zoom</string>
@@ -186,7 +186,7 @@
     <string name="bookmark_add">Lisa järjehoidja</string>
     <string name="discard">Unusta</string>
     <string name="saved_manga">Salvestatud manga</string>
-    <string name="manga_downloading_">Laadin alla…</string>
+    <string name="manga_downloading_">Laadin alla&#8230;</string>
     <string name="screenshots_block_all">Alati blokeeri</string>
     <string name="new_sources_text">Uued manga allikad on saadaval</string>
     <string name="manga_error_description_pattern">Vea detailid:&lt;br&gt;&lt;tt&gt;%1$s&lt;/tt&gt;&lt;br&gt;&lt;br&gt;1. Proovi &lt;a href=%2$s&gt;avada mangat oma browseris&lt;/a&gt; et olla kindel et see manga on saadaval allikast &lt;br&gt;2. tee kindlaks et sa kasutad &lt;a href=kotatsu://about&gt;kõige uuemat versiooni Kotatsut&lt;/a&gt;&lt;br&gt;3. Kui see on saadaval, saada vea raport arendajatele.</string>
@@ -323,7 +323,7 @@
     <string name="status_dropped">Lõpetatud</string>
     <string name="nsfw">18+</string>
     <string name="disable_nsfw">Lülita välja NSFW</string>
-    <string name="processing_">Töötlen…</string>
+    <string name="processing_">Töötlen&#8230;</string>
     <string name="black_dark_theme_summary">Kasuta vähem elektrit AMOLED ekraanidel</string>
     <string name="available">Saadaval</string>
     <string name="notifications_enable">Lülita sisse notifikatsioonid</string>
@@ -351,16 +351,16 @@
     <string name="show_on_shelf">Näita riiulil</string>
     <string name="allow_unstable_updates">Luba ebastabiilseid uuendusi</string>
     <string name="sync_auth_hint">Sa võid sisse logida olemasolevasse kasutajasse või teha uue</string>
-    <string name="create_shortcut">Tee otsetee…</string>
+    <string name="create_shortcut">Tee otsetee&#8230;</string>
     <string name="theme_name_kanade">Kanade</string>
     <string name="other_storage">Teine salvestamisruum</string>
     <string name="updated">Uuendatud</string>
     <string name="color_theme">Värvi skeema</string>
     <string name="brightness">Helendus</string>
     <string name="memory_usage_pattern">%s - %s</string>
-    <string name="preparing_">Valmistan…</string>
+    <string name="preparing_">Valmistan&#8230;</string>
     <string name="share">Jaga</string>
-    <string name="computing_">Arvutan…</string>
+    <string name="computing_">Arvutan&#8230;</string>
     <string name="add">Lisa</string>
     <string name="exit_confirmation_summary">Vajuta Tagasi kaks korda, et lahkuda äppist</string>
     <string name="bookmarks_removed">Järjehoidjad eemaldatud</string>
@@ -389,7 +389,7 @@
     <string name="empty_favourite_categories">Pole lemmikkategooriaid</string>
     <string name="invalid_domain_message">Kehtetu domeen</string>
     <string name="system_default">Tava</string>
-    <string name="text_empty_holder_primary">On üsna tühi siin…</string>
+    <string name="text_empty_holder_primary">On üsna tühi siin&#8230;</string>
     <string name="screenshots_policy">Ekraanipiltide poliitika</string>
     <string name="done">Tehtud</string>
     <string name="error_no_space_left">Ruumi pole ülejäänud seadmel</string>

@@ -9,7 +9,7 @@
     <string name="detailed_list">Detaylı liste</string>
     <string name="grid">Izgara</string>
     <string name="list_mode">Liste modu</string>
-    <string name="loading_">Yükleniyor…</string>
+    <string name="loading_">Yükleniyor&#8230;</string>
     <string name="close">Kapat</string>
     <string name="try_again">Tekrar dene</string>
     <string name="clear_history">Geçmişi temizle</string>
@@ -25,8 +25,8 @@
     <string name="share_s">%s Paylaş</string>
     <string name="search">Ara</string>
     <string name="search_manga">Manga ara</string>
-    <string name="manga_downloading_">İndiriliyor…</string>
-    <string name="processing_">İşleniyor…</string>
+    <string name="manga_downloading_">İndiriliyor&#8230;</string>
+    <string name="processing_">İşleniyor&#8230;</string>
     <string name="download_complete">İndirildi</string>
     <string name="downloads">İndirmeler</string>
     <string name="by_name">Ad</string>
@@ -77,7 +77,7 @@
     <string name="create_shortcut">Kısayol oluştur</string>
     <string name="_import">İçe aktar</string>
     <string name="delete_manga">Mangayı sil</string>
-    <string name="computing_">Bilgi işleniyor…</string>
+    <string name="computing_">Bilgi işleniyor&#8230;</string>
     <string name="sort_order">Sıralama düzeni</string>
     <string name="no_description">Açıklama yok</string>
     <string name="operation_not_supported">Bu işlem desteklenmiyor</string>
@@ -98,7 +98,7 @@
     <string name="cannot_find_available_storage">Kullanılabilir depolama alanı yok</string>
     <string name="text_delete_local_manga">\"%s\" cihazdan kalıcı olarak silinsin mi?</string>
     <string name="clear_search_history">Arama geçmişini temizle</string>
-    <string name="text_empty_holder_primary">Burası biraz boş…</string>
+    <string name="text_empty_holder_primary">Burası biraz boş&#8230;</string>
     <string name="rotate_screen">Ekranı döndür</string>
     <string name="scale_mode">Boyutlandırma modu</string>
     <string name="zoom_mode_fit_height">Yüksekliğe sığdır</string>
@@ -137,7 +137,7 @@
     <string name="backup_restore">Yedekle ve geri yükle</string>
     <string name="create_backup">Yedek oluştur</string>
     <string name="data_restored">Geri yüklendi</string>
-    <string name="preparing_">Hazırlanıyor…</string>
+    <string name="preparing_">Hazırlanıyor&#8230;</string>
     <string name="yesterday">Dün</string>
     <string name="group">Grup</string>
     <string name="silent">Sessiz</string>

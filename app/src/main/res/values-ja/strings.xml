@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="history">履歴</string>
-    <string name="loading_">ロード中…</string>
+    <string name="loading_">ロード中&#8230;</string>
     <string name="chapter_d_of_d">%1$d/%2$d 章</string>
     <string name="share">共有</string>
     <string name="clear_history">履歴を削除</string>
@@ -28,8 +28,8 @@
     <string name="save">保存</string>
     <string name="create_shortcut">ショートカットを作成</string>
     <string name="share_s">%s を共有する</string>
-    <string name="manga_downloading_">ダウンロード中…</string>
-    <string name="processing_">処理中…</string>
+    <string name="manga_downloading_">ダウンロード中&#8230;</string>
+    <string name="processing_">処理中&#8230;</string>
     <string name="download_complete">ダウンロード完了</string>
     <string name="downloads">ダウンロード</string>
     <string name="by_name">名前</string>
@@ -118,7 +118,7 @@
     <string name="clear_search_history">検索履歴をクリア</string>
     <string name="external_storage">外部ストレージ</string>
     <string name="app_update_available">新しいバージョンの Kotatsu が利用可能です</string>
-    <string name="text_empty_holder_primary">ここは空っぽです…</string>
+    <string name="text_empty_holder_primary">ここは空っぽです&#8230;</string>
     <string name="favourites_category_empty">空のカテゴリー</string>
     <string name="text_local_holder_secondary">オンラインソースから保存するかファイルをインポートします。</string>
     <string name="new_version_s">新しいバージョン:%s</string>
@@ -166,7 +166,7 @@
     <string name="about_app_translation">このアプリを翻訳</string>
     <string name="data_restored_success">全てのデータが復元されました</string>
     <string name="data_restored">復元</string>
-    <string name="preparing_">準備中…</string>
+    <string name="preparing_">準備中&#8230;</string>
     <string name="zoom_mode_keep_start">開始時に維持</string>
     <string name="backup_restore">バックアップと復元</string>
     <string name="reverse">リバース</string>
@@ -187,7 +187,7 @@
     <string name="sign_in">サインイン</string>
     <string name="welcome">ようこそ</string>
     <string name="black_dark_theme_summary">AMOLEDスクリーンでさらに少ない電力を使用</string>
-    <string name="computing_">計算中…</string>
+    <string name="computing_">計算中&#8230;</string>
     <string name="screenshots_allow">許可する</string>
     <string name="screenshots_block_all">常にブロック</string>
     <string name="screenshots_policy">スクリーンショットポリシー</string>

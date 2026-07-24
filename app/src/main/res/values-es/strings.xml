@@ -13,7 +13,7 @@
     <string name="list_mode">Vista de lista</string>
     <string name="settings">Ajustes</string>
     <string name="remote_sources">Fuentes del manga</string>
-    <string name="loading_">Cargando…</string>
+    <string name="loading_">Cargando&#8230;</string>
     <string name="chapter_d_of_d">Capítulo %1$d de %2$d</string>
     <string name="close">Cerrar</string>
     <string name="try_again">Inténtalo de nuevo</string>
@@ -31,8 +31,8 @@
     <string name="share_s">Compartir %s</string>
     <string name="search">Buscar</string>
     <string name="search_manga">Buscar manga</string>
-    <string name="manga_downloading_">Descargando…</string>
-    <string name="processing_">Procesando…</string>
+    <string name="manga_downloading_">Descargando&#8230;</string>
+    <string name="processing_">Procesando&#8230;</string>
     <string name="download_complete">Descargado</string>
     <string name="downloads">Descargas</string>
     <string name="by_name">Nombre</string>
@@ -135,7 +135,7 @@
     <string name="create_backup">Crear copia de seguridad de datos</string>
     <string name="restore_backup">Restaurar desde la copia de seguridad</string>
     <string name="data_restored">Datos restaurados</string>
-    <string name="preparing_">Preparando…</string>
+    <string name="preparing_">Preparando&#8230;</string>
     <string name="file_not_found">Archivo no encontrado</string>
     <string name="data_restored_success">Todos los datos fueron restaurados con éxito</string>
     <string name="data_restored_with_errors">Los datos fueron restaurados, pero hay errores</string>
@@ -167,7 +167,7 @@
     <string name="text_local_holder_primary">Todavía no tienes ningún manga guardado</string>
     <string name="text_history_holder_secondary">Encuentra qué leer en la sección «Explorar»</string>
     <string name="text_history_holder_primary">Lo que leas se mostrará aquí</string>
-    <string name="text_empty_holder_primary">Está un poco vacío aquí…</string>
+    <string name="text_empty_holder_primary">Está un poco vacío aquí&#8230;</string>
     <string name="chapter_is_missing">Falta un capítulo</string>
     <string name="about_app_translation_summary">Traducir esta aplicación</string>
     <string name="about_app_translation">Traducción</string>
@@ -187,7 +187,7 @@
     <string name="text_clear_cookies_prompt">Serás desconectado de todas las fuentes</string>
     <string name="exclude_nsfw_from_history">Excluye manga NSFW del historial</string>
     <string name="show_pages_numbers">Mostrar los números de páginas</string>
-    <string name="computing_">Informática…</string>
+    <string name="computing_">Informática&#8230;</string>
     <string name="screenshots_policy">Política de capturas de pantalla</string>
     <string name="screenshots_allow">Permitir</string>
     <string name="screenshots_block_all">Bloquear siempre</string>

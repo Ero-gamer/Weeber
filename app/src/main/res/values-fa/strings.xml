@@ -16,7 +16,7 @@
     <string name="pages">صفحات</string>
     <string name="clear">پاکسازی</string>
     <string name="domain">دامنه</string>
-    <string name="preparing_">در حال آماده سازی…</string>
+    <string name="preparing_">در حال آماده سازی&#8230;</string>
     <string name="repeat_password">گذرواژه را تکرار کنید</string>
     <string name="read_more">خواندن بیشتر</string>
     <string name="grid">دریچه</string>
@@ -37,14 +37,14 @@
     <string name="detailed_list">لیست با جزئیات</string>
     <string name="try_again">مجدد امتحان کنید</string>
     <string name="add_new_category">دسته بندی جدید</string>
-    <string name="manga_downloading_">درحال دانلود…</string>
-    <string name="processing_">درحال پردازش…</string>
+    <string name="manga_downloading_">درحال دانلود&#8230;</string>
+    <string name="processing_">درحال پردازش&#8230;</string>
     <string name="download_complete">دانلود شد</string>
     <string name="save">ذخیره</string>
-    <string name="computing_">درحال محاسبه کردن…</string>
+    <string name="computing_">درحال محاسبه کردن&#8230;</string>
     <string name="clear_history">پاکسازی تاریخچه</string>
     <string name="read">خواندن</string>
-    <string name="create_shortcut">ایجاد میانبر…</string>
+    <string name="create_shortcut">ایجاد میانبر&#8230;</string>
     <string name="share_s">اشتراک گذاری %s</string>
     <string name="search_manga">جستجو مانگا</string>
     <string name="save_page">ذخیره ی صفحه</string>
@@ -90,7 +90,7 @@
     <string name="only_using_wifi">فقط با وایفای</string>
     <string name="create_backup">پشتیبان گیری از داده ها</string>
     <string name="details">جزئیات</string>
-    <string name="loading_">درحال بارگذاری…</string>
+    <string name="loading_">درحال بارگذاری&#8230;</string>
     <string name="downloads">دانلودها</string>
     <string name="by_name">اسم</string>
     <string name="popular">محبوبیت</string>
@@ -154,7 +154,7 @@
     <string name="remote_sources">منابع مانگا</string>
     <string name="text_history_holder_secondary">برای پیدا کردن چیزهای جدید برای خواندن، به بخش «Explore» مراجعه کنید</string>
     <string name="download">دانلود</string>
-    <string name="text_empty_holder_primary">اینجا یجورایی خالیه…</string>
+    <string name="text_empty_holder_primary">اینجا یجورایی خالیه&#8230;</string>
     <string name="text_search_holder_secondary">سعی کنید کلمات جستجو را تغییر دهید.</string>
     <string name="suggestions_summary">پیشنهاد دادن مانگا بر اساس اولویت ها</string>
     <string name="text_local_holder_primary">در ابتدا چیزی را ذخیره کنید</string>

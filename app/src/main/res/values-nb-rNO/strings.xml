@@ -41,7 +41,7 @@
     <string name="text_history_holder_secondary">Finn lesestoff i sidemenyen.</string>
     <string name="text_history_holder_primary">Det du leser vil vises her</string>
     <string name="text_search_holder_secondary">Prøv å reformulere spørringen.</string>
-    <string name="text_empty_holder_primary">Det er ganske tomt her …</string>
+    <string name="text_empty_holder_primary">Det er ganske tomt her &#8230;</string>
     <string name="enabled_d_of_d" tools:ignore="PluralsCandidate">%1$d av %2$d påskrudd</string>
     <string name="open_in_browser">Åpne i nettleser</string>
     <string name="app_update_available">En ny versjon av programmet er tilgjengelig</string>
@@ -77,7 +77,7 @@
     <string name="yesterday">I går</string>
     <string name="just_now">Akkurat nå</string>
     <string name="data_restored_success">All data ble gjenopprettet</string>
-    <string name="preparing_">Forbereder …</string>
+    <string name="preparing_">Forbereder &#8230;</string>
     <string name="data_restored">Data gjenopprettet</string>
     <string name="restore_backup">Gjenopprett fra sikkerhetskopi</string>
     <string name="create_backup">Opprett sikkerhetskopi</string>
@@ -144,12 +144,12 @@
     <string name="popular">Popularitet</string>
     <string name="downloads">Nedlastinger</string>
     <string name="download_complete">Nedlastet</string>
-    <string name="processing_">Behandler …</string>
-    <string name="manga_downloading_">Laster ned …</string>
+    <string name="processing_">Behandler &#8230;</string>
+    <string name="manga_downloading_">Laster ned &#8230;</string>
     <string name="search_manga">Søk manga</string>
     <string name="search">Søk</string>
     <string name="share_s">Del %s</string>
-    <string name="create_shortcut">Opprett snarvei …</string>
+    <string name="create_shortcut">Opprett snarvei &#8230;</string>
     <string name="share">Del</string>
     <string name="save">Lagre</string>
     <string name="add">Legg til</string>
@@ -161,7 +161,7 @@
     <string name="try_again">Prøv igjen</string>
     <string name="close">Lukk</string>
     <string name="chapter_d_of_d">Kapittel %1$d av %2$d</string>
-    <string name="loading_">Laster inn …</string>
+    <string name="loading_">Laster inn &#8230;</string>
     <string name="settings">Innstillinger</string>
     <string name="list_mode">Listemodus</string>
     <string name="grid">Rutenett</string>
@@ -187,7 +187,7 @@
     <string name="exclude_nsfw_from_history">Utelat sensurerbar-manga fra historikk</string>
     <string name="system_default">Forvalg</string>
     <string name="show_pages_numbers">Sidenummerering</string>
-    <string name="computing_">Beregner …</string>
+    <string name="computing_">Beregner &#8230;</string>
     <string name="screenshots_allow">Tillat</string>
     <string name="screenshots_block_nsfw">Blokker for sensurerbare</string>
     <string name="screenshots_block_all">Alltid blokker</string>
@@ -228,7 +228,7 @@
     <string name="removed_from_history">Fjernet fra historikk</string>
     <string name="bookmark_remove">Fjern bokmerke</string>
     <string name="send">Send</string>
-    <string name="suggestions_updating">Oppdaterer forslag …</string>
+    <string name="suggestions_updating">Oppdaterer forslag &#8230;</string>
     <string name="hide">Skjul</string>
     <string name="new_sources_text">Nye manga-kilder tilgjengelig</string>
     <string name="download_slowdown">Tregere nedlasting</string>

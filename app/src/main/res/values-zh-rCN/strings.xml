@@ -9,13 +9,13 @@
     <string name="chapters">章节</string>
     <string name="list">列表</string>
     <string name="data_restored_with_errors">数据已恢复，但出现了一些错误</string>
-    <string name="processing_">正在处理…</string>
+    <string name="processing_">正在处理&#8230;</string>
     <string name="newest">最新</string>
     <string name="by_rating">评分（降序）</string>
     <string name="cookies_cleared">Cookies 已清除</string>
     <string name="data_restored_success">数据已全部恢复</string>
     <string name="silent">无声</string>
-    <string name="preparing_">准备中…</string>
+    <string name="preparing_">准备中&#8230;</string>
     <string name="file_not_found">未找到文件</string>
     <string name="yesterday">昨天</string>
     <string name="backup_information">可对历史和收藏进行备份与恢复</string>
@@ -44,8 +44,8 @@
     <string name="grid">网格</string>
     <string name="list_mode">视图选项</string>
     <string name="remote_sources">图源</string>
-    <string name="loading_">加载中…</string>
-    <string name="computing_">计算中…</string>
+    <string name="loading_">加载中&#8230;</string>
+    <string name="computing_">计算中&#8230;</string>
     <string name="chapter_d_of_d">%1$d/%2$d 章</string>
     <string name="close">关闭</string>
     <string name="try_again">重试</string>
@@ -63,7 +63,7 @@
     <string name="share_s">分享 %s</string>
     <string name="search">搜索</string>
     <string name="search_manga">搜索漫画</string>
-    <string name="manga_downloading_">正在下载…</string>
+    <string name="manga_downloading_">正在下载&#8230;</string>
     <string name="download_complete">下载已完成</string>
     <string name="downloads">下载</string>
     <string name="by_name">名称（升序）</string>
@@ -78,7 +78,7 @@
     <string name="pages">页面</string>
     <string name="clear">清除</string>
     <string name="remove">删除</string>
-    <string name="_s_deleted_from_local_storage">已从本地存储中删除“%s”</string>
+    <string name="_s_deleted_from_local_storage">已从本地存储中删除&#8220;%s&#8221;</string>
     <string name="save_page">保存图片</string>
     <string name="page_saved">保存成功</string>
     <string name="share_image">分享图片</string>
@@ -117,7 +117,7 @@
     <string name="vibration">振动</string>
     <string name="favourites_categories">分类管理</string>
     <string name="remove_category">删除分类</string>
-    <string name="text_empty_holder_primary">什么都没有…</string>
+    <string name="text_empty_holder_primary">什么都没有&#8230;</string>
     <string name="text_search_holder_secondary">试试换一个关键词再搜索</string>
     <string name="text_history_holder_primary">看过的漫画将在这里显示</string>
     <string name="text_history_holder_secondary">在【浏览】页面搜索想读的漫画</string>

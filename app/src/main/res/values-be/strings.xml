@@ -13,7 +13,7 @@
     <string name="list_mode">Выгляд спісу</string>
     <string name="settings">Налады</string>
     <string name="remote_sources">Крыніцы мангі</string>
-    <string name="loading_">Загрузка…</string>
+    <string name="loading_">Загрузка&#8230;</string>
     <string name="chapter_d_of_d">Глава %1$d з %2$d</string>
     <string name="close">Закрыць</string>
     <string name="try_again">Паўтарыць</string>
@@ -31,8 +31,8 @@
     <string name="share_s">Падзялiцца %s</string>
     <string name="search">Пошук</string>
     <string name="search_manga">Пошук мангі</string>
-    <string name="manga_downloading_">Спампоўванне мангі…</string>
-    <string name="processing_">Апрацоўка…</string>
+    <string name="manga_downloading_">Спампоўванне мангі&#8230;</string>
+    <string name="processing_">Апрацоўка&#8230;</string>
     <string name="download_complete">Спампоўванне завершана</string>
     <string name="downloads">Спампоўкі</string>
     <string name="by_name">Па імю</string>
@@ -135,7 +135,7 @@
     <string name="create_backup">Стварыць рэзервовую копію</string>
     <string name="restore_backup">Аднавіць данныя</string>
     <string name="data_restored">Данныя адноўлены</string>
-    <string name="preparing_">Падрыхтоўка…</string>
+    <string name="preparing_">Падрыхтоўка&#8230;</string>
     <string name="file_not_found">Файл не знойдзены</string>
     <string name="data_restored_success">Усе данныя паспяхова адноўлены</string>
     <string name="data_restored_with_errors">Данныя адноўлены, але ўзніклі некаторыя памылкі</string>
@@ -173,7 +173,7 @@
     <string name="text_history_holder_secondary">Знайдзіце, што пачытаць, у раздзеле «Агляд»</string>
     <string name="text_history_holder_primary">Тут будзе паказана манга, якую вы чытаеце</string>
     <string name="text_search_holder_secondary">Паспрабуйце перафармуляваць запыт.</string>
-    <string name="text_empty_holder_primary">Неяк тут пуста…</string>
+    <string name="text_empty_holder_primary">Неяк тут пуста&#8230;</string>
     <string name="chapter_is_missing">Глава адсутнічае</string>
     <string name="queued">У чарзе</string>
     <string name="about_app_translation_summary">Дапамагчы з перакладам праграмы</string>
@@ -187,7 +187,7 @@
     <string name="system_default">Па змаўчанні</string>
     <string name="exclude_nsfw_from_history">Выключыць NSFW мангу з гісторыі</string>
     <string name="show_pages_numbers">Паказваць нумары старонак</string>
-    <string name="computing_">Вылічэнні…</string>
+    <string name="computing_">Вылічэнні&#8230;</string>
     <string name="screenshots_allow">Дазваляць</string>
     <string name="screenshots_policy">Палітыка скрыншотаў</string>
     <string name="screenshots_block_all">Заўсёды блакуйце</string>

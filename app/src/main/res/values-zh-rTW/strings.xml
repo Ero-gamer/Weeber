@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="show_notification_new_chapters_off">您將不會收到通知，但新的章節將在清單中被凸顯</string>
-    <string name="computing_">計算中…</string>
+    <string name="computing_">計算中&#8230;</string>
     <string name="try_again">重試</string>
     <string name="history_is_empty">尚無歷史紀錄</string>
     <string name="operation_not_supported">不支援此操作</string>
     <string name="text_local_holder_secondary">從線上來源儲存或者匯入檔案。</string>
     <string name="text_history_holder_primary">您所閱讀的將被顯示在此</string>
     <string name="text_history_holder_secondary">在側「瀏覽」部分找到想要閱讀的內容</string>
-    <string name="text_empty_holder_primary">這裡有點空…</string>
+    <string name="text_empty_holder_primary">這裡有點空&#8230;</string>
     <string name="feed_will_update_soon">訂閱更新即將開始</string>
     <string name="reader_mode_hint">於此漫畫選擇的組態將會被記住</string>
     <string name="data_restored_with_errors">資料已還原，但有錯誤</string>
@@ -50,7 +50,7 @@
     <string name="detailed_list">詳細清單</string>
     <string name="list_mode">清單模式</string>
     <string name="remote_sources">漫畫來源</string>
-    <string name="loading_">載入中…</string>
+    <string name="loading_">載入中&#8230;</string>
     <string name="close">關閉</string>
     <string name="clear_history">清除歷史紀錄</string>
     <string name="suggestions_info">所有的資料都在此裝置上進本機分析，並不會傳送至任何其他地方。</string>
@@ -84,7 +84,7 @@
     <string name="save">儲存</string>
     <string name="share_s">分享 %s</string>
     <string name="search">搜尋</string>
-    <string name="manga_downloading_">下載中…</string>
+    <string name="manga_downloading_">下載中&#8230;</string>
     <string name="download_complete">已下載</string>
     <string name="filter">篩選器</string>
     <string name="theme">主題</string>
@@ -220,9 +220,9 @@
     <string name="share_logs">分享日誌</string>
     <string name="clear_source_cookies_summary">僅清除指定網域的 cookie，大多數情況下會使授權會失效</string>
     <string name="share">分享</string>
-    <string name="create_shortcut">建立捷徑…</string>
+    <string name="create_shortcut">建立捷徑&#8230;</string>
     <string name="search_manga">搜尋漫畫</string>
-    <string name="processing_">處理中…</string>
+    <string name="processing_">處理中&#8230;</string>
     <string name="newest">最新</string>
     <string name="by_rating">評分</string>
     <string name="sort_order">排列順序</string>
@@ -253,7 +253,7 @@
     <string name="zoom_mode_fit_center">適應中心</string>
     <string name="zoom_mode_fit_height">適應高度</string>
     <string name="black_dark_theme">黑色</string>
-    <string name="preparing_">準備…</string>
+    <string name="preparing_">準備&#8230;</string>
     <string name="file_not_found">沒有找到檔案</string>
     <string name="tap_to_try_again">輕觸以重試</string>
     <string name="captcha_solve">解決</string>

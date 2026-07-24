@@ -18,8 +18,8 @@
     <string name="list_mode">Mod senarai</string>
     <string name="settings">Tetapan</string>
     <string name="remote_sources">Sumber Manga</string>
-    <string name="loading_">Memuat…</string>
-    <string name="computing_">Mengira…</string>
+    <string name="loading_">Memuat&#8230;</string>
+    <string name="computing_">Mengira&#8230;</string>
     <string name="chapter_d_of_d">Bab %1$d daripada %2$d</string>
     <string name="close">Tutup</string>
     <string name="try_again">Cuba semula</string>
@@ -33,7 +33,7 @@
     <string name="create_shortcut">Buat pintasan</string>
     <string name="search">Cari</string>
     <string name="search_manga">Cari manga</string>
-    <string name="manga_downloading_">Memuat turun…</string>
+    <string name="manga_downloading_">Memuat turun&#8230;</string>
     <string name="download_complete">Dimuat turun</string>
     <string name="downloads">Muat turun</string>
     <string name="by_name">Nama</string>
@@ -99,7 +99,7 @@
     <string name="create_backup">Buat penyandaran data</string>
     <string name="restore_backup">Pulihkan daripada sandaran</string>
     <string name="data_restored">Dipulihkan</string>
-    <string name="preparing_">Bersedia…</string>
+    <string name="preparing_">Bersedia&#8230;</string>
     <string name="file_not_found">Fail tidak ditemui</string>
     <string name="data_restored_success">Semua data telah dipulih</string>
     <string name="data_restored_with_errors">Data telah dipulih, namun terdapat ralat</string>
@@ -246,7 +246,7 @@
     <string name="suggestions_info">Semua data hanya dianalisa secara tempatan pada peranti ini dan tidak dihantar ke mana-mana.</string>
     <string name="you_have_not_favourites_yet">Tiada kegemaran lagi</string>
     <string name="exclude_nsfw_from_suggestions">Jangan syor manga NSFW</string>
-    <string name="processing_">Memproses…</string>
+    <string name="processing_">Memproses&#8230;</string>
     <string name="onboard_text">Pilih bahasa untuk manga yang anda mahu baca. Anda boleh mengubah ini kemudian melalui tetapan.</string>
     <string name="add_to_favourites">Tambah dalam kegemaran</string>
     <string name="theme">Tema</string>
@@ -268,7 +268,7 @@
     <string name="notifications_settings">Tetapan pemberitahuan</string>
     <string name="grid_size">Saiz grid</string>
     <string name="switch_pages">Tukar muka surat</string>
-    <string name="text_empty_holder_primary">Ianya agak kosong di sini…</string>
+    <string name="text_empty_holder_primary">Ianya agak kosong di sini&#8230;</string>
     <string name="text_search_holder_secondary">Cuba untuk merumuskan semula carian.</string>
     <string name="updates">Kemas kini</string>
     <string name="all_favourites">Semua kegemaran</string>

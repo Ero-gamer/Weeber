@@ -12,7 +12,7 @@
     <string name="add">Pridėti</string>
     <string name="save">Išsaugoti</string>
     <string name="search">Paieška</string>
-    <string name="computing_">Skaičiuojama…</string>
+    <string name="computing_">Skaičiuojama&#8230;</string>
     <string name="new_chapters">Nauji skyriai</string>
     <string name="local_storage">Vietos saugykla</string>
     <string name="favourites">Favoritai</string>
@@ -25,8 +25,8 @@
     <string name="detailed_list">Detalus sąrašas</string>
     <string name="grid">Tinklelis</string>
     <string name="settings">Nustatymai</string>
-    <string name="loading_">Kraunasi…</string>
+    <string name="loading_">Kraunasi&#8230;</string>
     <string name="search_manga">Ieškoti manga</string>
     <string name="remote_sources">Manga šaltiniai</string>
-    <string name="manga_downloading_">Atsisiunčiama…</string>
+    <string name="manga_downloading_">Atsisiunčiama&#8230;</string>
 </resources>

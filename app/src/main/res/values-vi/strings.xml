@@ -20,7 +20,7 @@
     <string name="create_shortcut">Tạo lối tắt</string>
     <string name="share_s">Chia sẻ %s</string>
     <string name="search_manga">Tìm kiếm manga</string>
-    <string name="manga_downloading_">Đang tải xuống…</string>
+    <string name="manga_downloading_">Đang tải xuống&#8230;</string>
     <string name="by_name">Tên</string>
     <string name="updated">Mới cập nhật</string>
     <string name="newest">Mới nhất</string>
@@ -92,7 +92,7 @@
     <string name="zoom_mode_keep_start">Giữ ở đầu</string>
     <string name="black_dark_theme">Nền đen</string>
     <string name="backup_restore">Sao lưu và khôi phục</string>
-    <string name="preparing_">Đang chuẩn bị…</string>
+    <string name="preparing_">Đang chuẩn bị&#8230;</string>
     <string name="backup_information">Bạn có thể tạo bản sao lưu lịch sử, danh mục yêu thích và khôi phục nó sau này</string>
     <string name="just_now">Mới đây</string>
     <string name="yesterday">Hôm qua</string>
@@ -174,8 +174,8 @@
     <string name="history">Lịch sử</string>
     <string name="grid">Dạng lưới</string>
     <string name="detailed_list">Danh sách chi tiết</string>
-    <string name="computing_">Đang tính toán…</string>
-    <string name="loading_">Đang tải…</string>
+    <string name="computing_">Đang tính toán&#8230;</string>
+    <string name="loading_">Đang tải&#8230;</string>
     <string name="try_again">Thử lại</string>
     <string name="clear_history">Xoá lịch sử</string>
     <string name="read">Đọc</string>
@@ -184,7 +184,7 @@
     <string name="save">Lưu</string>
     <string name="add_new_category">Danh mục mới</string>
     <string name="search">Tìm kiếm</string>
-    <string name="processing_">Đang xử lý…</string>
+    <string name="processing_">Đang xử lý&#8230;</string>
     <string name="downloads">Danh sách tải xuống</string>
     <string name="popular">Phổ biến</string>
     <string name="sort_order">Sắp xếp theo</string>
@@ -235,7 +235,7 @@
     <string name="text_clear_cookies_prompt">Bạn sẽ bị đăng xuất khỏi tất cả các nguồn</string>
     <string name="clear_search_history">Xoá lịch sử tìm kiếm</string>
     <string name="search_history_cleared">Đã xoá</string>
-    <string name="text_empty_holder_primary">Không có gì ở đây…</string>
+    <string name="text_empty_holder_primary">Không có gì ở đây&#8230;</string>
     <string name="notifications_settings">Cài đặt thông báo</string>
     <string name="text_search_holder_secondary">Hãy thử lại với từ khoá khác.</string>
     <string name="text_history_holder_primary">Những gì bạn đã đọc sẽ được hiển thị ở đây ツ</string>

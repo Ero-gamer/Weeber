@@ -25,7 +25,7 @@
     <string name="settings">सेटिंग्स</string>
     <string name="list_mode">सूची मोड</string>
     <string name="chapter_d_of_d">अध्याय %1$d, %2$d में से</string>
-    <string name="computing_">गणना हो रही है…</string>
+    <string name="computing_">गणना हो रही है&#8230;</string>
     <string name="add_new_category">नई श्रेणी</string>
     <string name="clear_history">इतिहास साफ करें</string>
     <string name="share">साझा करें</string>
@@ -33,7 +33,7 @@
     <string name="share_s">%s साझा करें</string>
     <string name="search">खोजें</string>
     <string name="search_manga">मंगा खोजें</string>
-    <string name="manga_downloading_">डाउनलोड हो रहा है…</string>
+    <string name="manga_downloading_">डाउनलोड हो रहा है&#8230;</string>
     <string name="downloads">डाउनलोड</string>
     <string name="by_rating">रेटिंग</string>
     <string name="clear">साफ करे</string>
@@ -46,10 +46,10 @@
     <string name="webtoon">वेबटून</string>
     <string name="remote_sources">मांगा स्रोत</string>
     <string name="download_complete">डाउनलोड किया गया</string>
-    <string name="processing_">प्रसंस्करण…</string>
+    <string name="processing_">प्रसंस्करण&#8230;</string>
     <string name="history">इतिहास</string>
     <string name="grid">ग्रिड</string>
-    <string name="loading_">लोड हो रहा है…</string>
+    <string name="loading_">लोड हो रहा है&#8230;</string>
     <string name="text_file_not_supported">ZIP या CBZ मैं से एक फाइल चुनें।</string>
     <string name="updated">अद्यतित</string>
     <string name="_s_deleted_from_local_storage">\"%s\" को स्थानीय स्टोरेज से मिटा दिया गया</string>
@@ -116,7 +116,7 @@
     <string name="external_storage">बाहरी स्टोरेज</string>
     <string name="text_local_holder_secondary">किसी ऑनलाइन कैटलॉग से कुछ सहेजें या किसी फाइल से आयात करें।</string>
     <string name="text_local_holder_primary">पहले कुछ सहेजें</string>
-    <string name="text_empty_holder_primary">यहां कुछ खाली सा है…</string>
+    <string name="text_empty_holder_primary">यहां कुछ खाली सा है&#8230;</string>
     <string name="done">संपन्न</string>
     <string name="dont_check">जांच मत करें</string>
     <string name="enter_password">पासवर्ड दर्ज करें</string>
@@ -508,7 +508,7 @@
     <string name="text_clear_search_history_prompt">हाल की सभी खोज क्वेरी को स्थायी रूप से हटा दें?</string>
     <string name="about">ऐप के बारे में</string>
     <string name="backup_restore">बैकअप और पुनर्स्थापना</string>
-    <string name="preparing_">तैयार कर रहे हैं…</string>
+    <string name="preparing_">तैयार कर रहे हैं&#8230;</string>
     <string name="file_not_found">फाइल नहीं मिली</string>
     <string name="data_restored_success">सारा डेटा पुनर्स्थापित कर दिया गया</string>
     <string name="backup_information">आप अपने इतिहास और पसंदीदा का बैकअप बना सकते हैं और उसे पुनर्स्थापित कर सकते हैं</string>

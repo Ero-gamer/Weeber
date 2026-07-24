@@ -13,8 +13,8 @@
     <string name="list_mode">జాబితా మోడ్</string>
     <string name="settings">సెట్టింగ్స్</string>
     <string name="remote_sources">మంగా సోర్సెస్</string>
-    <string name="loading_">లోడ్ అవుతోంది…</string>
-    <string name="computing_">లెక్కించబడుతోంది…</string>
+    <string name="loading_">లోడ్ అవుతోంది&#8230;</string>
+    <string name="computing_">లెక్కించబడుతోంది&#8230;</string>
     <string name="chapter_d_of_d">చాప్టర్ %1$d / %2$d</string>
     <string name="close">మూసివేయి</string>
     <string name="try_again">మళ్లీ ప్రయత్నించండి</string>
@@ -33,8 +33,8 @@
     <string name="share_s">%sని షేర్ చెయ్యి</string>
     <string name="search">సెర్చ్</string>
     <string name="search_manga">మంగా సెర్చ్</string>
-    <string name="manga_downloading_">మంగా డౌన్‌లోడ్ అవుతోంది…</string>
-    <string name="processing_">ప్రాసెస్ అవుతోంది…</string>
+    <string name="manga_downloading_">మంగా డౌన్‌లోడ్ అవుతోంది&#8230;</string>
+    <string name="processing_">ప్రాసెస్ అవుతోంది&#8230;</string>
     <string name="download_complete">డౌన్‌లోడ్ పూర్తైంది</string>
     <string name="downloads">డౌన్‌లోడ్లు</string>
     <string name="by_name">పేరుతో</string>
@@ -51,7 +51,7 @@
     <string name="pages">పేజీలు</string>
     <string name="clear">క్లియర్ చెయ్యి</string>
     <string name="remove">తీసివేయి</string>
-    <string name="_s_deleted_from_local_storage">“%s” లోకల్ స్టోరేజ్ నుండి తొలగించబడింది</string>
+    <string name="_s_deleted_from_local_storage">&#8220;%s&#8221; లోకల్ స్టోరేజ్ నుండి తొలగించబడింది</string>
     <string name="save_page">పేజీ సేవ్ చెయ్యి</string>
     <string name="page_saved">పేజీలు సేవ్ అయ్యాయి</string>
     <string name="pages_saved">పేజీలు సేవ్ అయ్యాయి</string>
@@ -69,7 +69,7 @@
     <string name="grid_size">గ్రిడ్ పరిమాణం</string>
     <string name="search_on_s">%s లో వెతుకు</string>
     <string name="delete_manga">మంగా తొలగించు</string>
-    <string name="text_delete_local_manga">“%s”ను పరికరం నుండి శాశ్వతంగా తొలగించాలా?</string>
+    <string name="text_delete_local_manga">&#8220;%s&#8221;ను పరికరం నుండి శాశ్వతంగా తొలగించాలా?</string>
     <string name="reader_settings">రీడర్ సెట్టింగ్స్</string>
     <string name="switch_pages">పేజీలు మార్చు</string>
     <string name="_continue">కొనసాగించు</string>
@@ -92,7 +92,7 @@
     <string name="vibration">వైబ్రేషన్</string>
     <string name="favourites_categories">ఫేవరెట్ వర్గాలు</string>
     <string name="remove_category">వర్గం తొలగించు</string>
-    <string name="text_empty_holder_primary">ఇక్కడ ఏదీ లేదు…</string>
+    <string name="text_empty_holder_primary">ఇక్కడ ఏదీ లేదు&#8230;</string>
     <string name="text_search_holder_secondary">వెతుకును మరల ప్రయత్నించండి.</string>
     <string name="text_history_holder_primary">మీ చదివినవి ఇక్కడ చూపబడతాయి</string>
     <string name="text_history_holder_secondary">\"ఎక్స్‌ప్లోర్\" విభాగంలో చదవదగినవి వెతకండి</string>

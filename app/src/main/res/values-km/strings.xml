@@ -14,8 +14,8 @@
     <string name="list_mode">រាយបញ្ជី</string>
     <string name="settings">ការកំណត់</string>
     <string name="remote_sources">ប្រភពម៉ងហ្គា</string>
-    <string name="loading_">កំពុងលូដ…</string>
-    <string name="computing_">កំពុងគណនា…</string>
+    <string name="loading_">កំពុងលូដ&#8230;</string>
+    <string name="computing_">កំពុងគណនា&#8230;</string>
     <string name="chapter_d_of_d">ជំពូក%1$dនៃ%2$d</string>
     <string name="try_again">សាកល្បងម្តងទៀត</string>
     <string name="clear_history">លុប​ ប្រវត្តិអាន</string>
@@ -27,12 +27,12 @@
     <string name="add">រាប់បញ្ចូល</string>
     <string name="save">រក្សាទុក</string>
     <string name="share">ចែករំលែក</string>
-    <string name="processing_">កំពុងដំណើរការ…</string>
+    <string name="processing_">កំពុងដំណើរការ&#8230;</string>
     <string name="download_complete">បានទាញយក</string>
     <string name="share_s">ចែករំលែក%s</string>
     <string name="search">ស្វែងរក</string>
     <string name="search_manga">ស្វែងរកមេនហ្គារ</string>
-    <string name="manga_downloading_">កំពុងទាញយក…</string>
+    <string name="manga_downloading_">កំពុងទាញយក&#8230;</string>
     <string name="by_name">ឈ្មោះ</string>
     <string name="popular">ពេញនិយម</string>
     <string name="updated">បានធ្វើបច្ចុប្បន្នភាព</string>
@@ -82,7 +82,7 @@
     <string name="delete_manga">លុបម៉េងហ្កា</string>
     <string name="text_delete_local_manga">លុប\"%s\"ជាអចិន្ត្រៃយ៍ពីឧបករណ៍?</string>
     <string name="reader_settings">ការកំណត់ការអាន</string>
-    <string name="create_shortcut">បង្កើតផ្លូវកាត់…</string>
+    <string name="create_shortcut">បង្កើតផ្លូវកាត់&#8230;</string>
     <string name="read_mode">អាន</string>
     <string name="grid_size">ទំហំក្រឡា</string>
     <string name="search_on_s">រកលើ%s</string>
@@ -105,7 +105,7 @@
     <string name="text_empty_holder_secondary_filtered">មិនមានមេនហ្កាដែលត្រូវគ្នានឹងតម្រងដែលអ្នកបានជ្រើសរើសទេ</string>
     <string name="text_history_holder_secondary">រកអ្វីដែលត្រូវអាននៅក្នុងផ្នែក \"រុករក\"</string>
     <string name="favourites_categories">ប្រភេទដែលចូលចិត្ត</string>
-    <string name="text_empty_holder_primary">វាដូចជាទទេនៅទីនេះ…</string>
+    <string name="text_empty_holder_primary">វាដូចជាទទេនៅទីនេះ&#8230;</string>
     <string name="text_search_holder_secondary">ព្យាយាមកែទម្រង់សំណួរ។</string>
     <string name="text_history_holder_primary">អ្វីដែលអ្នកអាននឹងត្រូវបានបង្ហាញនៅទីនេះ</string>
     <string name="manga_shelf">ធ្នើ</string>

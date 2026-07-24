@@ -13,7 +13,7 @@
     <string name="list_mode">Режим листе</string>
     <string name="settings">Подешавања</string>
     <string name="remote_sources">Извори манге</string>
-    <string name="loading_">Учитавање…</string>
+    <string name="loading_">Учитавање&#8230;</string>
     <string name="chapter_d_of_d">Поглавље %1$d од %2$d</string>
     <string name="close">Затвори</string>
     <string name="try_again">Покушај поново</string>
@@ -31,7 +31,7 @@
     <string name="search_manga">Претражи мангу</string>
     <string name="by_name">Имену</string>
     <string name="clear_pages_cache">Избриши кеш странице</string>
-    <string name="manga_downloading_">Преузимање…</string>
+    <string name="manga_downloading_">Преузимање&#8230;</string>
     <string name="switch_pages">Листање страница</string>
     <string name="delete_manga">Избриши мангу</string>
     <string name="search_on_s">Претрага по %s</string>
@@ -50,7 +50,7 @@
     <string name="open_in_browser">Отвори у прегледачу</string>
     <string name="notification_sound">Звук обавештења</string>
     <string name="vibration">Вибрација</string>
-    <string name="text_empty_holder_primary">Овде је некако празно…</string>
+    <string name="text_empty_holder_primary">Овде је некако празно&#8230;</string>
     <string name="pages_animation">Анимација превлачења странице</string>
     <string name="about">О апликацији</string>
     <string name="app_version">Верзија %s</string>
@@ -73,7 +73,7 @@
     <string name="reader_info_bar_summary">Прикажи тренутно време и напредак читања на врху екрана</string>
     <string name="authorization_optional">Ауторизација (опционално)</string>
     <string name="images_procy_description">Користите wsrv.nl услуга за смањење употребе саобраћаја и убрзавање учитавања слика ако је могуће</string>
-    <string name="computing_">Рачунање…</string>
+    <string name="computing_">Рачунање&#8230;</string>
     <string name="search">Претражи</string>
     <string name="by_rating">Оцени</string>
     <string name="sort_order">Распореди по</string>
@@ -97,7 +97,7 @@
     <string name="show_in_grid_view">Прикажи као мрежу</string>
     <string name="page_saved">Страница је сачувана</string>
     <string name="text_delete_local_manga">Трајно избриши \"%s\" са уређаја?</string>
-    <string name="processing_">Обрада…</string>
+    <string name="processing_">Обрада&#8230;</string>
     <string name="download_complete">Преузето</string>
     <string name="downloads">Преузимања</string>
     <string name="popular">Популарности</string>
@@ -118,7 +118,7 @@
     <string name="explore">Истражи</string>
     <string name="options">Опције</string>
     <string name="add_to_favourites">Додај у Омиљене</string>
-    <string name="text_history_holder_secondary">Пронађи ствари за читање у одељку „Истражи“</string>
+    <string name="text_history_holder_secondary">Пронађи ствари за читање у одељку „Истражи&#8220;</string>
     <string name="light_indicator">Показатељ ЛЕД светла</string>
     <string name="favourites_categories">Омиљене категорије</string>
     <string name="remove_category">Уклони</string>
@@ -472,7 +472,7 @@
     <string name="color_theme">Палета боја</string>
     <string name="brightness">Осветљеност</string>
     <string name="memory_usage_pattern">%1$s - %2$s</string>
-    <string name="preparing_">Припрема се…</string>
+    <string name="preparing_">Припрема се&#8230;</string>
     <string name="exit_confirmation_summary">Притисни Назад двапут да би изашао из апликације</string>
     <string name="bookmarks_removed">Обележивачи су уклоњени</string>
     <string name="screenshots_block_nsfw">Блокирај садржај за одрасле</string>
@@ -811,7 +811,7 @@
     <string name="additional_action_required">Потребна је додатна радња</string>
     <string name="use_default_cover">Користи подразумевану корицу</string>
     <string name="theme_name_expressive">Експресивно (Тест)</string>
-    <string name="incognito_mode_hint_nsfw">Ова манга може да садржи садржај за одрасле. Да ли желите да користите режим „нечувања“?</string>
+    <string name="incognito_mode_hint_nsfw">Ова манга може да садржи садржај за одрасле. Да ли желите да користите режим „нечувања&#8220;?</string>
     <string name="manga_override_hint">Ове промене ће утицати на то како се манга приказује у апликацији</string>
     <string name="pick_custom_file">Изабери прилагођену датотеку</string>
     <string name="change_cover">Промени корице</string>
@@ -843,7 +843,7 @@
     <string name="enable_pull_gesture_summary">Користи покрет повлачења да би пребацивао поглавља у webtoon-у</string>
     <string name="main_screen">Главни екран</string>
     <string name="main_screen_fab">Прикажи плутајуће дугме Настави</string>
-    <string name="main_screen_fab_summary">Омогућава наставак читања једним додиром. Ово дугме се неће појавити у режиму „Без чувања“ или када је историја празна</string>
+    <string name="main_screen_fab_summary">Омогућава наставак читања једним додиром. Ово дугме се неће појавити у режиму „Без чувања&#8220; или када је историја празна</string>
     <string name="error_corrupted_zip">Оштећена ZIP архива (%s)</string>
     <string name="discord_rpc">Присуство богато Discord-ом</string>
     <string name="discord_token">Discord Токен</string>

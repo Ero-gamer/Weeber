@@ -12,8 +12,8 @@
     <string name="list_mode">စာရင်းမုဒ်</string>
     <string name="settings">စက်တင်များ</string>
     <string name="remote_sources">မန်ဂါရင်းမြစ်များ</string>
-    <string name="loading_">စောင့်ဆိုင်းပါ…</string>
-    <string name="computing_">တွက်ချက်နေသည်…</string>
+    <string name="loading_">စောင့်ဆိုင်းပါ&#8230;</string>
+    <string name="computing_">တွက်ချက်နေသည်&#8230;</string>
     <string name="chapter_d_of_d">%2$d ရဲ့ အခန်း %1$d</string>
     <string name="close">ပိတ်မည်</string>
     <string name="try_again">ပြန်လည်ကြိုးစားပါ</string>
@@ -31,5 +31,5 @@
     <string name="share_s">%s ကို မျှဝေ</string>
     <string name="search">ရှာဖွေ</string>
     <string name="search_manga">Manga ကိုရှာမည်</string>
-    <string name="manga_downloading_">Donwload လုပ်နေ…</string>
+    <string name="manga_downloading_">Donwload လုပ်နေ&#8230;</string>
 </resources>
