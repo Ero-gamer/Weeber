@@ -14,8 +14,8 @@
     <string name="list_mode">List mode</string>
     <string name="settings">Settings</string>
     <string name="remote_sources">Manga sources</string>
-    <string name="loading_">Loading…</string>
-    <string name="computing_">Computing…</string>
+    <string name="loading_">Loading&#8230;</string>
+    <string name="computing_">Computing&#8230;</string>
     <string name="chapter_d_of_d">Chapter %1$d of %2$d</string>
     <string name="close">Close</string>
     <string name="try_again">Try again</string>
@@ -35,8 +35,8 @@
     <string name="share_s">Share %s</string>
     <string name="search">Search</string>
     <string name="search_manga">Search manga</string>
-    <string name="manga_downloading_">Downloading…</string>
-    <string name="processing_">Processing…</string>
+    <string name="manga_downloading_">Downloading&#8230;</string>
+    <string name="processing_">Processing&#8230;</string>
     <string name="download_complete">Downloaded</string>
     <string name="downloads">Downloads</string>
     <string name="by_name">Name</string>
@@ -97,7 +97,7 @@
     <string name="vibration">Vibration</string>
     <string name="favourites_categories">Favorite categories</string>
     <string name="remove_category">Remove</string>
-    <string name="text_empty_holder_primary">It\'s kind of empty here…</string>
+    <string name="text_empty_holder_primary">It\'s kind of empty here&#8230;</string>
     <string name="text_search_holder_secondary">Try to reformulate the query.</string>
     <string name="text_history_holder_primary">What you read will be displayed here</string>
     <string name="text_history_holder_secondary">Find what to read in the «Explore» section</string>
@@ -150,7 +150,7 @@
     <string name="create_backup">Create data backup</string>
     <string name="restore_backup">Restore from backup</string>
     <string name="data_restored">Restored</string>
-    <string name="preparing_">Preparing…</string>
+    <string name="preparing_">Preparing&#8230;</string>
     <string name="file_not_found">File not found</string>
     <string name="data_restored_success">All data was restored</string>
     <string name="data_restored_with_errors">The data was restored, but there are errors</string>
@@ -165,7 +165,7 @@
     <string name="silent">Silent</string>
     <string name="captcha_required">CAPTCHA required</string>
     <string name="captcha_solve">Solve</string>
-    <string name="captcha_solving">Solving captcha automatically…</string>
+    <string name="captcha_solving">Solving captcha automatically&#8230;</string>
     <string name="disable_captcha_auto_solve">Disable automatic CAPTCHA solving</string>
     <string name="disable_captcha_auto_solve_summary">When enabled, CloudFlare challenges will not be solved automatically in the background</string>
     <string name="disable_captcha_auto_solve_global_hint">Disabled globally in Settings → Network</string>
@@ -967,7 +967,7 @@
     <!-- ═══════════════════════════════════════════════════════════
          Crash handler (core/crash/)
          ═══════════════════════════════════════════════════════════ -->
-    <string name="crash_collecting">Collecting crash report… please don't close the app.</string>
+    <string name="crash_collecting">Collecting crash report&#8230; please don't close the app.</string>
     <string name="crash_dialog_message">Kotatsu-Next crashed. The crash report was copied to the clipboard. Open GitHub Issues and paste the crash message or stack trace there if the form is not filled automatically.</string>
     <string name="crash_dialog_message_degraded">Kotatsu-Next crashed, but the crash report couldn't be collected. You can still report the crash itself on GitHub Issues.</string>
     <string name="crash_notification_text">Preparing crash report</string>
@@ -1047,7 +1047,7 @@
     <string name="add_browser_source">Add Browser Source</string>
     <string name="add_source_label">Add source</string>
     <string name="browser_source_help_text">Opens this site in a full in-app browser. When a chapter is detected, a button appears to open pages in the native reader.</string>
-    <string name="browser_source_name_hint">Name (optional — auto-detected)</string>
+    <string name="browser_source_name_hint">Name (optional &#8212; auto-detected)</string>
     <string name="browser_source_url_hint">Website URL (e.g. https://mangadex.org)</string>
     <string name="browser_source_url_invalid">Please enter a valid URL</string>
     <string name="browser_source_preview_hint">Tap 'Add' to save this browser source</string>
@@ -1079,7 +1079,7 @@
     <string name="translate_page">Translate page</string>
     <string name="extract_text">Extract text</string>
     <string name="translate_enabled">Enable page translation</string>
-    <string name="translate_enabled_summary">Beta — adds the translate &amp; extract-text actions in the reader</string>
+    <string name="translate_enabled_summary">Beta &#8212; adds the translate &amp; extract-text actions in the reader</string>
     <string name="translate_provider">Provider</string>
     <string name="translate_provider_openai">OpenAI-compatible</string>
     <string name="translate_provider_gemini">Native Gemini</string>
@@ -1099,9 +1099,9 @@
     <string name="translate_rpm">Max requests per minute</string>
     <string name="translate_clear_cache">Clear translation cache</string>
     <string name="translate_setup_required">Configure an AI provider in Settings → Reader → AI translation</string>
-    <string name="translate_partial_failure">%1$d part(s) failed — tap to retry</string>
+    <string name="translate_partial_failure">%1$d part(s) failed &#8212; tap to retry</string>
     <string name="lang_auto">Auto-detect</string>
-    <string name="ocr_recognizing">Recognizing…</string>
+    <string name="ocr_recognizing">Recognizing&#8230;</string>
     <string name="ocr_no_text">No text detected.</string>
 
     <!-- ═══════════════════════════════════════════════════════════
@@ -1147,8 +1147,8 @@
     <string name="manga">Manga</string>
     <string name="cover_only">Cover only</string>
     <string name="merge_with_existing_data">Merge with existing data</string>
-    <string name="migrate_to_another_manga">Migrate to another manga…</string>
-    <string name="migrate_to_manga_confirmation">Migrate progress to "%1$s" from "%2$s"? Source and target may differ — proceed only if you're sure they refer to the same work.</string>
+    <string name="migrate_to_another_manga">Migrate to another manga&#8230;</string>
+    <string name="migrate_to_manga_confirmation">Migrate progress to "%1$s" from "%2$s"? Source and target may differ &#8212; proceed only if you're sure they refer to the same work.</string>
     <string name="amoled_navbar">Pure black bottom navigation</string>
     <string name="amoled_navbar_summary">Force the bottom navigation bar to pure black on the AMOLED theme. Turn off to keep the default Material tint.</string>
     <string name="tags_warnings">Highlight dangerous genres</string>
