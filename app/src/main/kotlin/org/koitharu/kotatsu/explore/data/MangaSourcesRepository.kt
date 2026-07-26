@@ -25,6 +25,8 @@ import org.koitharu.kotatsu.core.model.MangaSourceInfo
 import org.koitharu.kotatsu.core.model.getTitle
 import org.koitharu.kotatsu.core.model.isNsfw
 import org.koitharu.kotatsu.core.parser.external.ExternalMangaSource
+import org.koitharu.kotatsu.core.parser.DynamicParserManager
+import org.koitharu.kotatsu.core.parser.mihon.MihonExtensionManager
 import org.koitharu.kotatsu.core.prefs.AppSettings
 import org.koitharu.kotatsu.core.prefs.observeAsFlow
 import org.koitharu.kotatsu.core.ui.util.ReversibleHandle
@@ -402,4 +404,25 @@ class MangaSourcesRepository @Inject constructor(
 	}
 
 	private fun String.toMangaSourceOrNull(): MangaParserSource? = MangaParserSource.entries.find { it.name == this }
+	/**
+	 * Refreshes the source list after installing or deleting a custom JAR plugin.
+	 * Called by [PluginsManageViewModel] after each import/delete operation.
+	 *
+	 * Bumps [AppSettings.KEY_SOURCES_VERSION] which triggers every
+	 * [observeEnabledSources] / [observeAll] collector to re-emit — causing the UI
+	 * to rebuild its source list with the newly registered plugin sources.
+	 */
+	suspend fun refreshInstalledPluginSources() {
+		assimilateNewSources()
+	}
+
+	/**
+	 * Refreshes the source list after a Mihon extension is installed or removed.
+	 * Follows the same re-assimilation path used for built-in sources.
+	 */
+	suspend fun refreshInstalledMihonSources() {
+		assimilateNewSources()
+	}
+
+
 }

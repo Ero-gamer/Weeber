@@ -51,7 +51,18 @@ class WebtoonHolder internal constructor(
 			binding.ssiv.recycle()
 		}
 		boundPageKey = newPageKey
-		binding.ssiv.setPlaceholderSize(pageSizeCache[newPageKey])
+		// Pre-set the item's minimum height from cache so RecyclerView reserves
+		// the right amount of space before the image is decoded — prevents
+		// jumpy layout when scrolling across cached pages.
+		pageSizeCache[newPageKey]?.let { size ->
+			if (size.width > 0 && size.height > 0) {
+				val viewportWidth = itemView.width.takeIf { it > 0 } ?: size.width
+				val scaledHeight = (size.height.toLong() * viewportWidth / size.width).toInt()
+				itemView.minimumHeight = scaledHeight
+			} else {
+				itemView.minimumHeight = 0
+			}
+		} ?: run { itemView.minimumHeight = 0 }
 		scrollPercentToRestore = -1
 		scrollToRestore = 0
 		isInitialScrollApplied = false

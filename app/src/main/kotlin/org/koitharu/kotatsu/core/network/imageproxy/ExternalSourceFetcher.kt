@@ -12,6 +12,7 @@ import eu.kanade.tachiyomi.source.online.HttpSource
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import okhttp3.Request
+import org.koitharu.kotatsu.core.parser.mihon.MihonExtensionManager
 import org.koitharu.kotatsu.core.parser.mihon.MihonMangaSource
 import coil3.Uri as CoilUri
 
@@ -21,7 +22,7 @@ import coil3.Uri as CoilUri
  * source-specific headers (Referer, X-Requested-With, etc.).
  *
  * Only activates when the image data is an http(s) URL AND the request
- * carries a [MihonMangaSource] in its extras. All other requests pass through.
+ * carries a [MihonMangaSource] in its tag. All other requests pass through.
  */
 class ExternalSourceFetcher(
 	private val httpSource: HttpSource,
@@ -45,19 +46,17 @@ class ExternalSourceFetcher(
 		)
 	}
 
-	class Factory : Fetcher.Factory<CoilUri> {
+	class Factory(
+		private val extensionManager: MihonExtensionManager,
+	) : Fetcher.Factory<CoilUri> {
 
 		override fun create(data: CoilUri, options: Options, imageLoader: ImageLoader): Fetcher? {
 			if (data.scheme != "http" && data.scheme != "https") return null
-			// Only activate for Mihon sources that have an HttpSource catalog
-			val mihonSource = options.extras[MIHON_SOURCE_KEY] as? MihonMangaSource ?: return null
-			val httpSource = mihonSource.httpSource ?: return null
+			// Mihon source is passed via the tag mechanism to avoid Extras.Key dependency
+			val mihonSource = options.tags[MihonMangaSource::class] as? MihonMangaSource ?: return null
+			val loaded = extensionManager.resolve(mihonSource) ?: return null
+			val httpSource = loaded.source as? HttpSource ?: return null
 			return ExternalSourceFetcher(httpSource, data.toString(), options)
 		}
-	}
-
-	companion object {
-		/** Extras key used to pass a MihonMangaSource through Coil image requests */
-		val MIHON_SOURCE_KEY = coil3.request.Options.Extras.Key<MihonMangaSource?>()
 	}
 }

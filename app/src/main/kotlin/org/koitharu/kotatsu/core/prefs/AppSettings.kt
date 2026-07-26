@@ -799,8 +799,16 @@ class AppSettings @Inject constructor(@ApplicationContext context: Context) {
 	val isPagesSavingAskEnabled: Boolean
 		get() = prefs.getBoolean(KEY_PAGES_SAVE_ASK, true)
 
+
+	var isVerticalSliderEnabled: Boolean
+		get() = prefs.getBoolean(KEY_READER_VERTICAL_SLIDER, false)
+		set(value) = prefs.edit { putBoolean(KEY_READER_VERTICAL_SLIDER, value) }
 	val isStatsEnabled: Boolean
 		get() = prefs.getBoolean(KEY_STATS_ENABLED, false)
+
+	var statsDailyGoalMinutes: Int
+		get() = prefs.getInt(KEY_STATS_DAILY_GOAL, 30)
+		set(value) = prefs.edit { putInt(KEY_STATS_DAILY_GOAL, value) }
 
 	val isAutoLocalChaptersCleanupEnabled: Boolean
 		get() = prefs.getBoolean(KEY_CHAPTERS_CLEAR_AUTO, false)
@@ -1091,6 +1099,8 @@ class AppSettings @Inject constructor(@ApplicationContext context: Context) {
 		const val KEY_PAGES_SAVE_DIR = "pages_dir"
 		const val KEY_PAGES_SAVE_ASK = "pages_dir_ask"
 		const val KEY_STATS_ENABLED = "stats_on"
+		const val KEY_READER_VERTICAL_SLIDER = "reader_vertical_slider"
+		const val KEY_STATS_DAILY_GOAL = "stats_daily_goal_minutes"
 		const val KEY_FEED_HEADER = "feed_header"
 		const val KEY_SEARCH_SUGGESTION_TYPES = "search_suggest_types"
 		const val KEY_FIRST_LAUNCH = "first_launch"

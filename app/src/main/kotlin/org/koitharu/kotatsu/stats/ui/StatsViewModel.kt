@@ -3,6 +3,11 @@ package org.koitharu.kotatsu.stats.ui
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.stateIn
+import org.koitharu.kotatsu.stats.data.ReadingStreak
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.take
@@ -31,6 +36,19 @@ class StatsViewModel @Inject constructor(
 		.take(1)
 
 	val readingStats = MutableStateFlow<List<StatsRecord>>(emptyList())
+
+	/**
+	 * Current reading streak snapshot. Emits null while the first value is loading.
+	 * Re-fetched every time the stats period changes so the card updates live.
+	 */
+	val readingStreak: StateFlow<ReadingStreak?> = flow {
+		emit(null)
+		try {
+			emit(repository.getReadingStreak())
+		} catch (_: Exception) {
+			emit(null)
+		}
+	}.stateIn(viewModelScope, SharingStarted.Lazily, null)
 
 	init {
 		launchJob(Dispatchers.Default) {

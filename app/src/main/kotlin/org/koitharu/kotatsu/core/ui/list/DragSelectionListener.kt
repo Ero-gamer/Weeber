@@ -100,7 +100,8 @@ class DragSelectionListener(
 			val id = getItem(rv, itemsList, i).takeIf { it != RecyclerView.NO_ID } ?: continue
 			decoration.setItemIsChecked(id, if (i in touch..end) isSelecting else id in init)
 		}
-		controller.notifySelectionChanged()
+		// Notify the RecyclerView to redraw item decorations which reflect the new selection
+		rv.invalidateItemDecorations()
 	}
 
 	private fun getItem(rv: RecyclerView, itemsList: List<*>?, position: Int): Long =

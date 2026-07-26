@@ -9,4 +9,6 @@ data class LoadingState(
 	override fun areItemsTheSame(other: ListModel): Boolean {
 		return other is LoadingState
 	}
+
+	companion object : LoadingState(0)
 }

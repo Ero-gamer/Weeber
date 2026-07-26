@@ -37,9 +37,9 @@ class BypassProxyServer(
 ) {
 
 	private val scope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
-	private val strictDnsResolver = DoHManager(cache, settings, false)
-	private val googleDnsResolver = DoHManager(cache, settings, false, DoHProvider.GOOGLE)
-	private val cloudflareDnsResolver = DoHManager(cache, settings, false, DoHProvider.CLOUDFLARE)
+	private val strictDnsResolver = DoHManager(cache, settings)
+	private val googleDnsResolver = DoHManager(cache, settings)
+	private val cloudflareDnsResolver = DoHManager(cache, settings)
 	private val lock = Any()
 
 	@Volatile

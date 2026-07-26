@@ -66,6 +66,22 @@ abstract class StatsDao {
 		query: SupportSQLiteQuery
 	): Map<@MapColumn("manga") MangaEntity, @MapColumn("d") Long>
 
+
+	/**
+	 * Total reading time (ms) for all sessions that started on or after [fromTimestamp].
+	 * Used to calculate today's reading duration for the streak card.
+	 */
+	@Query("SELECT IFNULL(SUM(duration), 0) FROM stats WHERE started_at >= :fromTimestamp")
+	abstract suspend fun getTotalDurationSince(fromTimestamp: Long): Long
+
+	/**
+	 * All session start timestamps since [fromTimestamp].
+	 * Used to find which calendar days had at least one reading session
+	 * so the streak counter can walk backwards day-by-day.
+	 */
+	@Query("SELECT started_at FROM stats WHERE started_at >= :fromTimestamp")
+	abstract suspend fun getStartTimesSince(fromTimestamp: Long): List<Long>
+
 	@Query("SELECT * FROM stats ORDER BY started_at LIMIT :limit OFFSET :offset")
 	protected abstract suspend fun findAll(offset: Int, limit: Int): List<StatsEntity>
 	fun dumpEnabled(): Flow<StatsEntity> = flow {

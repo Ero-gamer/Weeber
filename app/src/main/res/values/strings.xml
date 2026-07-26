@@ -1167,4 +1167,10 @@
     <string name="update_check_wifi_only_summary">Only check when connected to Wi‑Fi</string>
     <string name="update_check_interval">Check interval</string>
     <string name="skip_this_version">Skip this version</string>
+
+    <!-- Reading streak card in StatsActivity -->
+    <string name="reading_goal_progress">%1$d / %2$d min today</string>
+    <string name="reading_streak_card">Reading Streak</string>
+    <string name="reading_goal_label">Daily goal</string>
+
 </resources>

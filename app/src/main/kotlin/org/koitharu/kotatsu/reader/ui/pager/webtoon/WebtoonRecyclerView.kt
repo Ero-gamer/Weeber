@@ -45,6 +45,16 @@ class WebtoonRecyclerView @JvmOverloads constructor(
 			}
 		}
 	var pullThreshold: Float = 0.3f
+	/**
+	 * Monotonically increasing counter bumped on every scroll event.
+	 * [WebtoonHolder] captures the value when a deferred scroll restore is
+	 * requested; if the counter has moved by the time the image is ready, the
+	 * restore is dropped so it cannot teleport the view back after user scrolling.
+	 */
+	@Volatile
+	var scrollGeneration: Int = 0
+		private set
+
 	private var pullListener: OnPullGestureListener? = null
 
 	fun setOnPullGestureListener(listener: OnPullGestureListener?) {
@@ -151,6 +161,7 @@ class WebtoonRecyclerView @JvmOverloads constructor(
 	}
 
 	private fun notifyScrollChanged(dy: Int) {
+		scrollGeneration++  // bump before listeners so holders see the new value immediately
 		val listeners = onPageScrollListeners
 		if (listeners.isEmpty()) {
 			return
@@ -373,6 +384,22 @@ class WebtoonRecyclerView @JvmOverloads constructor(
 		TOP,
 		BOTTOM,
 	}
+
+	/**
+	 * Returns true when the last page's content and list bottom are both
+	 * fully visible, i.e. there is nothing left to scroll down to.
+	 */
+	fun isScrolledToAbsoluteBottom(): Boolean {
+		val itemAdapter = adapter ?: return false
+		val lm = layoutManager as? LinearLayoutManager ?: return !canScrollVertically(1)
+		if (lm.findLastVisibleItemPosition() != itemAdapter.itemCount - 1) return false
+		if (childCount <= 0) return false
+		val child = getChildAt(childCount - 1) as? WebtoonFrameLayout ?: return false
+		if (child.bottom > height) return false
+		val ssiv = child.target
+		return ssiv.getScroll() >= ssiv.getScrollRange()
+	}
+
 
 	interface OnWebtoonScrollListener {
 

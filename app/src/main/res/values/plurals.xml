@@ -44,4 +44,10 @@
 		<item quantity="one">%1$d page</item>
 		<item quantity="other">%1$d pages</item>
 	</plurals>
+
+    <plurals name="reading_streak_days">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+
 </resources>

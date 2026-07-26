@@ -173,18 +173,7 @@ class WebtoonReaderFragment : BaseReaderFragment<FragmentReaderWebtoonBinding>()
 		val progress = firstHolder?.getScrollProgress()
 			?: firstPage?.let { getSavedScrollPercent(it.chapterId, it.index) }
 			?: -1f
-		viewModel.updateScrollProgress(progress)
-		if (firstPage != null) {
-			viewModel.updateScrollOffset(
-				chapterId = firstPage.chapterId,
-				page = firstPage.index,
-				offset = if (progress >= 0f) {
-					(progress * 10000).toInt()
-				} else {
-					getSavedScrollOffset(firstPage.chapterId, firstPage.index)
-				},
-			)
-		}
+// scroll offset persisted via getCurrentState() on each page change
 		val itemCount = adapter?.itemCount ?: 0
 		val atAbsoluteBottom = itemCount > 0 && recyclerView.isScrolledToAbsoluteBottom()
 		val positionsChanged = firstVisiblePosition != lastFirstPos || lastVisiblePosition != lastLastPos
@@ -194,7 +183,7 @@ class WebtoonReaderFragment : BaseReaderFragment<FragmentReaderWebtoonBinding>()
 			// Reaching the end inside a tall final image does not necessarily change visible adapter
 			// positions. Report the transition independently so live and persisted progress reach 100%.
 			val lastIndex = itemCount - 1
-			viewModel.onCurrentPageChanged(lastIndex, lastIndex, 1f, 10000)
+			viewModel.onCurrentPageChanged(lastIndex, lastIndex)
 		} else if (!atAbsoluteBottom && positionsChanged) {
 			lastFirstPos = firstVisiblePosition
 			lastLastPos = lastVisiblePosition
@@ -210,7 +199,7 @@ class WebtoonReaderFragment : BaseReaderFragment<FragmentReaderWebtoonBinding>()
 			} else {
 				centerPage?.let { getSavedScrollOffset(it.chapterId, it.index) } ?: 0
 			}
-			viewModel.onCurrentPageChanged(firstVisiblePosition, lastVisiblePosition, progress, scrollPercent)
+			viewModel.onCurrentPageChanged(firstVisiblePosition, lastVisiblePosition)
 		}
 		wasAtAbsoluteBottom = atAbsoluteBottom
 	}
@@ -235,15 +224,7 @@ class WebtoonReaderFragment : BaseReaderFragment<FragmentReaderWebtoonBinding>()
 					firstVisibleItemPosition = position
 					postRestoreScroll(this, position, restoreTarget, pendingState.scroll)
 				}
-				viewModel.onCurrentPageChanged(
-					position,
-					position,
-					scrollProgress = pendingState.scroll / 10000f,
-					scrollOffset = pendingState.scroll,
-					// Programmatic re-anchor, not a user scroll: don't trigger bounds preload, otherwise
-					// the restore feeds back into a re-emit/re-anchor loop (open/continue flicker).
-					triggerAutoLoad = false,
-				)
+				viewModel.onCurrentPageChanged(position, position)
 			} else {
 				Snackbar.make(requireView(), R.string.not_found_404, Snackbar.LENGTH_SHORT)
 					.show()
@@ -539,6 +520,16 @@ class WebtoonReaderFragment : BaseReaderFragment<FragmentReaderWebtoonBinding>()
 			this.text = text
 		}
 	}
+
+	/** True when the absolute-bottom state changes, warranting a page-changed report. */
+	private fun shouldReportAbsoluteBottom(atBottom: Boolean, wasAtBottom: Boolean): Boolean =
+		atBottom && !wasAtBottom
+
+
+	private fun isRestoreTarget(target: WebtoonPageKey, chapterId: Long?, pageId: Long?): Boolean {
+		return chapterId == target.chapterId && pageId == target.pageId
+	}
+
 
 	companion object {
 

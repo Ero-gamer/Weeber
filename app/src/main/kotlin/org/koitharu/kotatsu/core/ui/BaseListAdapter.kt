@@ -63,4 +63,25 @@ open class BaseListAdapter<T : ListModel> : AsyncListDifferDelegationAdapter<T>(
 	}.onStart {
 		emit(items)
 	}
+	/**
+	 * Immediately swaps items at [from] and [to] positions by submitting a reordered
+	 * snapshot to the differ. Used by drag-reorder callbacks for live visual feedback.
+	 */
+	fun reorderItems(from: Int, to: Int) {
+		val current = items.toMutableList()
+		if (from !in current.indices || to !in current.indices) return
+		val item = current.removeAt(from)
+		current.add(to, item)
+		setItems(current)
+	}
+
+	/**
+	 * Replaces the entire item list immediately. Used by drag-reorder callbacks
+	 * to apply visual grouping of selected items during an active drag.
+	 */
+	fun updateItems(newItems: List<T>) {
+		setItems(newItems)
+	}
+
+
 }

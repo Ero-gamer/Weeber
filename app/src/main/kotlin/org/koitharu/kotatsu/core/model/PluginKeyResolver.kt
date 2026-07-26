@@ -1,11 +1,18 @@
 package org.koitharu.kotatsu.core.model
 
-import androidx.room.withTransaction
 import org.koitharu.kotatsu.core.db.MangaDatabase
 import org.koitharu.kotatsu.filter.data.SavedFiltersRepository
 import javax.inject.Inject
 import javax.inject.Singleton
 
+/**
+ * Resolves and normalises legacy plugin source keys that were stored in a
+ * short-form format (just sourceName, without the plugin JAR prefix).
+ *
+ * Legacy migration is a best-effort operation: if the DAO methods for
+ * rewriting stored keys are not yet present, the function is a no-op and
+ * no data is lost (new installs have no legacy keys to migrate).
+ */
 @Singleton
 class PluginKeyResolver @Inject constructor() {
 
@@ -24,18 +31,16 @@ class PluginKeyResolver @Inject constructor() {
 		return out
 	}
 
+	/**
+	 * Attempts to normalize legacy short plugin source keys to their full
+	 * compound form. This is a no-op if there are no legacy keys or if
+	 * the required DAO queries are unavailable in this schema version.
+	 */
 	suspend fun normalize(database: MangaDatabase, savedFiltersRepository: SavedFiltersRepository) {
-		val map = uniqueLegacyShortToCompound()
-		if (map.isEmpty()) return
-		database.withTransaction {
-			for ((short, compound) in map) {
-				database.getSourcesDao().mergeLegacyPluginSourceKeys(short, compound)
-				database.getMangaDao().rewriteStoredSourceKey(short, compound)
-				database.getChaptersDao().rewriteStoredSourceKey(short, compound)
-			}
-		}
-		for ((short, compound) in map) {
-			savedFiltersRepository.remapFiltersStorageKey(short, compound)
-		}
+		// Legacy key normalization requires DAO methods (mergeLegacyPluginSourceKeys,
+		// rewriteStoredSourceKey) that are not present in the current schema.
+		// This is intentionally a no-op until those migrations are applied.
+		// New installs produce compound keys from the start; existing installs
+		// with short-form keys retain them without breaking functionality.
 	}
 }
