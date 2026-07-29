@@ -90,9 +90,6 @@ android {
         androidTest.assets.srcDirs += files("$projectDir/schemas".toString())
         main {
             java.srcDirs += 'src/main/kotlin/'
-            // Force AGP to resolve the manifest relative to this module (app/)
-            // so it finds app/src/main/AndroidManifest.xml correctly.
-            manifest.srcFile 'src/main/AndroidManifest.xml'
         }
     }
 
