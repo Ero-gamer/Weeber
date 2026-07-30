@@ -14,6 +14,7 @@ import org.koitharu.kotatsu.tracker.work.TrackWorker
 import javax.inject.Inject
 import javax.inject.Provider
 import javax.inject.Singleton
+import org.koitharu.kotatsu.core.reminders.ReadingReminderWorker
 
 @Singleton
 class WorkScheduleManager @Inject constructor(
@@ -44,6 +45,9 @@ class WorkScheduleManager @Inject constructor(
 			AppSettings.KEY_AUTO_UPDATE_CHECK,
 			AppSettings.KEY_UPDATE_CHECK_INTERVAL,
 			AppSettings.KEY_UPDATE_CHECK_WIFI_ONLY -> AppUpdateCheckWorker.schedule(context, settings)
+
+			AppSettings.KEY_READING_REMINDER,
+			AppSettings.KEY_READING_REMINDER_HOUR -> ReadingReminderWorker.schedule(context, settings)
 		}
 	}
 

@@ -1103,15 +1103,6 @@
     <string name="lang_auto">Auto-detect</string>
     <string name="ocr_recognizing">Recognizing…</string>
     <string name="ocr_no_text">No text detected.</string>
-
-    <!-- ═══════════════════════════════════════════════════════════
-         FlareSolverr (core/network/FlareSolverrInterceptor)
-         ═══════════════════════════════════════════════════════════ -->
-    <string name="flaresolverr_title">FlareSolverr (Beta)</string>
-    <string name="flaresolverr_enable">Use FlareSolverr</string>
-    <string name="flaresolverr_summary">Beta: solve Cloudflare challenges through a FlareSolverr server you run on your own computer. Enter its address below. The computer must be on and reachable on the same network. Falls back to the in-app solver if unavailable.</string>
-    <string name="flaresolverr_url">Server address</string>
-    <string name="flaresolverr_timeout">Timeout (ms)</string>
     <string name="cf_auto_solve">Auto-solve Cloudflare</string>
     <string name="cf_auto_solve_summary">Experimental: automatically tap the Cloudflare verification checkbox when a challenge appears. May not work on every site or device.</string>
 
@@ -1173,4 +1164,28 @@
     <string name="reading_streak_card">Reading Streak</string>
     <string name="reading_goal_label">Daily goal</string>
 
+
+
+    <!-- Yumemi additions -->
+    <string name="backup_creating_background">Creating backup in background</string>
+    <string name="captcha_not_solved">Challenge not completed yet. Please solve the captcha first.</string>
+    <string name="deselect_all">Deselect all</string>
+    <string name="export">Export</string>
+    <string name="export_data">Export data</string>
+    <string name="note_hint">Your private note</string>
+    <string name="nothing_selected">Nothing selected</string>
+    <string name="personal_note">Note &amp; rating</string>
+    <string name="proxy_webview_not_supported">Proxy for WebView is not supported on this device</string>
+    <string name="reading_daily_goal">Daily reading goal (minutes)</string>
+    <string name="reading_reminder_text">Pick up where you left off in Yumemi</string>
+    <string name="reading_reminder_time">Reminder time</string>
+    <string name="reading_reminder_title">Time to read</string>
+    <string name="reading_reminders">Daily reading reminder</string>
+    <string name="reading_reminders_summary">Show a daily notification reminding you to read</string>
+    <string name="remove_page_gaps">Remove page gaps</string>
+    <string name="remove_page_gaps_summary">Remove gaps between pages in horizontal reading mode</string>
+    <string name="select_all">Select all</string>
+    <string name="select_chapter">Select chapter</string>
+    <string name="selective_backup">Selective backup</string>
+    <string name="selective_backup_summary">Export specific data sections</string>
 </resources>

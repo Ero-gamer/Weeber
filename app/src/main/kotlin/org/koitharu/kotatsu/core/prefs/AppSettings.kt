@@ -642,15 +642,8 @@ class AppSettings @Inject constructor(@ApplicationContext context: Context) {
 	val isCloudflareAutoSolverEnabled: Boolean
 		get() = prefs.getBoolean(KEY_CF_AUTOSOLVE, false)
 
-	val isFlareSolverrEnabled: Boolean
-		get() = prefs.getBoolean(KEY_FLARESOLVERR_ENABLED, false)
 
-	val flareSolverrUrl: String
-		get() = prefs.getString(KEY_FLARESOLVERR_URL, null)?.nullIfEmpty() ?: DEFAULT_FLARESOLVERR_URL
 
-	val flareSolverrTimeoutMs: Int
-		get() = (prefs.getString(KEY_FLARESOLVERR_TIMEOUT, null)?.toIntOrNull() ?: DEFAULT_FLARESOLVERR_TIMEOUT)
-			.coerceAtLeast(MIN_FLARESOLVERR_TIMEOUT)
 
 	val proxyType: Proxy.Type
 		get() {
@@ -1060,9 +1053,6 @@ class AppSettings @Inject constructor(@ApplicationContext context: Context) {
 		const val KEY_TIPS_CLOSED = "tips_closed"
 		const val KEY_SSL_BYPASS = "ssl_bypass"
 		const val KEY_CF_AUTOSOLVE = "cf_autosolve"
-		const val KEY_FLARESOLVERR_ENABLED = "flaresolverr_enabled"
-		const val KEY_FLARESOLVERR_URL = "flaresolverr_url"
-		const val KEY_FLARESOLVERR_TIMEOUT = "flaresolverr_timeout"
 		const val KEY_READER_AUTOSCROLL_SPEED = "as_speed"
 		const val KEY_READER_AUTOSCROLL_FAB = "as_fab"
 		const val KEY_READER_AUTOSCROLL_HOLD = "as_hold"
@@ -1120,6 +1110,13 @@ class AppSettings @Inject constructor(@ApplicationContext context: Context) {
 		const val KEY_DISCORD_REFRESH_TOKEN = "discord_refresh_token"
 		const val KEY_DISCORD_CODE_VERIFIER = "discord_code_verifier"
 		const val KEY_DISCORD_OAUTH_SIGNIN = "discord_oauth_signin"
+		const val KEY_FLOATING_NAV = "floating_nav"
+		const val KEY_CF_SHARPENING = "cf_sharpening"
+		const val KEY_CF_VIBRANCE = "cf_vibrance2"
+		const val KEY_CF_SATURATION = "cf_vibrance"
+		const val KEY_CF_AUTO_SOLVE_DISABLED = "cf_auto_solve_disabled"
+		const val KEY_WEBTOON_MEMORY_SAVER = "webtoon_memory_saver"
+		const val KEY_READER_DOWNSCALE_MODE = "reader_downscale_mode"
 
 		const val KEY_TRANSLATE_PROVIDER = "translate_provider"
 		const val KEY_TRANSLATE_ENDPOINT = "translate_endpoint"
@@ -1160,11 +1157,20 @@ class AppSettings @Inject constructor(@ApplicationContext context: Context) {
 		private const val READER_CROP_PAGED = 1
 		private const val READER_CROP_WEBTOON = 2
 
-		const val DEFAULT_FLARESOLVERR_URL = "http://localhost:8191/v1"
-		private const val DEFAULT_FLARESOLVERR_TIMEOUT = 60_000
-		private const val MIN_FLARESOLVERR_TIMEOUT = 10_000
 		const val AUTOSCROLL_BOOST_MIN = 1.5f
 		const val AUTOSCROLL_BOOST_MAX = 5.0f
 		const val AUTOSCROLL_BOOST_DEFAULT = 2.0f
+		const val KEY_READING_REMINDER = "reading_reminder"
+		const val KEY_READING_REMINDER_HOUR = "reading_reminder_hour"
+		const val DEFAULT_READING_REMINDER_HOUR = 20
+
 	}
+
+	var isReadingReminderEnabled: Boolean
+		get() = prefs.getBoolean(KEY_READING_REMINDER, false)
+		set(value) = prefs.edit { putBoolean(KEY_READING_REMINDER, value) }
+
+	val readingReminderHour: Int
+		get() = prefs.getString(KEY_READING_REMINDER_HOUR, null)?.toIntOrNull() ?: DEFAULT_READING_REMINDER_HOUR
+
 }

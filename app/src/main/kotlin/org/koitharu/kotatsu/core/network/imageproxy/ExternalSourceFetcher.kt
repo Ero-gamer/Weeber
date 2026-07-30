@@ -1,5 +1,6 @@
 package org.koitharu.kotatsu.core.network.imageproxy
 
+import coil3.Extras
 import coil3.ImageLoader
 import coil3.decode.DataSource
 import coil3.decode.ImageSource
@@ -22,7 +23,7 @@ import coil3.Uri as CoilUri
  * source-specific headers (Referer, X-Requested-With, etc.).
  *
  * Only activates when the image data is an http(s) URL AND the request
- * carries a [MihonMangaSource] in its tag. All other requests pass through.
+ * carries a [MihonMangaSource] in its extras. All other requests pass through.
  */
 class ExternalSourceFetcher(
 	private val httpSource: HttpSource,
@@ -52,11 +53,15 @@ class ExternalSourceFetcher(
 
 		override fun create(data: CoilUri, options: Options, imageLoader: ImageLoader): Fetcher? {
 			if (data.scheme != "http" && data.scheme != "https") return null
-			// Mihon source is passed via the tag mechanism to avoid Extras.Key dependency
-			val mihonSource = options.tags[MihonMangaSource::class] as? MihonMangaSource ?: return null
+			// MihonMangaSource is passed via Extras to avoid a tags API dependency
+			val mihonSource = options.extras[mihonSourceKey] ?: return null
 			val loaded = extensionManager.resolve(mihonSource) ?: return null
-			val httpSource = loaded.source as? HttpSource ?: return null
+			val httpSource = loaded.catalogueSource as? HttpSource ?: return null
 			return ExternalSourceFetcher(httpSource, data.toString(), options)
 		}
+	}
+
+	companion object {
+		val mihonSourceKey = Extras.Key<MihonMangaSource?>(default = null)
 	}
 }

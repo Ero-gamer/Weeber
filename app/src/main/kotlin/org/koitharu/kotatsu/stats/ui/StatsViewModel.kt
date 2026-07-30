@@ -22,6 +22,7 @@ import org.koitharu.kotatsu.stats.data.StatsRepository
 import org.koitharu.kotatsu.stats.domain.StatsPeriod
 import org.koitharu.kotatsu.stats.domain.StatsRecord
 import javax.inject.Inject
+import androidx.lifecycle.viewModelScope
 
 @HiltViewModel
 class StatsViewModel @Inject constructor(

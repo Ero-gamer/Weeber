@@ -77,8 +77,11 @@ import org.koitharu.kotatsu.suggestions.data.SuggestionEntity
 import org.koitharu.kotatsu.tracker.data.TrackEntity
 import org.koitharu.kotatsu.tracker.data.TrackLogEntity
 import org.koitharu.kotatsu.tracker.data.TracksDao
+import org.koitharu.kotatsu.core.db.entity.MangaNoteEntity
+import org.koitharu.kotatsu.core.db.dao.MangaNotesDao
+import org.koitharu.kotatsu.core.db.migrations.Migration33To34
 
-const val DATABASE_VERSION = 33
+const val DATABASE_VERSION = 34
 
 @Database(
 	entities = [
@@ -87,6 +90,7 @@ const val DATABASE_VERSION = 33
 		TrackLogEntity::class, SuggestionEntity::class, BookmarkEntity::class, ScrobblingEntity::class,
 		MangaSourceEntity::class, StatsEntity::class, LocalMangaIndexEntity::class,
 		SourcePresetEntity::class,
+		MangaNoteEntity::class,
 	],
 	version = DATABASE_VERSION,
 )
@@ -124,6 +128,10 @@ abstract class MangaDatabase : RoomDatabase() {
 
 	abstract fun getSourcePresetsDao(): SourcePresetsDao
 
+
+	abstract fun getMangaNotesDao(): MangaNotesDao
+
+
 }
 
 fun getDatabaseMigrations(context: Context): Array<Migration> = arrayOf(
@@ -160,6 +168,7 @@ fun getDatabaseMigrations(context: Context): Array<Migration> = arrayOf(
 	Migration30To31(),
 	Migration31To32(),
 			Migration32To33(),
+	Migration33To34(),
 )
 
 fun MangaDatabase(context: Context): MangaDatabase = Room

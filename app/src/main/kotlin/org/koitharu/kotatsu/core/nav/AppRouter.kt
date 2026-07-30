@@ -110,6 +110,7 @@ import org.koitharu.kotatsu.suggestions.ui.SuggestionsActivity
 import org.koitharu.kotatsu.tracker.ui.updates.UpdatesActivity
 import java.io.File
 import androidx.appcompat.R as appcompatR
+import org.koitharu.kotatsu.settings.sources.repo.MihonRepoExtensionsActivity
 
 class AppRouter private constructor(
     private val activity: FragmentActivity?,
@@ -207,6 +208,15 @@ class AppRouter private constructor(
     }
 
     fun openSourcesCatalog() = startActivity(SourcesCatalogActivity::class.java)
+
+
+    fun openMihonRepoExtensions(baseUrl: String, title: String? = null) {
+        startActivity(
+            Intent(contextOrNull() ?: return, MihonRepoExtensionsActivity::class.java)
+                .putExtra(KEY_URL, baseUrl)
+                .putExtra(KEY_TITLE, title),
+        )
+    }
 
     fun openDownloads() = startActivity(DownloadsActivity::class.java)
 

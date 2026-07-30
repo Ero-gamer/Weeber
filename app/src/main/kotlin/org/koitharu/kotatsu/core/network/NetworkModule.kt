@@ -17,8 +17,8 @@ import org.koitharu.kotatsu.core.network.cookies.PreferencesCookieJar
 import org.koitharu.kotatsu.core.network.imageproxy.ImageProxyInterceptor
 import org.koitharu.kotatsu.core.network.imageproxy.RealImageProxyInterceptor
 import org.koitharu.kotatsu.core.network.proxy.ProxyProvider
-import org.koitharu.kotatsu.core.network.BandwidthTrackingInterceptor
 import org.koitharu.kotatsu.core.prefs.AppSettings
+import org.koitharu.kotatsu.core.util.ext.assertNotInMainThread
 import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
 import org.koitharu.kotatsu.local.data.LocalStorageManager
 import java.util.concurrent.TimeUnit
@@ -45,7 +45,6 @@ interface NetworkModule {
 			AndroidCookieJar()
 		}.getOrElse { e ->
 			e.printStackTraceDebug()
-			// WebView is not available
 			PreferencesCookieJar(context)
 		}
 
@@ -64,8 +63,8 @@ interface NetworkModule {
 			cookieJar: CookieJar,
 			settings: AppSettings,
 			proxyProvider: ProxyProvider,
-			bandwidthTracker: BandwidthTrackingInterceptor,
 		): OkHttpClient = OkHttpClient.Builder().apply {
+			assertNotInMainThread()
 			connectTimeout(20, TimeUnit.SECONDS)
 			readTimeout(60, TimeUnit.SECONDS)
 			writeTimeout(20, TimeUnit.SECONDS)
@@ -79,11 +78,7 @@ interface NetworkModule {
 				installExtraCertificates(contextProvider.get())
 			}
 			cache(cache)
-			addNetworkInterceptor(bandwidthTracker)
-			//addInterceptor(GZipInterceptor())
-			// FlareSolverr sits outside CloudFlareInterceptor: catches its CF exception, solves
-			// via the external server, and retries. No-op unless the user opted in (Beta).
-			addInterceptor(FlareSolverrInterceptor(settings, contextProvider.get()))
+			addInterceptor(GZipInterceptor())
 			addInterceptor(CloudFlareInterceptor())
 			addInterceptor(RateLimitInterceptor())
 			if (BuildConfig.DEBUG) {

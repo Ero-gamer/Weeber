@@ -88,7 +88,9 @@ android {
 
     sourceSets {
         androidTest.assets.srcDirs += files("$projectDir/schemas".toString())
-        main.java.srcDirs += 'src/main/kotlin/'
+        main {
+            java.srcDirs += 'src/main/kotlin/'
+        }
     }
 
     compileOptions {
