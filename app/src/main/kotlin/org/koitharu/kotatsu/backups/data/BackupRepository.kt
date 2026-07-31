@@ -67,9 +67,20 @@ class BackupRepository @Inject constructor(
         output: ZipOutputStream,
         progress: FlowCollector<Progress>?,
     ) {
+        createSelectiveBackup(output, BackupSection.entries.toSet(), progress)
+    }
+
+    suspend fun createSelectiveBackup(
+        output: ZipOutputStream,
+        sections: Set<BackupSection>,
+        progress: FlowCollector<Progress>?,
+    ) {
         progress?.emit(Progress.INDETERMINATE)
-        var commonProgress = Progress(0, BackupSection.entries.size)
+        var commonProgress = Progress(0, sections.size)
         for (section in BackupSection.entries) {
+            if (section !in sections && section != BackupSection.INDEX) {
+                continue
+            }
             when (section) {
                 BackupSection.INDEX -> output.writeJsonArray(
                     section = BackupSection.INDEX,

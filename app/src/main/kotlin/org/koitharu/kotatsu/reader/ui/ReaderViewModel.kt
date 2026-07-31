@@ -91,6 +91,7 @@ class ReaderViewModel @Inject constructor(
     private val detectReaderModeUseCase: DetectReaderModeUseCase,
     private val statsCollector: StatsCollector,
     private val discordRpc: DiscordRpc,
+    val translationCoordinator: org.koitharu.kotatsu.reader.translate.TranslationCoordinator,
     @LocalStorageChanges localStorageChanges: SharedFlow<LocalManga?>,
     interactor: DetailsInteractor,
     deleteLocalMangaUseCase: DeleteLocalMangaUseCase,
@@ -122,6 +123,12 @@ class ReaderViewModel @Inject constructor(
     val onLoadingError = MutableEventFlow<Throwable>()
     val onShowToast = MutableEventFlow<Int>()
     val onAskNsfwIncognito = MutableEventFlow<Unit>()
+    val onShowOcrSheet = MutableEventFlow<Unit>()
+    val onTranslateConfigMissing = MutableEventFlow<Unit>()
+    val ocrSheetState = MutableStateFlow<org.koitharu.kotatsu.reader.translate.OcrSheetState>(
+        org.koitharu.kotatsu.reader.translate.OcrSheetState.Idle,
+    )
+    private var ocrJob: Job? = null
     val uiState = MutableStateFlow<ReaderUiState?>(null)
 
     val isIncognitoMode = MutableStateFlow(savedStateHandle.get<Boolean>(ReaderIntent.EXTRA_INCOGNITO))
@@ -668,5 +675,27 @@ class ReaderViewModel @Inject constructor(
     } else {
         other.addSuppressed(this)
         other
+    }
+
+    fun requestOcrCurrentPage() {
+        val page = getCurrentPage() ?: return
+        if (!isTranslateConfigured()) {
+            onTranslateConfigMissing.call(Unit)
+            return
+        }
+        onShowOcrSheet.call(Unit)
+        ocrJob?.cancel()
+        ocrSheetState.value = org.koitharu.kotatsu.reader.translate.OcrSheetState.Loading
+        ocrJob = viewModelScope.launch(Dispatchers.Default) {
+            try {
+                val blocks = translationCoordinator.requestOcr(page)
+                val text = blocks.joinToString("\n") { it.originalText }.trim()
+                ocrSheetState.value = org.koitharu.kotatsu.reader.translate.OcrSheetState.Done(text, blocks)
+            } catch (e: CancellationException) {
+                throw e
+            } catch (e: Throwable) {
+                ocrSheetState.value = org.koitharu.kotatsu.reader.translate.OcrSheetState.Failed(e)
+            }
+        }
     }
 }

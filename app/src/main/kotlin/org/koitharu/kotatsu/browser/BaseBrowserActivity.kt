@@ -19,9 +19,13 @@ import org.koitharu.kotatsu.databinding.ActivityBrowserBinding
 import org.koitharu.kotatsu.parsers.model.MangaSource
 import org.koitharu.kotatsu.parsers.util.nullIfEmpty
 import javax.inject.Inject
+import org.koitharu.kotatsu.core.network.webview.adblock.AdBlock
 
 @AndroidEntryPoint
 abstract class BaseBrowserActivity : BaseActivity<ActivityBrowserBinding>(), BrowserCallback {
+
+	@Inject
+	lateinit var adBlock: AdBlock
 
 	@Inject
 	lateinit var proxyProvider: ProxyProvider
