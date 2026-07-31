@@ -20,7 +20,7 @@ private const val CF_CLEARANCE = "cf_clearance"
 class CloudFlareClient(
 	private val cookieJar: MutableCookieJar,
 	private val callback: CloudFlareCallback,
-	adBlock: AdBlock,
+	adBlock: AdBlock? = null,
 	private val targetUrl: String,
 ) : BrowserClient(callback, adBlock) {
 

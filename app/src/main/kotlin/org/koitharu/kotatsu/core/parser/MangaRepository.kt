@@ -37,6 +37,7 @@ import org.koitharu.kotatsu.parsers.model.SortOrder
 import java.lang.ref.WeakReference
 import javax.inject.Inject
 import javax.inject.Singleton
+import org.koitharu.kotatsu.customsource.data.CustomMangaRepository
 
 interface MangaRepository {
 
@@ -154,7 +155,7 @@ interface MangaRepository {
 
 			// User-defined in-app browser source: pages are stashed by BrowserSourceActivity and served
 			// back from the page store (only BROWSER_SOURCE custom sources exist in this build).
-			is CustomMangaSource -> BrowserSourceMangaRepository(source)
+			is CustomMangaSource -> CustomMangaRepository(customSource = source)
 
 			else -> null
 		}

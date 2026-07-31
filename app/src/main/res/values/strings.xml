@@ -1103,6 +1103,15 @@
     <string name="lang_auto">Auto-detect</string>
     <string name="ocr_recognizing">Recognizing…</string>
     <string name="ocr_no_text">No text detected.</string>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         FlareSolverr (core/network/FlareSolverrInterceptor)
+         ═══════════════════════════════════════════════════════════ -->
+    <string name="flaresolverr_title">FlareSolverr (Beta)</string>
+    <string name="flaresolverr_enable">Use FlareSolverr</string>
+    <string name="flaresolverr_summary">Beta: solve Cloudflare challenges through a FlareSolverr server you run on your own computer. Enter its address below. The computer must be on and reachable on the same network. Falls back to the in-app solver if unavailable.</string>
+    <string name="flaresolverr_url">Server address</string>
+    <string name="flaresolverr_timeout">Timeout (ms)</string>
     <string name="cf_auto_solve">Auto-solve Cloudflare</string>
     <string name="cf_auto_solve_summary">Experimental: automatically tap the Cloudflare verification checkbox when a challenge appears. May not work on every site or device.</string>
 
@@ -1166,26 +1175,38 @@
 
 
 
-    <!-- Yumemi additions -->
-    <string name="backup_creating_background">Creating backup in background</string>
-    <string name="captcha_not_solved">Challenge not completed yet. Please solve the captcha first.</string>
-    <string name="deselect_all">Deselect all</string>
-    <string name="export">Export</string>
-    <string name="export_data">Export data</string>
-    <string name="note_hint">Your private note</string>
-    <string name="nothing_selected">Nothing selected</string>
-    <string name="personal_note">Note &amp; rating</string>
-    <string name="proxy_webview_not_supported">Proxy for WebView is not supported on this device</string>
-    <string name="reading_daily_goal">Daily reading goal (minutes)</string>
-    <string name="reading_reminder_text">Pick up where you left off in Yumemi</string>
-    <string name="reading_reminder_time">Reminder time</string>
-    <string name="reading_reminder_title">Time to read</string>
-    <string name="reading_reminders">Daily reading reminder</string>
-    <string name="reading_reminders_summary">Show a daily notification reminding you to read</string>
-    <string name="remove_page_gaps">Remove page gaps</string>
-    <string name="remove_page_gaps_summary">Remove gaps between pages in horizontal reading mode</string>
-    <string name="select_all">Select all</string>
-    <string name="select_chapter">Select chapter</string>
-    <string name="selective_backup">Selective backup</string>
-    <string name="selective_backup_summary">Export specific data sections</string>
+    <!-- Custom Source / Parser Template strings -->
+    <string name="add_custom_source">Add custom source</string>
+    <string name="add_source">Add source</string>
+    <string name="change_parser">Change Parser</string>
+    <string name="change_parser_subtitle">Select a parser for this source. The active parser is shown with a checkmark.</string>
+    <string name="custom_source">Custom source</string>
+    <string name="custom_sources">Custom sources</string>
+    <string name="edit_custom_source">Edit source</string>
+    <string name="edit_source_desc">Edit source</string>
+    <string name="export_parser_template">Export template</string>
+    <string name="import_parser_guide_format">Accepted format: .json</string>
+    <string name="import_parser_guide_sources">Where to find templates: Tsuki\'s GitHub repo (/parsers folder), Tsuki\'s Discord server, community shares on Reddit</string>
+    <string name="import_parser_guide_title">About parser templates</string>
+    <string name="import_parser_guide_what">Templates define universal parser rules for entire families of websites — for example, one Madara template works on any WordPress Madara-based manga site.</string>
+    <string name="import_parser_short">Import parser</string>
+    <string name="import_parser_template">Import Parser</string>
+    <string name="import_parser_title">Import Parser Template</string>
+    <string name="manage_custom_sources">Manage custom sources</string>
+    <string name="manage_custom_sources_summary">View, open, or remove the sources you\'ve added</string>
+    <string name="manga_site_prompt_add_source">Add Source</string>
+    <string name="no_custom_sources_summary">Tap the button below to add a manga site by URL. Web sources open inside the in-app browser.</string>
+    <string name="no_custom_sources_title">No custom sources yet</string>
+    <string name="no_parser_templates_summary">Import a .json template from Tsuki\'s GitHub repo, Discord server, or the community to add support for entire families of manga websites.</string>
+    <string name="no_parser_templates_title">No parser templates yet</string>
+    <string name="parser_template_example">Required: name, version, type, mangaList, pageList\nOptional: mangaDetail, chapterList, genres</string>
+    <string name="parser_template_example_title">Valid template fields</string>
+    <string name="parser_template_removed">Template \"%s\" removed</string>
+    <string name="parser_template_what_body">Parser templates define the scraping rules for entire families of manga websites. One Madara template, for example, works on dozens of WordPress Madara-based sites.\n\nImport a .json template to add support for any compatible site without waiting for an app update.</string>
+    <string name="parser_template_what_title">What are parser templates?</string>
+    <string name="parser_templates">Parsers</string>
+    <string name="parser_templates_summary">Import and manage universal parser templates</string>
+    <string name="remove_parser_template_message">\"%1$s\" will be removed. You can re-import it later.</string>
+    <string name="remove_parser_template_title">Remove parser template?</string>
+    <string name="webview_parser_add_source">Add as Source</string>
 </resources>

@@ -133,8 +133,11 @@ class PageSaveHelper @AssistedInject constructor(
 				url.lastPathSegment
 			},
 		) { "Invalid page url: $url" }
-		val extension = name.substringAfterLast('.', "")
-		return if (extension.length in 2..4) extension else EXTENSION_FALLBACK
+		var extension = name.substringAfterLast('.', "")
+		if (extension.length !in 2..4) {
+			extension = fileUri.toFileOrNull()?.let { file -> getImageExtension(file) } ?: EXTENSION_FALLBACK
+		}
+		return extension
 	}
 
 	private suspend fun <I> ActivityResultLauncher<I>.launchAndAwait(input: I): Uri {

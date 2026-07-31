@@ -88,18 +88,32 @@ class DiscordRpc @Inject constructor(
 				clearRpc()
 				return
 			}
+			// Custom/browser sources use CUSTOM_ prefix — show chapter title as state
+			// and guard against empty coverUrl which would silently cancel the RPC job
+			val isCustomOrBrowser = manga.source.name.startsWith("CUSTOM_")
+			val stateText = if (isCustomOrBrowser) {
+				val chapterLabel = state.chapter.title?.takeIf { it.isNotBlank() }
+					?: run {
+						val n = state.chapter.number
+						"Chapter \${if (n % 1f == 0f) n.toInt() else n}"
+					}
+				"\$chapterLabel · \${manga.source.getTitle(context)}"
+			} else {
+				context.getString(R.string.chapter_d_of_d, state.chapterNumber, state.chaptersTotal)
+			}
+			val safeCoverUrl = manga.coverUrl?.takeIf { it.isNotBlank() } ?: appIcon
 			updateRpcAsync(
 				activity = Activity(
 					applicationId = appId,
 					name = appName,
 					details = manga.title,
-					state = context.getString(R.string.chapter_d_of_d, state.chapterNumber, state.chaptersTotal),
+					state = stateText,
 					type = 3,
 					timestamps = Timestamps(
 						start = lastActivity?.timestamps?.start ?: System.currentTimeMillis(),
 					),
 					assets = Assets(
-						largeImage = manga.coverUrl,
+						largeImage = safeCoverUrl,
 						largeText = context.getString(R.string.reading_s, manga.title),
 						smallText = context.getString(R.string.discord_rpc_description),
 						smallImage = appIcon,

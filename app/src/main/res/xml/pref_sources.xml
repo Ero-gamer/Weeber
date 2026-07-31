@@ -58,4 +58,18 @@
         android:summary="@string/handle_links_summary"
         android:title="@string/handle_links" />
 
+
+    <PreferenceScreen
+        android:fragment="org.koitharu.kotatsu.customsource.ui.CustomSourcesSettingsFragment"
+        android:key="custom_sources"
+        android:persistent="false"
+        android:summary="@string/manage_custom_sources_summary"
+        android:title="@string/manage_custom_sources" />
+
+    <PreferenceScreen
+        android:fragment="org.koitharu.kotatsu.customsource.ui.ParserTemplatesFragment"
+        android:key="parser_templates"
+        android:persistent="false"
+        android:summary="@string/parser_templates_summary"
+        android:title="@string/parser_templates" />
 </androidx.preference.PreferenceScreen>

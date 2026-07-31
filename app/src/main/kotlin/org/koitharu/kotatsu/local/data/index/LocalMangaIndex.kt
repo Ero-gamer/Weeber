@@ -41,14 +41,18 @@ class LocalMangaIndex @Inject constructor(
 	}
 
 	suspend fun update() = mutex.withLock {
-		db.withTransaction {
-			val dao = db.getLocalMangaIndexDao()
-			dao.clear()
-			localMangaRepositoryProvider.get()
-				.getRawListAsFlow()
-				.collect { upsert(it) }
+		runCatchingCancellable {
+			db.withTransaction {
+				val dao = db.getLocalMangaIndexDao()
+				dao.clear()
+				localMangaRepositoryProvider.get()
+					.getRawListAsFlow()
+					.collect { upsert(it) }
+			}
+			currentVersion = VERSION
+		}.onFailure {
+			it.printStackTraceDebug("LocalMangaIndex::update")
 		}
-		currentVersion = VERSION
 	}
 
 	suspend fun updateIfRequired() {

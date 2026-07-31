@@ -128,46 +128,20 @@ object BitmapDecoderCompat {
 		}
 	private fun detectBitmapType(bytes: ByteArray): MimeType? {
 		if (bytes.size >= 12
-			&& bytes[0] == 'R'.code.toByte()
-			&& bytes[1] == 'I'.code.toByte()
-			&& bytes[2] == 'F'.code.toByte()
-			&& bytes[3] == 'F'.code.toByte()
-			&& bytes[8] == 'W'.code.toByte()
-			&& bytes[9] == 'E'.code.toByte()
-			&& bytes[10] == 'B'.code.toByte()
-			&& bytes[11] == 'P'.code.toByte()
-		) {
-			return MimeType("image/webp")
-		}
-		if (bytes.size >= 3
-			&& bytes[0] == 0xff.toByte()
-			&& bytes[1] == 0xd8.toByte()
-			&& bytes[2] == 0xff.toByte()
-		) {
-			return MimeType("image/jpeg")
-		}
-		if (bytes.size >= 8
-			&& bytes[0] == 0x89.toByte()
-			&& bytes[1] == 0x50.toByte()
-			&& bytes[2] == 0x4e.toByte()
-			&& bytes[3] == 0x47.toByte()
-			&& bytes[4] == 0x0d.toByte()
-			&& bytes[5] == 0x0a.toByte()
-			&& bytes[6] == 0x1a.toByte()
-			&& bytes[7] == 0x0a.toByte()
-		) {
-			return MimeType("image/png")
-		}
-		if (bytes.size >= 6
-			&& bytes[0] == 'G'.code.toByte()
-			&& bytes[1] == 'I'.code.toByte()
-			&& bytes[2] == 'F'.code.toByte()
-			&& bytes[3] == '8'.code.toByte()
-			&& (bytes[4] == '7'.code.toByte() || bytes[4] == '9'.code.toByte())
-			&& bytes[5] == 'a'.code.toByte()
-		) {
-			return MimeType("image/gif")
-		}
+			&& bytes[0] == 'R'.code.toByte() && bytes[1] == 'I'.code.toByte()
+			&& bytes[2] == 'F'.code.toByte() && bytes[3] == 'F'.code.toByte()
+			&& bytes[8] == 'W'.code.toByte() && bytes[9] == 'E'.code.toByte()
+			&& bytes[10] == 'B'.code.toByte() && bytes[11] == 'P'.code.toByte()
+		) return MimeType("image/webp")
+		if (bytes.size >= 3 && bytes[0] == 0xff.toByte()
+			&& bytes[1] == 0xd8.toByte() && bytes[2] == 0xff.toByte()
+		) return MimeType("image/jpeg")
+		if (bytes.size >= 8 && bytes[0] == 0x89.toByte() && bytes[1] == 0x50.toByte()
+			&& bytes[2] == 0x4e.toByte() && bytes[3] == 0x47.toByte()
+		) return MimeType("image/png")
+		if (bytes.size >= 6 && bytes[0] == 'G'.code.toByte()
+			&& bytes[1] == 'I'.code.toByte() && bytes[2] == 'F'.code.toByte()
+		) return MimeType("image/gif")
 		return null
 	}
 

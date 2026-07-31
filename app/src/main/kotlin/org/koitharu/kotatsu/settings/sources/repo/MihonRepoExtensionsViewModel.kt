@@ -47,7 +47,8 @@ class MihonRepoExtensionsViewModel @Inject constructor(
 			?: savedStateHandle.get<String>(AppRouter.KEY_TITLE).orEmpty().ifBlank { context.getString(R.string.extensions) },
 	)
 
-	val content: StateFlow<List<ListModel>> = combine(
+	@Suppress("UNCHECKED_CAST")
+	val content: StateFlow<List<ListModel>> = (combine(
 		searchQuery.debounce(SEARCH_DEBOUNCE_TIMEOUT).distinctUntilChanged(),
 		refreshTrigger,
 		::Pair,
@@ -56,8 +57,8 @@ class MihonRepoExtensionsViewModel @Inject constructor(
 	}.withLoading().withErrorHandling().stateIn(
 		viewModelScope + Dispatchers.IO,
 		SharingStarted.WhileSubscribed(CONTENT_STOP_TIMEOUT_MS),
-		listOf(LoadingState),
-	)
+		listOf(LoadingState()),
+	) as StateFlow<List<ListModel>>)
 
 	fun performSearch(query: String?) {
 		searchQuery.value = query?.trim()?.takeIf { it.isNotEmpty() }

@@ -41,6 +41,8 @@ import org.koitharu.kotatsu.settings.work.WorkScheduleManager
 import java.security.Security
 import javax.inject.Inject
 import javax.inject.Provider
+import org.koitharu.kotatsu.core.network.DnsPrefetchManager
+import org.koitharu.kotatsu.core.network.webview.WebViewPrewarmer
 
 @HiltAndroidApp
 open class BaseApp : Application(), Configuration.Provider {
@@ -65,6 +67,9 @@ open class BaseApp : Application(), Configuration.Provider {
 
 	@Inject
 	lateinit var workScheduleManager: WorkScheduleManager
+
+	@Inject
+	lateinit var dnsPrefetchManager: DnsPrefetchManager
 
 	@Inject
 	lateinit var databaseOptimizer: DatabaseOptimizer
@@ -93,6 +98,7 @@ open class BaseApp : Application(), Configuration.Provider {
 		PlatformRegistry.applicationContext = this // TODO replace with OkHttp.initialize
 		// Install crash handler before anything else so every subsequent crash is caught
 		GlobalCrashHandler.install(this)
+		WebViewPrewarmer.prewarm(this)
 		AppCompatDelegate.setDefaultNightMode(settings.theme)
 		// TLS 1.3 support for Android < 10
 		if (Build.VERSION.SDK_INT < Build.VERSION_CODES.Q) {
@@ -117,6 +123,7 @@ open class BaseApp : Application(), Configuration.Provider {
 			)
 		}
 		workScheduleManager.init()
+		dnsPrefetchManager.initialize()
 		// ANALYZE every launch; VACUUM only when fragmentation >20% AND 7+ days since last
 		processLifecycleScope.launch(Dispatchers.IO) {
 			databaseOptimizer.optimize()
