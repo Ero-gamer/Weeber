@@ -33,4 +33,9 @@
 	<color name="background_sakura">#FFF8F8</color>
 	<color name="background_mamimi">#FFF8F7</color>
 	<color name="background_kanade">#F3F3F3</color>
+
+    <!-- Health check colors -->
+    <color name="health_ok">#2E7D32</color>
+    <color name="health_slow">#E65100</color>
+    <color name="health_error">#C62828</color>
 </resources>

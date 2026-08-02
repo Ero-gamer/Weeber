@@ -51,7 +51,7 @@ class LocalMangaIndex @Inject constructor(
 			}
 			currentVersion = VERSION
 		}.onFailure {
-			it.printStackTraceDebug("LocalMangaIndex::update")
+			it.printStackTraceDebug()
 		}
 	}
 

@@ -133,8 +133,6 @@ class CustomSourcesSettingsFragment : Fragment() {
                         true
                     }
                     R.id.action_browse_library -> {
-                        KotatsuParserBrowserSheet.newInstance()
-                            .show(childFragmentManager, KotatsuParserBrowserSheet.TAG)
                         true
                     }
                     R.id.action_health_check -> {

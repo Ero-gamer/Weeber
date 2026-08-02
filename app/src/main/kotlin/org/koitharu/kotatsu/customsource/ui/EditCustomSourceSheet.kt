@@ -72,7 +72,7 @@ class EditCustomSourceSheet : BottomSheetDialogFragment() {
 
         val adapter = object : ArrayAdapter<String>(
             requireContext(),
-            R.layout.item_dropdown_simple,
+            android.R.layout.simple_dropdown_item_1line,
             entries.map { it.displayLabel },
         ) {
             private val noOpFilter = object : Filter() {

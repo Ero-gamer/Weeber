@@ -133,12 +133,13 @@ class FaviconFetcher(
 		val pm = options.context.packageManager
 		val icon = runInterruptible {
 			try {
-				pm.getApplicationIcon(source.pkgName)
+				pm.getApplicationIcon(source.packageName)
 			} catch (e: Exception) {
-				e.printStackTraceDebug("FaviconFetcher::fetchMihonIcon")
+				e.printStackTraceDebug()
 				null
 			}
 		} ?: return imageLoader.fetch(R.drawable.ic_storage, options)
+			?: error("FaviconFetcher: no fallback result")
 		return ImageFetchResult(
 			image = icon.nonAdaptive().asImage(),
 			isSampled = false,

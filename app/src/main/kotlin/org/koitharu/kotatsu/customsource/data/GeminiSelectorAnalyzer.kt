@@ -10,7 +10,7 @@ import java.net.URL
 
 /**
  * Calls the Gemini AI API with a structured manga-site analysis prompt and
- * returns CSS selectors mapped to [SiteAutoDetector.DetectedFields].
+ * returns CSS selectors mapped to [DetectedFields].
  *
  * Every returned selector is validated against the real HTML via Jsoup so
  * the caller knows which selectors actually match content.
@@ -18,8 +18,24 @@ import java.net.URL
  */
 class GeminiSelectorAnalyzer {
 
+    data class DetectedFields(
+        val titleSelector: String? = null,
+        val coverSelector: String? = null,
+        val authorSelector: String? = null,
+        val descriptionSelector: String? = null,
+        val genreSelector: String? = null,
+        val chapterListSelector: String? = null,
+        val chapterTitleSelector: String? = null,
+        val chapterDateSelector: String? = null,
+        val paginationSelector: String? = null,
+        val pageImageSelector: String? = null,
+    )
+
+    enum class Confidence { LOW, MEDIUM, HIGH }
+    enum class CmsType { UNKNOWN }
+
     data class AnalysisResult(
-        val fields: SiteAutoDetector.DetectedFields,
+        val fields: DetectedFields,
         /** Maps selector field key to whether it matched >= 1 element in the real HTML. */
         val verifiedSelectors: Map<String, Boolean>,
         val confidence: String,
@@ -160,7 +176,7 @@ class GeminiSelectorAnalyzer {
     private fun jsonToFields(
         json: JSONObject,
         domain: String,
-    ): SiteAutoDetector.DetectedFields {
+    ): DetectedFields {
         val ml = json.optJSONObject("mangaList")
         val md = json.optJSONObject("mangaDetail")
         val cl = json.optJSONObject("chapterList")
@@ -183,14 +199,14 @@ class GeminiSelectorAnalyzer {
         val confidence = json.optString("confidence", "low")
 
         fun score(sel: String) = when {
-            sel.isEmpty() -> SiteAutoDetector.Confidence.LOW
+            sel.isEmpty() -> Confidence.LOW
             sel.contains('.') || sel.contains('#') || sel.contains('[') ->
-                if (confidence == "high") SiteAutoDetector.Confidence.HIGH
-                else SiteAutoDetector.Confidence.MEDIUM
-            else -> SiteAutoDetector.Confidence.MEDIUM
+                if (confidence == "high") Confidence.HIGH
+                else Confidence.MEDIUM
+            else -> Confidence.MEDIUM
         }
 
-        return SiteAutoDetector.DetectedFields(
+        return DetectedFields(
             siteName = domain.removePrefix("www.").substringBefore(".")
                 .replaceFirstChar { it.uppercaseChar() },
             listPath          = listPath.ifEmpty { "/" },
@@ -202,7 +218,7 @@ class GeminiSelectorAnalyzer {
             description       = descSel,
             chapterSelector   = chapSel,
             pageImageSelector = pageImgSel,
-            cmsType           = SiteAutoDetector.CmsType.UNKNOWN,
+            cmsType           = CmsType.UNKNOWN,
             fieldConfidence = mapOf(
                 "cardSelector"      to score(cardSel),
                 "titleSelector"     to score(titleSel),
@@ -211,8 +227,8 @@ class GeminiSelectorAnalyzer {
                 "description"       to score(descSel),
                 "chapterSelector"   to score(chapSel),
                 "pageImageSelector" to score(pageImgSel),
-                "listPath"   to if (listPath.isNotEmpty()) SiteAutoDetector.Confidence.HIGH else SiteAutoDetector.Confidence.LOW,
-                "searchPath" to if (searchPath.isNotEmpty()) SiteAutoDetector.Confidence.HIGH else SiteAutoDetector.Confidence.LOW,
+                "listPath"   to if (listPath.isNotEmpty()) Confidence.HIGH else Confidence.LOW,
+                "searchPath" to if (searchPath.isNotEmpty()) Confidence.HIGH else Confidence.LOW,
             ),
         )
     }

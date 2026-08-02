@@ -81,8 +81,6 @@ class ChangeParserSheet : BottomSheetDialogFragment() {
             },
             onBrowseLibrary = {
                 dismiss()
-                KotatsuParserBrowserSheet.newInstanceForChange(sourceId)
-                    .show(parentFragmentManager, KotatsuParserBrowserSheet.TAG)
             },
         )
     }

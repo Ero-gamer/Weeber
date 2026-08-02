@@ -108,6 +108,16 @@ interface MangaRepository {
 			}
 		}
 
+		@AnyThread
+		fun invalidateBySourceId(id: Long) {
+			synchronized(cache) {
+				val toRemove = cache.keys
+					.filterIsInstance<CustomMangaSource>()
+					.filter { it.source.id == id }
+				toRemove.forEach { cache.remove(it) }
+			}
+		}
+
 		private fun createRepository(source: MangaSource): MangaRepository? = when (source) {
 			// Constructing a built-in parser can still throw (a malformed source, a removed symbol, or
 			// an unavailable source picked up from an old backup). Contain it so the source degrades to

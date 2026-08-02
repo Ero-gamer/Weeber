@@ -17,11 +17,11 @@ private const val LOOP_COUNTER = 10
 private const val CHECK_DELAY_MS = 1000L
 private const val CF_CLEARANCE = "cf_clearance"
 
-class CloudFlareClient(
+open class CloudFlareClient(
 	private val cookieJar: MutableCookieJar,
 	private val callback: CloudFlareCallback,
-	adBlock: AdBlock? = null,
 	private val targetUrl: String,
+	adBlock: AdBlock? = null,
 ) : BrowserClient(callback, adBlock) {
 
 	private val oldClearance = getClearanceFromCookieManager()

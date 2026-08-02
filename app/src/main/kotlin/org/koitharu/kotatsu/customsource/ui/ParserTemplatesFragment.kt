@@ -193,14 +193,14 @@ class ParserTemplatesFragment : Fragment() {
 
     private fun showAddSiteDialog(template: ParserTemplate) {
         val dialogView = LayoutInflater.from(requireContext())
-            .inflate(R.layout.dialog_add_template_site, null, false)
-        val urlLayout = dialogView.findViewById<TextInputLayout>(R.id.layout_add_site_url)
-        val urlInput  = dialogView.findViewById<TextInputEditText>(R.id.input_add_site_url)
-
-        val dialog = MaterialAlertDialogBuilder(requireContext())
-            .setTitle(getString(R.string.add_site_for_template_title, template.name))
-            .setView(dialogView)
-            .setNegativeButton(R.string.cancel, null)
+            .setView(
+                    TextInputEditText(requireContext()).apply {
+                        hint = getString(R.string.source_url_hint)
+                        inputType = android.text.InputType.TYPE_TEXT_VARIATION_URI or android.text.InputType.TYPE_CLASS_TEXT
+                        id = android.R.id.edit
+                    }
+                )
+                .setNegativeButton(R.string.cancel, null)
             .setPositiveButton(R.string.add_source_label, null)
             .create()
 

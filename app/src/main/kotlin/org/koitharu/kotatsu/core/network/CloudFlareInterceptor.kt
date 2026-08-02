@@ -44,7 +44,7 @@ class CloudFlareInterceptor : Interceptor {
                     else -> CloudFlareHelper.PROTECTION_NOT_DETECTED
                 }
             } catch (e: Exception) {
-                e.printStackTraceDebug("CloudFlareInterceptor")
+                e.printStackTraceDebug()
                 CloudFlareHelper.PROTECTION_NOT_DETECTED
             }
         } else {
@@ -55,7 +55,7 @@ class CloudFlareInterceptor : Interceptor {
                 if (e.message?.contains("Bad position") == true) {
                     CloudFlareHelper.PROTECTION_NOT_DETECTED
                 } else {
-                    e.printStackTraceDebug("CloudFlareInterceptor")
+                    e.printStackTraceDebug()
                 }
             }
         }

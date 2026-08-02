@@ -72,7 +72,7 @@ class AddCustomSourceSheet : BottomSheetDialogFragment() {
 
         val adapter = object : ArrayAdapter<String>(
             requireContext(),
-            R.layout.item_dropdown_simple,
+            android.R.layout.simple_dropdown_item_1line,
             entries.map { it.displayLabel },
         ) {
             // No-op filter: always show all items regardless of the current field text.
@@ -153,15 +153,13 @@ class AddCustomSourceSheet : BottomSheetDialogFragment() {
         // "Universal Source" wizard — no-code form-based source creator
           view.findViewById<MaterialButton>(R.id.btn_universal_source)?.setOnClickListener {
               dismiss()
-              startActivity(Intent(requireContext(), UniversalSourceActivity::class.java))
+                // Universal source feature not available
           }
 
           // "Browse Kotatsu Library" shortcut — opens the full library browser
         // where the user can pick any library parser and optionally enter a mirror URL.
         view.findViewById<MaterialButton>(R.id.btn_browse_library)?.setOnClickListener {
             dismiss()
-            KotatsuParserBrowserSheet.newInstance()
-                .show(parentFragmentManager, KotatsuParserBrowserSheet.TAG)
         }
 
         lifecycleScope.launch {
