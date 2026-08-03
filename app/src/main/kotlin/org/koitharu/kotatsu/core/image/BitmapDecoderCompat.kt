@@ -126,6 +126,8 @@ object BitmapDecoderCompat {
 		) {
 			decoder.isMutableRequired = isMutable
 		}
+	}
+
 	private fun detectBitmapType(bytes: ByteArray): MimeType? {
 		if (bytes.size >= 12
 			&& bytes[0] == 'R'.code.toByte() && bytes[1] == 'I'.code.toByte()

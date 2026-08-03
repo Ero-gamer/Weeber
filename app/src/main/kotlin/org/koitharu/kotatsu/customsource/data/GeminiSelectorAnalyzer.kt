@@ -17,22 +17,22 @@ import java.net.URL
  * Never crashes on malformed Gemini JSON -- returns null on any failure.
  */
 class GeminiSelectorAnalyzer {
-
     data class DetectedFields(
-        val titleSelector: String? = null,
-        val coverSelector: String? = null,
-        val authorSelector: String? = null,
-        val descriptionSelector: String? = null,
-        val genreSelector: String? = null,
-        val chapterListSelector: String? = null,
-        val chapterTitleSelector: String? = null,
-        val chapterDateSelector: String? = null,
-        val paginationSelector: String? = null,
-        val pageImageSelector: String? = null,
+        val cardSelector: String = "",
+        val titleSelector: String = "",
+        val coverSelector: String = "",
+        val detailTitle: String = "",
+        val description: String = "",
+        val chapterSelector: String = "",
+        val pageImageSelector: String = "",
+        val listPath: String = "",
+        val searchPath: String = "",
     )
 
     enum class Confidence { LOW, MEDIUM, HIGH }
     enum class CmsType { UNKNOWN }
+
+
 
     data class AnalysisResult(
         val fields: DetectedFields,

@@ -1183,7 +1183,7 @@
     <string name="action_export_sources">Export sources</string>
     <string name="action_import_sources">Import sources</string>
 
-    <!-- Feature strings (Yumemi + CustomSource + ParserTemplate + Health) -->
+    <!-- Feature strings -->
     <string name="note_hint">Your private note</string>
     <string name="select_all">Select all</string>
     <string name="deselect_all">Deselect all</string>
@@ -1252,6 +1252,17 @@
     <string name="universal_source_action">Universal Source (Beta)…</string>
     <string name="url_hint_auto_detect">Site URL — type will be detected automatically</string>
     <string name="webview_parser_add_source">Add as Source</string>
+    <string name="no_file_selected_error">Please pick a .json file first.</string>
+    <string name="template_import_failed">Failed to read the file — please try again</string>
+    <string name="template_imported">Parser template \"%s\" imported successfully</string>
+    <string name="health_checking_label">Checking…</string>
+    <string name="health_recheck_label">Re-check All</string>
+    <string name="health_summary">%1$d reachable · %2$d failed · %3$d total</string>
+    <string name="remove_source_title">Remove source?</string>
+    <string name="remove_source_message">\"%1$s\" will be removed from your custom sources. You can add it again later.</string>
+    <string name="source_disabled_badge">Disabled</string>
+    <string name="source_disabled_desc">Source disabled — tap to enable</string>
+    <string name="source_enabled_desc">Source enabled — tap to disable</string>
     <string name="sources_exported">%d sources exported</string>
     <string name="export_failed">Export failed</string>
     <string name="sources_imported">%d new sources imported</string>

@@ -678,6 +678,8 @@ class ReaderViewModel @Inject constructor(
         other
     }
 
+    private fun isTranslateConfigured(): Boolean = settings.isPageTranslationConfigured
+
     fun requestOcrCurrentPage() {
         val page = getCurrentPage() ?: return
         if (!isTranslateConfigured()) {
