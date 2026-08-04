@@ -25,7 +25,7 @@ jobs:
             -validity 10000 \
             -storepass "$PASS" \
             -keypass "$PASS" \
-            -dname "CN=Radhouane, OU=EroGamer, O=Dev, L=EsSenia, ST=Oran, C=DZ"
+            -dname "CN=Weeber, OU=EroGamer, O=Dev, L=Es Senia, ST=Oran, C=DZ"
 
       - name: Output Base64 String
         run: |
