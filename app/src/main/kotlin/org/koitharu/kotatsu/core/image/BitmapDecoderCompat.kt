@@ -147,5 +147,4 @@ object BitmapDecoderCompat {
 		return null
 	}
 
-	}
 }

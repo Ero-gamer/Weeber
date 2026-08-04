@@ -18,6 +18,7 @@ import java.net.URL
  */
 class GeminiSelectorAnalyzer {
     data class DetectedFields(
+        val siteName: String = "",
         val cardSelector: String = "",
         val titleSelector: String = "",
         val coverSelector: String = "",
@@ -27,6 +28,8 @@ class GeminiSelectorAnalyzer {
         val pageImageSelector: String = "",
         val listPath: String = "",
         val searchPath: String = "",
+        val cmsType: CmsType = CmsType.UNKNOWN,
+        val fieldConfidence: Map<String, Confidence> = emptyMap(),
     )
 
     enum class Confidence { LOW, MEDIUM, HIGH }
