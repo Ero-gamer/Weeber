@@ -294,7 +294,7 @@ class AppSettings @Inject constructor(@ApplicationContext context: Context) {
 		get() = prefs.getBoolean(KEY_AUTO_PLUGINS, false)
 
 	var lastAutoPlugins: Long
-		get() = prefs.getLong(KEY_LAST_AUTO_PLUGINS, 0L)
+		get() = prefs.getLongCompat(KEY_LAST_AUTO_PLUGINS, 0L)
 		set(value) = prefs.edit { putLong(KEY_LAST_AUTO_PLUGINS, value) }
 
 	var notificationSound: Uri
@@ -395,7 +395,7 @@ class AppSettings @Inject constructor(@ApplicationContext context: Context) {
 
 	// ── App update check (AppUpdateCheckWorker) ──────────────────────────────
 	var activeSourcePresetId: Long
-		get() = prefs.getLong(KEY_ACTIVE_SOURCE_PRESET, 0L)
+		get() = prefs.getLongCompat(KEY_ACTIVE_SOURCE_PRESET, 0L)
 		set(value) = prefs.edit { putLong(KEY_ACTIVE_SOURCE_PRESET, value) }
 
 		var isAutoUpdateCheckEnabled: Boolean
@@ -403,7 +403,7 @@ class AppSettings @Inject constructor(@ApplicationContext context: Context) {
 		set(value) = prefs.edit { putBoolean(KEY_AUTO_UPDATE_CHECK, value) }
 
 	var lastUpdateCheckTime: Long
-		get() = prefs.getLong(KEY_LAST_UPDATE_CHECK, 0L)
+		get() = prefs.getLongCompat(KEY_LAST_UPDATE_CHECK, 0L)
 		set(value) = prefs.edit { putLong(KEY_LAST_UPDATE_CHECK, value) }
 
 	var updateCheckIntervalHours: Int
@@ -422,7 +422,7 @@ class AppSettings @Inject constructor(@ApplicationContext context: Context) {
 
 	// ── DatabaseOptimizer guard ───────────────────────────────────────────────
 	var lastVacuumTime: Long
-		get() = prefs.getLong(KEY_LAST_VACUUM, 0L)
+		get() = prefs.getLongCompat(KEY_LAST_VACUUM, 0L)
 		set(value) = prefs.edit { putLong(KEY_LAST_VACUUM, value) }
 
 	val isPagesTabEnabled: Boolean
