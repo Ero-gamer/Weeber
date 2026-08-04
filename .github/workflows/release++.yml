@@ -2,6 +2,23 @@ name: Release Build + KeyGen
 
 on:
   workflow_dispatch:
+    inputs:
+      store_password:
+        description: 'Keystore store password'
+        required: false
+        default: ''
+      key_alias:
+        description: 'Key alias'
+        required: false
+        default: ''
+      key_password:
+        description: 'Key password'
+        required: false
+        default: ''
+      generate_keystore:
+        description: 'Generate NEW keystore? (yes/no) — only needed first time or if lost'
+        required: false
+        default: 'no'
 
 jobs:
   build:
@@ -23,39 +40,71 @@ jobs:
         with:
           gradle-version: wrapper
 
-      - name: Generate or restore keystore
+      - name: Resolve signing credentials
+        id: creds
         run: |
-          # If a saved keystore secret exists, use it. Otherwise generate a new one.
-          if [ -n "${{ secrets.RELEASE_KEYSTORE }}" ]; then
-            echo "Using existing keystore from secret."
-            echo "${{ secrets.RELEASE_KEYSTORE }}" | base64 -d > release.keystore
-          else
-            echo "No keystore secret found — generating a new one."
+          # Prefer manually-typed inputs over secrets (inputs take priority)
+          STORE_PASS="${{ github.event.inputs.store_password }}"
+          KEY_ALIAS="${{ github.event.inputs.key_alias }}"
+          KEY_PASS="${{ github.event.inputs.key_password }}"
+
+          # Fall back to saved secrets if inputs are blank
+          [ -z "$STORE_PASS" ] && STORE_PASS="${{ secrets.RELEASE_PASSWORD }}"
+          [ -z "$KEY_ALIAS"  ] && KEY_ALIAS="${{ secrets.RELEASE_ALIAS }}"
+          [ -z "$KEY_PASS"   ] && KEY_PASS="${{ secrets.RELEASE_KEY_PASSWORD }}"
+
+          # Validate
+          if [ -z "$STORE_PASS" ] || [ -z "$KEY_ALIAS" ] || [ -z "$KEY_PASS" ]; then
+            echo "ERROR: store_password, key_alias, and key_password are all required."
+            echo "Either type them in the workflow inputs or save them as GitHub secrets."
+            exit 1
+          fi
+
+          echo "store_pass=$STORE_PASS" >> $GITHUB_OUTPUT
+          echo "key_alias=$KEY_ALIAS"   >> $GITHUB_OUTPUT
+          echo "key_pass=$KEY_PASS"     >> $GITHUB_OUTPUT
+
+      - name: Prepare keystore
+        run: |
+          GENERATE="${{ github.event.inputs.generate_keystore }}"
+
+          if [ "$GENERATE" = "yes" ]; then
+            echo "Generating new keystore..."
             keytool -genkey -v \
               -keystore release.keystore \
-              -alias "${{ secrets.RELEASE_ALIAS || 'weeber' }}" \
+              -alias "${{ steps.creds.outputs.key_alias }}" \
               -keyalg RSA -keysize 2048 -validity 10000 \
-              -storepass "${{ secrets.RELEASE_PASSWORD }}" \
-              -keypass "${{ secrets.RELEASE_KEY_PASSWORD }}" \
-              -dname "CN=Erogamer, OU=Weeber, O=Weeber, L=Unknown, ST=Es Senia, C=DZ"
+              -storepass "${{ steps.creds.outputs.store_pass }}" \
+              -keypass "${{ steps.creds.outputs.key_pass }}" \
+              -dname "CN=Weeber, OU=App, O=Weeber, L=Oran, ST=Es Senia, C=DZ"
+
             echo ""
-            echo "================================================================"
-            echo "NEW KEYSTORE GENERATED."
-            echo "Save the base64 below as your RELEASE_KEYSTORE secret so future"
-            echo "builds use the same key (required for app updates):"
-            echo "================================================================"
+            echo "========================================================"
+            echo "NEW KEYSTORE GENERATED. Copy the base64 below and save"
+            echo "it as the RELEASE_KEYSTORE GitHub secret so future"
+            echo "builds reuse the same key (required for APK updates):"
+            echo "========================================================"
             base64 -w 0 release.keystore
             echo ""
-            echo "================================================================"
+            echo "========================================================"
+
+          elif [ -n "${{ secrets.RELEASE_KEYSTORE }}" ]; then
+            echo "Restoring keystore from secret..."
+            echo "${{ secrets.RELEASE_KEYSTORE }}" | base64 -d > release.keystore
+
+          else
+            echo "ERROR: No keystore found."
+            echo "Set generate_keystore=yes on first run, then save the printed base64 as RELEASE_KEYSTORE secret."
+            exit 1
           fi
 
       - name: Build Release APK
         run: |
           ./gradlew assembleRelease \
             -Pandroid.injected.signing.store.file=$(pwd)/release.keystore \
-            -Pandroid.injected.signing.store.password=${{ secrets.RELEASE_PASSWORD }} \
-            -Pandroid.injected.signing.key.alias=${{ secrets.RELEASE_ALIAS }} \
-            -Pandroid.injected.signing.key.password=${{ secrets.RELEASE_KEY_PASSWORD }} \
+            -Pandroid.injected.signing.store.password=${{ steps.creds.outputs.store_pass }} \
+            -Pandroid.injected.signing.key.alias=${{ steps.creds.outputs.key_alias }} \
+            -Pandroid.injected.signing.key.password=${{ steps.creds.outputs.key_pass }} \
             --no-daemon
 
       - name: Upload APK
